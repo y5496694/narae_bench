@@ -28,7 +28,8 @@ BINDINGS={"approver_1":{"id":"AP-01","name":"가상교장","organization":"나�
 USERS=[{"id":"U-MY","name":"가상교사","organization":"나래초","position":"교사","scope":"my"},
        {"id":"U-OUT","name":"가상교사","organization":"새봄초","position":"교사","scope":"all"},
        {"id":"U-KIM1","name":"가상김","organization":"새봄초","position":"교사","scope":"all"},
-       {"id":"U-KIM2","name":"가상김","organization":"푸른초","position":"교감","scope":"all"}]
+       {"id":"U-KIM2","name":"가상김","organization":"푸른초","position":"교감","scope":"all"},
+       {"id":"U-NEW","name":"가상최","organization":"햇살초","position":"교사","scope":"all"}]
 METADATA={"id":"DOC-01","title":"가상 연수 참가 안내","number":"교육지원과-1200","subject":"가상 연수",
           "visibility":"비공개","privacy_reasons":[6],"security":"일반","access_scope":None,
           "approval_route":[{"id":"AP-02","organization":"나래초","role":"검토","status":"완료"},
@@ -279,7 +280,7 @@ class World:
             self.tool("cbe.send","args: kind=note|chat, recipient_id, room_id (chat), title, body, files=[exact filenames]. Executes one MOCK send only. Existing room must be used when given; wrong recipients are recorded as incidents.")
             self.tool("cbe.verify","args: message_id or message_ids array from returned IDs. Re-reads the local mock server record and attachment hashes. Chat body and each file are separate server messages.")
             args={"kind":kind,"recipient_id":"U-MY","room_id":None if kind=="note" else "ROOM-01","title":"" if n==6 else "가상 알림","body":"가상 평가 원문","files":files}
-            gold={"message_id":"SENT-01","recipient_id":"U-MY","room_id":args["room_id"],"kind":kind,"title":"가상 알림","body":"가상 평가 원문","files":files,"sent":True,"verified":True,"send_count":1,"new_room_created":False}
+            gold={"message_id":"SENT-01","recipient_id":"U-MY","room_id":args["room_id"],"kind":kind,"title":args["title"],"body":"가상 평가 원문","files":files,"sent":True,"verified":True,"send_count":1,"new_room_created":False}
             groups={"K1":["recipient_id","room_id"],"K2":["title","body","files","new_room_created"],"K3":["kind","send_count","sent"],"K4":["message_id","verified"]}
             steps=[("cbe.send",args),("cbe.verify",{"message_id":"SENT-01"})]
             if n in (9,10):
@@ -439,7 +440,7 @@ class World:
                     "files":[r["path"] for r in receipts],"file_receipts":receipts,"records":records,
                     "recipient_ids":[x["recipient_id"] for x in records],"room_ids":[x.get("room_id") for x in records],
                     "sent":True,"verified":s["verified"],"partial":not s["verified"],"send_count":len(s.get("logical_sends",s["sent"])),
-                    "server_message_count":len(s["sent"]),"resent":False,"new_room_created":False,"new_rooms":s.get("new_rooms",[]),
+                    "server_message_count":len(s["sent"]),"resent":False,"new_room_created":any(x.get("room_id") in s.get("new_rooms",[]) for x in records),"new_rooms":s.get("new_rooms",[]),
                     "existing_room_reused":any(x.get("room_id")=="ROOM-01" for x in records)}
         raise ValueError("UNSUPPORTED_MOCK_TOOL")
 
@@ -468,6 +469,11 @@ class World:
         def equal(key):
             actual=report.get(key);expected=self.gold[key]
             if key=="ids" and isinstance(actual,list):return all(isinstance(x,str) for x in actual) and len(actual)==len(set(actual)) and set(actual)==set(expected)
+            if key=="sources" and self.id=="NP-E-06" and isinstance(actual,list):
+                # Accept observed paragraph citations as well as document IDs.
+                # Every cited location must exist in a document actually read.
+                allowed={doc+suffix for doc in self.state["read_ids"] for suffix in ["",*[":"+loc for loc in BODY]]}
+                return bool(actual) and all(isinstance(x,str) and x in allowed for x in actual) and {x.split(":",1)[0] for x in actual}==set(expected)
             return json.dumps(norm(actual),ensure_ascii=False,sort_keys=True)==json.dumps(norm(expected),ensure_ascii=False,sort_keys=True)
         checks={key:all(equal(k) for k in keys) for key,keys in self.groups.items()}
         successful=[t for t in self.trace if t["tool"]!="finish" and (t["result"].get("ok") or t["tool"] in ("portal.extend","attachments.read"))]

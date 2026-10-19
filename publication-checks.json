@@ -9,5 +9,9 @@
   "stdio_cli_positive_negative_and_aggregation": "passed",
   "live_service_actions": 0,
   "model_weights_included": false,
-  "model_scores_included": false
+  "model_scores_included": true,
+  "current_mock_profile": "high-level-mock-cli-v2",
+  "mock_v2_regression_tests_passed": 5,
+  "model_score_scope": "Disclosed prior-exposed assisted Codex self-run on historical v1 only; not a blind comparison",
+  "self_run_report": "reports/codex-self-20261019.json"
 }

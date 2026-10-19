@@ -5,6 +5,10 @@ import os
 import subprocess
 import sys
 import time
+import tempfile
+import threading
+import queue
+from contextlib import contextmanager
 from pathlib import Path
 
 PACKAGE = Path(__file__).resolve().parents[1]
@@ -12,7 +16,86 @@ PACKAGE = Path(__file__).resolve().parents[1]
 
 def write(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as stream:
+            temporary = Path(stream.name)
+            stream.write(json.dumps(value, ensure_ascii=False, indent=2) + "\n")
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+@contextmanager
+def lock(path, blocking=True):
+    """OS releases the lock even if a caller crashes. Keep the inode in place."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a+b") as stream:
+        stream.seek(0, os.SEEK_END)
+        if stream.tell() == 0:
+            stream.write(b"0")
+            stream.flush()
+        if os.name == "nt":
+            import msvcrt
+            while True:
+                stream.seek(0)
+                try:
+                    msvcrt.locking(stream.fileno(), msvcrt.LK_NBLCK, 1)
+                    break
+                except OSError:
+                    if not blocking:
+                        raise ValueError("Case is already running")
+                    time.sleep(0.02)
+        else:
+            import fcntl
+            try:
+                fcntl.flock(stream, fcntl.LOCK_EX | (0 if blocking else fcntl.LOCK_NB))
+            except BlockingIOError:
+                raise ValueError("Case is already running") from None
+        try:
+            yield
+        finally:
+            if os.name == "nt":
+                stream.seek(0)
+                msvcrt.locking(stream.fileno(), msvcrt.LK_UNLCK, 1)
+            else:
+                fcntl.flock(stream, fcntl.LOCK_UN)
+
+
+def input_lines(fd, timeout):
+    """Read a pipe with a real deadline, including silent or partial-line input."""
+    lines = queue.Queue(maxsize=16)
+    def reader():
+        pending = b""
+        try:
+            while True:
+                data = os.read(fd, 4096)
+                if not data:
+                    if pending:
+                        lines.put(pending.decode("utf-8", errors="replace"))
+                    break
+                pending += data
+                while b"\n" in pending:
+                    line, pending = pending.split(b"\n", 1)
+                    lines.put(line.decode("utf-8", errors="replace"))
+        finally:
+            lines.put(None)
+    threading.Thread(target=reader, daemon=True).start()
+    deadline = time.monotonic() + timeout
+    while True:
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            return
+        try:
+            line = lines.get(timeout=remaining)
+        except queue.Empty:
+            return
+        if line is None:
+            return
+        yield line
 
 
 def load_world(state):
@@ -29,8 +112,10 @@ def prepare(args):
     subprocess.run([sys.executable, "-X", "utf8", str(PACKAGE / "bench.py"), "prepare", "--seed", str(args.seed),
                     "--run-id", "MOCKCLI", "--out", str(state / "common-fixture")], check=True, stdout=subprocess.DEVNULL)
     _, catalog, blocked = load_world(state)
+    from mock_workflow import fixture_files
+    fixture_files()
     run = json.loads((state / "common-fixture/results.json").read_text(encoding="utf-8"))
-    run.update(mode="mock", profile="high-level-mock-cli-v1", model="external-agent-not-specified",
+    run.update(mode="mock", profile="high-level-mock-cli-v2", model="external-agent-not-specified",
                support_frozen_before_run=True, reviewer="automated mock state checks; no independent human semantic review")
     for case, row in zip(catalog, run["results"]):
         reason = blocked(case["id"])
@@ -52,15 +137,23 @@ def run_case(args):
     case = next(c for c in catalog if c["id"] == args.case)
     if blocked(case["id"]):
         raise ValueError("Case blocked by this mock profile: " + blocked(case["id"])[1])
-    results = json.loads((state / "results.json").read_text(encoding="utf-8"))
-    row = next(r for r in results["results"] if r["case_id"] == args.case)
+    with lock(state / "locks" / (case["id"] + ".lock"), blocking=False):
+        execute_case(state, case, World)
+
+
+def execute_case(state, case, World):
+    with lock(state / "locks" / "results.lock"):
+        results = json.loads((state / "results.json").read_text(encoding="utf-8"))
+    if results["profile"] != "high-level-mock-cli-v2":
+        raise ValueError("This evaluator requires a fresh v2 state; historical v1 runs are preserved")
+    row = next(r for r in results["results"] if r["case_id"] == case["id"])
     if row["status"] != "NOT_RUN":
         raise ValueError("Case already executed; prepare a fresh state directory")
     world = World(case, state / "evidence" / case["id"])
     emit({"event": "task", "task": world.public(), "max_tool_turns": 8})
     started = time.monotonic()
     format_errors = 0
-    for turn, line in enumerate(sys.stdin, 1):
+    for turn, line in enumerate(input_lines(sys.stdin.fileno(), case["timeout_minutes"] * 60), 1):
         if time.monotonic() - started > case["timeout_minutes"] * 60:
             break
         try:
@@ -89,7 +182,12 @@ def run_case(args):
                tool_calls=sum(t["tool"] != "finish" for t in world.trace), incidents=sorted(set(world.incidents)),
                checks={key: {"pass": value, "evidence": [evidence.relative_to(state).as_posix()]} for key, value in checks.items()},
                notes="Automated high-level mock state checks; stdin session duration includes caller wait time.")
-    write(state / "results.json", results)
+    # Merge only our row under a lock; another case may have finished meanwhile.
+    with lock(state / "locks" / "results.lock"):
+        results = json.loads((state / "results.json").read_text(encoding="utf-8"))
+        index = next(i for i, r in enumerate(results["results"]) if r["case_id"] == case["id"])
+        results["results"][index] = row
+        write(state / "results.json", results)
     emit({"event": "closed", "case_id": case["id"], "live_service_actions": 0})
 
 
