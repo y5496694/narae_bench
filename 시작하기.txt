@@ -1,0 +1,58 @@
+나래교무 벤치마크 v1.0 — 명세·과제·채점 도구
+
+1. 나래교무_벤치마크_v1.html을 브라우저로 엽니다.
+   6개 영역, 45개 과제, 공문서 규칙, 수행 조건과 통과 기준이 있습니다.
+   각 과제 제목을 누르면 상세 조건이 펼쳐집니다.
+
+2. sample-run/작성과제3개.txt와 write_tasks.json은 AI에게 줄 가상 작성 과제입니다.
+   write_cases.json의 reference_body는 평가자 참고 답안입니다.
+   평가 AI에게는 과제와 입력 첨부만 별도 폴더로 전달합니다.
+   평가자 gold/채점 결과/참고 답안은 AI가 읽을 수 없는 위치에 둡니다.
+   이 패키지는 접근 제어를 자동 설정하지 않습니다.
+
+3. Python 3.10 이상에서 새 실행 폴더를 만듭니다. 추가 패키지는 필요하지 않습니다.
+
+   python bench.py prepare --seed 20261019 --run-id run001 --out D:\Codex\workspaces\narae-bench-run-001
+
+   seed는 가상 입력을 재현하며 run-id는 실행마다 다르게 지정합니다.
+   기존 폴더는 덮어쓰지 않습니다.
+   bindings.json과 과제별 실제 허용 대상, 날짜·필수값을 채워야 합니다.
+   작성 예시 날짜는 2026년 가상 값입니다.
+
+4. cases.json은 실행기/평가자용 45개 과제 목록입니다.
+   각 케이스의 프롬프트·초기 상태·정답 준비·항목별 배점을 담았습니다.
+   이 프로그램이 AI를 실행하거나 학교 서비스를 자동 조작하지는 않습니다.
+   기관별 실제 문서/사용자/방/권한 fixture와 형식별 첨부 파일은 평가자가 준비합니다.
+   HWP/HWPX/PDF/DOCX/XLSX/PPTX/스캔 PDF·PNG 바이너리와 모의 UI는 포함하지 않았습니다.
+   첨부 설계와 공통 가상 원문은 fixture-blueprint.json을 참고하세요.
+
+5. 실행 후 독립 평가자가 results.json의 각 체크를 기록합니다.
+   status: NOT_RUN / PASS / FAIL / BLOCKED
+   pass: true / false / null
+   evidence: 실행 폴더 안의 증거 파일 상대 경로 배열
+   notes: 증거의 JSON 필드/문단 위치와 판단 근거
+   failure_layer와 incidents의 값은 명세를 따릅니다.
+   도구 지원 여부는 실행 전에 고정합니다.
+
+   python bench.py grade D:\Codex\workspaces\narae-bench-run-001\results.json --out D:\Codex\workspaces\narae-bench-run-001\summary.json
+
+   grade는 증거 파일의 존재와 채점표 구조를 확인하고 집계합니다.
+   증거 내용의 의미를 자동 검증하지 않습니다.
+   미실행·미지원·환경 차단은 전체 E2E 점수의 분모에 남습니다.
+   모의/실제 준비/실제 CBE 전송 트랙은 따로 발표합니다.
+
+6. 공문 본문의 일부 형식만 점검할 때:
+
+   python bench.py lint-body D:\Codex\workspaces\narae-bench-run-001\body.txt
+
+   생산일자·실물 첨부·문단 서식·내용의 정확성은 별도로 대조해야 합니다.
+
+검증 상태
+- 오프라인 준비·집계 계약 검사 16개 통과(verification.json).
+- 나래 브라우저 doctor/schema/office schema 확인.
+- 명세 HTML을 나래 브라우저로 열어 확인.
+- 실제 학교 서비스 조회·초안 작성·메시지/파일 전송은 실행하지 않음.
+- 상신·결재 승인·실제 공문 발송은 평가 범위 밖.
+
+원본 작업 위치: D:\Codex\workspaces\narae-gyomu-benchmark-v1
+산출물 사본은 이 채팅의 outputs에 제공됩니다.

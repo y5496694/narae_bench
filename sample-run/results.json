@@ -1,0 +1,1415 @@
+{
+  "benchmark_version": "1.0",
+  "seed": 20261019,
+  "run_id": "sample-run",
+  "mode": "FILL: mock / live-prep / live-send",
+  "profile": "FILL: agent-tools / narae-office",
+  "model": "FILL",
+  "versions": {},
+  "support_frozen_before_run": false,
+  "reviewer": "FILL: independent reviewer",
+  "results": [
+    {
+      "case_id": "NP-P-01",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-P-02",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-P-03",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-P-04",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-P-05",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-01",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-02",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-03",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-04",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-05",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-06",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-07",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-08",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-01",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-02",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03A",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03B",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03C",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03D",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03E",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03F",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03G",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-04",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-05",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-READ-06",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-01",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        },
+        "K5": {
+          "pass": null,
+          "evidence": []
+        },
+        "K6": {
+          "pass": null,
+          "evidence": []
+        },
+        "K7": {
+          "pass": null,
+          "evidence": []
+        },
+        "K8": {
+          "pass": null,
+          "evidence": []
+        },
+        "K9": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-02",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        },
+        "K5": {
+          "pass": null,
+          "evidence": []
+        },
+        "K6": {
+          "pass": null,
+          "evidence": []
+        },
+        "K7": {
+          "pass": null,
+          "evidence": []
+        },
+        "K8": {
+          "pass": null,
+          "evidence": []
+        },
+        "K9": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-03",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        },
+        "K5": {
+          "pass": null,
+          "evidence": []
+        },
+        "K6": {
+          "pass": null,
+          "evidence": []
+        },
+        "K7": {
+          "pass": null,
+          "evidence": []
+        },
+        "K8": {
+          "pass": null,
+          "evidence": []
+        },
+        "K9": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-04",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-N-01",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-N-02",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-N-03",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-N-04",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "NP-N-05",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-01",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-02",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-03",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-04",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-05",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-06",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-07",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-08",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-09",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-10",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    },
+    {
+      "case_id": "CBE-11",
+      "status": "NOT_RUN",
+      "failure_layer": "NONE",
+      "declared_supported": null,
+      "active_seconds": null,
+      "wall_seconds": null,
+      "tool_calls": null,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": null,
+          "evidence": []
+        },
+        "K2": {
+          "pass": null,
+          "evidence": []
+        },
+        "K3": {
+          "pass": null,
+          "evidence": []
+        },
+        "K4": {
+          "pass": null,
+          "evidence": []
+        }
+      },
+      "notes": ""
+    }
+  ]
+}

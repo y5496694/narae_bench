@@ -1,0 +1,12 @@
+{
+  "run_date_kst": null,
+  "approver_1": null,
+  "reviewer_1": null,
+  "recipient_1": null,
+  "cbe_test_user": null,
+  "cbe_test_room": null,
+  "allowed_send_text": null,
+  "allowed_send_files_sha256": [],
+  "permission_scope": null,
+  "fixture_snapshot_id": null
+}

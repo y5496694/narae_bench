@@ -1,0 +1,62 @@
+{
+  "checked_date": "2026-10-19",
+  "public_sources": [
+    {
+      "title": "행정안전부 2025 행정업무운영 편람",
+      "url": "https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000012&nttId=122878"
+    },
+    {
+      "title": "국립한경대학교 배포 동일 편람 PDF",
+      "url": "https://www.hknu.ac.kr/bbs/sanhak/352/106759/download.do",
+      "printed_pages": "51-53, 59-62"
+    }
+  ],
+  "installed_skills": [
+    {
+      "relative_path": "narae-gyomu-work-portal/SKILL.md",
+      "sha256": "15b02ae330f02fcb3b238a6a9bbc024ccc8bf3f44a863a8cf06c093c2347b484"
+    },
+    {
+      "relative_path": "narae-gyomu-edufine/SKILL.md",
+      "sha256": "ae4f660763aad29ce2d5bfd5b9d34cccec2ff789c75d647658851a915699e7d2"
+    },
+    {
+      "relative_path": "wxs-cli/SKILL.md",
+      "sha256": "44a1bb39dd16e3df17ab2180ca83917f55343f7d30a1b1f93d8e97c96d0e8227"
+    },
+    {
+      "relative_path": "wxs-cli/references/draft.md",
+      "sha256": "a2fa9a3af536aa5eb0129c06bdd1648169c316e4bc38d22b7a691bbcee269df2"
+    },
+    {
+      "relative_path": "narae-gyomu-neis/SKILL.md",
+      "sha256": "5b563ff6252ce701e133ea6b2a0c34677b8dbc8fb839f9379036785c55854463"
+    },
+    {
+      "relative_path": "cbe-messenger/SKILL.md",
+      "sha256": "b495cd1b36e72374eb280d1f1075fb3a88c72287c503927746b5fb06359d8b54"
+    },
+    {
+      "relative_path": "narae-browser/SKILL.md",
+      "sha256": "678ffc5a382034e1cfe29f18859803fcddee20bde8d3be51e278709477ca3d5e"
+    },
+    {
+      "relative_path": "narae-browser/docs/office-assistant.md",
+      "sha256": "3e6112ed3ebbcf21c5fab7e98506e5e4ad86f37c63b714180353648fbd8f64a5"
+    },
+    {
+      "relative_path": "narae-browser/docs/document-ai.md",
+      "sha256": "73397a451183328d63ce6161c48486d9cb4fe4804718cea4c9e691ce7bd928c8"
+    },
+    {
+      "relative_path": "narae-hangul/SKILL.md",
+      "sha256": "0c493255e8bb2f24d21e76a5fb87125afeb19d1b45d375095cd05b43f424095a"
+    }
+  ],
+  "preflight_executed": [
+    "narae-browser doctor",
+    "narae-browser schema",
+    "narae-browser office schema"
+  ],
+  "actual_school_actions_executed": false
+}

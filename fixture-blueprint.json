@@ -1,0 +1,119 @@
+{
+  "included_binary_fixtures": false,
+  "canonical_atomic_facts": {
+    "purpose": "가상 연수 참가 안내",
+    "audience": "담당 교사 1명",
+    "event": "2026. 11. 25. 14:00~16:00",
+    "deadline": "2026. 11. 24. 15:00",
+    "action": "참가 명단 제출",
+    "exception": "기제출자는 재제출하지 않음",
+    "related_production_date": "2026. 10. 12.",
+    "received_date": "2026. 10. 14."
+  },
+  "source_text": "가상 시험자료\n담당 교사 1명은 2026. 11. 24. 15:00까지 참가 명단을 제출합니다.\n연수는 2026. 11. 25. 14:00~16:00에 실시합니다.\n기제출자는 재제출하지 않습니다.\n",
+  "required_formats": [
+    {
+      "case_id": "NP-E-WXS-READ-03A",
+      "format": "HWP",
+      "special_features": "구형 HWP5 표·문단; HWP3은 별도 추가 변형",
+      "gold_required": [
+        "filename",
+        "bytes",
+        "sha256",
+        "atomic_facts",
+        "page_sheet_cell_or_slide",
+        "render_reference"
+      ]
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03B",
+      "format": "HWPX",
+      "special_features": "병합표·반복 머리말·예외 조건",
+      "gold_required": [
+        "filename",
+        "bytes",
+        "sha256",
+        "atomic_facts",
+        "page_sheet_cell_or_slide",
+        "render_reference"
+      ]
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03C",
+      "format": "PDF",
+      "special_features": "2쪽 이상 텍스트 PDF·표·마지막 쪽 기한",
+      "gold_required": [
+        "filename",
+        "bytes",
+        "sha256",
+        "atomic_facts",
+        "page_sheet_cell_or_slide",
+        "render_reference"
+      ]
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03D",
+      "format": "DOCX",
+      "special_features": "본문·표·머리말/꼬리말에 서로 다른 조건",
+      "gold_required": [
+        "filename",
+        "bytes",
+        "sha256",
+        "atomic_facts",
+        "page_sheet_cell_or_slide",
+        "render_reference"
+      ]
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03E",
+      "format": "XLSX",
+      "special_features": "숨김 시트·병합 셀·수식 캐시 유무·0과 빈 셀",
+      "gold_required": [
+        "filename",
+        "bytes",
+        "sha256",
+        "atomic_facts",
+        "page_sheet_cell_or_slide",
+        "render_reference"
+      ]
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03F",
+      "format": "PPTX",
+      "special_features": "본문·표·발표자 노트·그림 속 별도 기한",
+      "gold_required": [
+        "filename",
+        "bytes",
+        "sha256",
+        "atomic_facts",
+        "page_sheet_cell_or_slide",
+        "render_reference"
+      ]
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03G",
+      "format": "스캔 PDF/PNG",
+      "special_features": "스캔과 사진 속 텍스트·낮은 해상도·90도 회전",
+      "gold_required": [
+        "filename",
+        "bytes",
+        "sha256",
+        "atomic_facts",
+        "page_sheet_cell_or_slide",
+        "render_reference"
+      ]
+    }
+  ],
+  "live_setup": "평가자가 권한 있는 시험 문서에 실제 파일을 첨부. 다운로드/읽기 권한 및 gold를 사전 확인.",
+  "multi_turn_script": {
+    "CBE-03": [
+      "첫 요청은 이름만 제공",
+      "후보와 구분 질문 뒤에만 소속/직책 제공",
+      "확정 ID와 질문 전 전송 여부를 대조"
+    ],
+    "NP-N-05": [
+      "종료시간과 결재자 구분 정보 누락",
+      "AI의 질문 후에만 정확한 종료시간·소속 제공"
+    ]
+  }
+}

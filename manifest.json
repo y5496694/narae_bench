@@ -1,0 +1,85 @@
+{
+  "benchmark_version": "1.0",
+  "files": [
+    {
+      "path": "bench.py",
+      "bytes": 15010,
+      "sha256": "f1c4d5987b445fe325b699ebca82d9dc09cce33eb7ed57ec3020b38d615061de"
+    },
+    {
+      "path": "cases.json",
+      "bytes": 62859,
+      "sha256": "8322223d21cb20d0c1d80f7725719d1cdf4be073f44d2dfe0b6860c980b96156"
+    },
+    {
+      "path": "fixture-blueprint.json",
+      "bytes": 3650,
+      "sha256": "db14cdb21913042929a03b22be85570c5eeeb9193b6f074334afeb247bfea61e"
+    },
+    {
+      "path": "sample-run/BENCH-W01-붙임1.txt",
+      "bytes": 268,
+      "sha256": "d5a324f3e3ef07d89ea69ed665fc44f29a7806936247cc45a1ab16905ed2e4a6"
+    },
+    {
+      "path": "sample-run/BENCH-W02-붙임1.txt",
+      "bytes": 257,
+      "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+    },
+    {
+      "path": "sample-run/BENCH-W02-붙임2.txt",
+      "bytes": 257,
+      "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+    },
+    {
+      "path": "sample-run/bindings.json",
+      "bytes": 279,
+      "sha256": "a5178b97eab279e0f31decbb7b3e3212d7f7d888901457f255ebdc96310922b9"
+    },
+    {
+      "path": "sample-run/results.json",
+      "bytes": 30986,
+      "sha256": "6878e257151f8819bf46ecd11ca44409173e65a58cec11ebd7b8054280128107"
+    },
+    {
+      "path": "sample-run/write_cases.json",
+      "bytes": 7414,
+      "sha256": "90a44b3fecc2cb00a662557be744633f6786613b66e1498f25b8025319cc83c0"
+    },
+    {
+      "path": "sample-run/write_tasks.json",
+      "bytes": 5808,
+      "sha256": "30f92913ea19d96f61fe52e6b12acd0e051965cf3da7f25551a672ba82185582"
+    },
+    {
+      "path": "sample-run/작성과제3개.txt",
+      "bytes": 5760,
+      "sha256": "0dc361f6bbf03527400f5adbddf859729a37411ee3123c2e3ce612e1ca9a4e0d"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 2198,
+      "sha256": "13317061156fda2b7227535b16398116cfefa34419db54f416e327f38b64ccba"
+    },
+    {
+      "path": "tests/verify.py",
+      "bytes": 5777,
+      "sha256": "5b7587e63d95fbea2a6b2b0d072ee4254a90f6e8790b930fb11cdfa86a6628e6"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 2129,
+      "sha256": "d4d654b9931de024239642d8d973f2b2288972b2d302415234e65ed2bbfe597b"
+    },
+    {
+      "path": "나래교무_벤치마크_v1.html",
+      "bytes": 79151,
+      "sha256": "b5158d92e238dffcead7dd1c6d9ddc031089095601512cdb4baa00100324b317"
+    },
+    {
+      "path": "시작하기.txt",
+      "bytes": 3412,
+      "sha256": "bf70dd7fabdbdbc35b273ccd25bf72097de38bf303ec2f6a98eaf751ae8ad178"
+    }
+  ]
+}

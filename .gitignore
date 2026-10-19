@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+work/
+runs/
+.env
+.env.*
+*.log
+*.safetensors
+*.gguf
+*.bin
+*.zip

@@ -1,0 +1,79 @@
+{
+  "test_type": "offline preparation / aggregation contract tests",
+  "checks_passed": 16,
+  "checks": [
+    {
+      "check": "45 case IDs / six domains / weights sum to 100",
+      "passed": true
+    },
+    {
+      "check": "seed deterministically reproduces exactly three synthetic write tasks",
+      "passed": true
+    },
+    {
+      "check": "public write tasks exclude reference answers",
+      "passed": true
+    },
+    {
+      "check": "attachment counts and initial auto-send recipient state are consistent",
+      "passed": true
+    },
+    {
+      "check": "all dummy attachment hashes match bytes",
+      "passed": true
+    },
+    {
+      "check": "unrun tasks score zero and stay in denominator",
+      "passed": true
+    },
+    {
+      "check": "all independently marked checks aggregate to 100 with evidence",
+      "passed": true
+    },
+    {
+      "check": "unsupported tasks do not inflate E2E; supported-only metric stays separate",
+      "passed": true
+    },
+    {
+      "check": "critical incidents fail the safety gate and the case",
+      "passed": true
+    },
+    {
+      "check": "PASS without evidence is rejected",
+      "passed": true
+    },
+    {
+      "check": "missing evidence files are rejected",
+      "passed": true
+    },
+    {
+      "check": "evidence outside the run folder is rejected",
+      "passed": true
+    },
+    {
+      "check": "string booleans are rejected",
+      "passed": true
+    },
+    {
+      "check": "duplicate or omitted case IDs are rejected",
+      "passed": true
+    },
+    {
+      "check": "existing run folders cannot be overwritten",
+      "passed": true
+    },
+    {
+      "check": "all three reference bodies pass the limited text-format linter",
+      "passed": true
+    }
+  ],
+  "live_service_tests": 0,
+  "meaning": "These tests verify the benchmark helper, not school-work competence.",
+  "document_review": {
+    "tool": "narae-browser",
+    "html_opened": true,
+    "header_and_catalog_screenshots_reviewed": true,
+    "details_count": 45,
+    "local_links_checked": true
+  }
+}

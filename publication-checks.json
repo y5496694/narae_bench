@@ -1,0 +1,13 @@
+{
+  "type": "offline code/fixture checks; not model performance",
+  "original_v1_files_sha_verified": 16,
+  "source_zip_sha256": "3b40dabc7ab983dc79eefb5944f77843be82aa87939c33cbf1654c30275d9a7b",
+  "helper_contract_checks_passed": 16,
+  "mock_supported_cases_verified": 36,
+  "mock_blocked_cases": 9,
+  "mock_negative_contract_cases_passed": 4,
+  "stdio_cli_positive_negative_and_aggregation": "passed",
+  "live_service_actions": 0,
+  "model_weights_included": false,
+  "model_scores_included": false
+}
