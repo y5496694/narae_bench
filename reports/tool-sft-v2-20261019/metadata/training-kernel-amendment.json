@@ -1,0 +1,15 @@
+{
+  "reason": "Use supported SDPA attention for the longer 2.4B CPU contexts, reducing attention memory and compute; chosen before 2.4B training or benchmark feedback",
+  "model": "EXAONE-Narae-2.4B-Tool-LoRA-v2",
+  "0.6b_backend": "eager, existing process unchanged",
+  "2.4b_backend": "sdpa",
+  "data_epochs_lr_seed_unchanged": true,
+  "attention_probe_max_abs_error": 8.344650268554688e-07,
+  "full_model_cache_equivalence_must_pass_before_training": true,
+  "superseded_waiting_pipeline_pid": 8380,
+  "source_sha256": {
+    "scripts/train_lora_sdpa.py": "837b261f54e2b6f16742630b25a034384ef0375bf775ff846d0757e11b4fff88",
+    "scripts/continue_pipeline_sdpa.py": "26b1c19eb92e9d487013addd74dfbae495613387db857940ede51bf1a709bf00"
+  },
+  "full_model_eager_vs_sdpa_loss_check_before_training": true
+}

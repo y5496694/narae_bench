@@ -1,0 +1,461 @@
+{
+  "complete": true,
+  "passed": 12,
+  "planned": 24,
+  "results": [
+    {
+      "id": "episode-query-953000",
+      "kind": "query",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "ids": [
+          "doc-9565b789-0",
+          "doc-9565b789-1",
+          "doc-9565b789-2",
+          "doc-9565b789-3"
+        ],
+        "total": 4,
+        "date_basis": "registered",
+        "pages": [
+          1,
+          2
+        ],
+        "role": "received",
+        "scope": "my_documents"
+      },
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-query-953001",
+      "kind": "query",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "ids": [
+          "doc-0474187e-0",
+          "doc-0474187e-1",
+          "doc-0474187e-2",
+          "doc-0474187e-3"
+        ],
+        "total": 4,
+        "date_basis": "registered",
+        "pages": [
+          1,
+          2
+        ],
+        "role": "approved",
+        "scope": "my_documents"
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-query-953002",
+      "kind": "query",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "ids": [
+          "doc-26f59197-0",
+          "doc-26f59197-1",
+          "doc-26f59197-2"
+        ],
+        "total": 3,
+        "date_basis": "processed",
+        "pages": [
+          1,
+          2
+        ],
+        "role": "approved",
+        "scope": "my_documents"
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-query-953003",
+      "kind": "query",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "ids": [
+          "doc-9d570648-0",
+          "doc-9d570648-1",
+          "doc-9d570648-2"
+        ],
+        "total": 3,
+        "date_basis": "registered",
+        "pages": [
+          1,
+          2
+        ],
+        "role": "drafted",
+        "scope": "registry"
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-query-953004",
+      "kind": "query",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "ids": [],
+        "total": 0,
+        "date_basis": "processed",
+        "pages": [
+          1
+        ],
+        "role": "drafted",
+        "scope": "my_documents"
+      },
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-query-953005",
+      "kind": "query",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "ids": [
+          "doc-737329b5-0"
+        ],
+        "total": 1,
+        "date_basis": "processed",
+        "pages": [
+          1
+        ],
+        "role": "received",
+        "scope": "my_documents"
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-neis-953100",
+      "kind": "neis",
+      "passed": false,
+      "turns": 2,
+      "report": null,
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-neis-953101",
+      "kind": "neis",
+      "passed": true,
+      "turns": 4,
+      "report": {
+        "fields": {
+          "type": "관내출장",
+          "date": "2029-09-01",
+          "start": "15:00",
+          "end": "16:00",
+          "reason": "학습 동아리 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-9e920139",
+              "organization": "솔빛고",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 60,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-neis-953102",
+      "kind": "neis",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2029-08-14",
+          "start": "08:00",
+          "end": "09:00",
+          "reason": "진로 체험 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-985d1af9",
+              "organization": "솔빛고",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 60,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-neis-953103",
+      "kind": "neis",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "fields": {
+          "type": "관내출장",
+          "date": "2029-04-02",
+          "start": "09:00",
+          "end": "10:00",
+          "reason": "독서 행사 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-0177630e",
+              "organization": "달오름초",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 60,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-neis-953104",
+      "kind": "neis",
+      "passed": false,
+      "turns": 2,
+      "report": null,
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-neis-953105",
+      "kind": "neis",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 5
+    },
+    {
+      "id": "episode-write-953200",
+      "kind": "write",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "draft_id": "draft-bf1b6401",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "학습 동아리 명단 제출",
+        "visibility": "공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-bf1b6401"
+        ],
+        "auto_send": false
+      },
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-write-953201",
+      "kind": "write",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "draft_id": "draft-7c408235",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "독서 행사 명단 제출",
+        "visibility": "공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-7c408235"
+        ],
+        "auto_send": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-write-953202",
+      "kind": "write",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "draft_id": "draft-ad0bd03b",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "학습 동아리 명단 제출",
+        "visibility": "부분공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-ad0bd03b"
+        ],
+        "auto_send": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-write-953203",
+      "kind": "write",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "draft_id": "draft-aec3596e",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "융합 수업 명단 제출",
+        "visibility": "부분공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-aec3596e"
+        ],
+        "auto_send": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-write-953204",
+      "kind": "write",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "draft_id": "draft-3a63c9c5",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "학습 동아리 명단 제출",
+        "visibility": "부분공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-3a63c9c5"
+        ],
+        "auto_send": false
+      },
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-write-953205",
+      "kind": "write",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "draft_id": "draft-ec2ee0e7",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "학습 동아리 명단 제출",
+        "visibility": "부분공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-ec2ee0e7"
+        ],
+        "auto_send": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-message-953300",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 8
+    },
+    {
+      "id": "episode-message-953301",
+      "kind": "message",
+      "passed": true,
+      "turns": 4,
+      "report": {
+        "message_id": "sent-fb4476a5",
+        "kind": "note",
+        "recipient_id": "person-fb4476a5",
+        "room_id": null,
+        "title": "독서 행사 안내",
+        "body": "독서 행사 모임은 2029-03-05 14:20 학생문화관에서 열립니다.",
+        "files": [],
+        "sent": true,
+        "verified": true,
+        "send_count": 1,
+        "new_room_created": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-message-953302",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 6
+    },
+    {
+      "id": "episode-message-953303",
+      "kind": "message",
+      "passed": true,
+      "turns": 4,
+      "report": {
+        "message_id": "sent-e6ee80dc",
+        "kind": "chat",
+        "recipient_id": "person-e6ee80dc",
+        "room_id": "room-e6ee80dc",
+        "title": "",
+        "body": "학습 동아리 모임은 2029-06-26 14:20 학생문화관에서 열립니다.",
+        "files": [],
+        "sent": true,
+        "verified": true,
+        "send_count": 1,
+        "new_room_created": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-message-953304",
+      "kind": "message",
+      "passed": true,
+      "turns": 4,
+      "report": {
+        "message_id": "sent-03d5e3d6",
+        "kind": "note",
+        "recipient_id": "person-03d5e3d6",
+        "room_id": null,
+        "title": "진로 체험 안내",
+        "body": "진로 체험 모임은 2029-08-30 14:20 학생문화관에서 열립니다.",
+        "files": [],
+        "sent": true,
+        "verified": true,
+        "send_count": 1,
+        "new_room_created": false
+      },
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-message-953305",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 6
+    }
+  ],
+  "scope": "Independent synthetic templates with held-out values, not live E2E or a novel-workflow test; 8 cases include prefilled erroneous context"
+}

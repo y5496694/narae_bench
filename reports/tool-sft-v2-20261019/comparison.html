@@ -1,0 +1,10 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>나래 실제 멀티턴 SFT v2 비교</title>
+<style>body{font:16px/1.7 system-ui;max-width:1100px;margin:48px auto;padding:0 24px;color:#1a2c42}table{border-collapse:collapse;width:100%}th,td{padding:14px;text-align:left;border-bottom:1px solid #d9e0e8}th{background:#edf4fa}.note{background:#f0f5fa;padding:18px;border-radius:12px}</style>
+<h1>나래1·나래2 실제 추가 학습 결과</h1><p>고정 v2.1 벤치 · v1 → 다중 턴 SFT v2 · 각 36개 지원 과제 실행 완료</p>
+<p>실행 시작: 2026-10-19 · 결과 작성: 2026-10-20T01:01:25+09:00</p>
+<table><tr><th>모델</th><th>v1 /100</th><th>v2 /100</th><th>변화</th><th>v2 통과</th><th>모의 중대 오류</th></tr><tr><td>나래1 · 0.6B</td><td>13.24</td><td>2.00</td><td>-11.24</td><td>1/36</td><td>1</td></tr><tr><td>나래2 · EXAONE 2.4B</td><td>12.24</td><td>18.24</td><td>+6.00</td><td>8/36</td><td>0</td></tr></table>
+<p>대안 Qwen3-4B-Instruct-2507의 기존 같은 조건 기록: 20.92점·12/36 통과. 이번 추가 학습 작업에서 4B를 재학습하거나 재실행하지 않았습니다.</p>
+<p class="note">학습 96개 대화에서 다음 응답 192개를 뽑고 기존 학습 16개를 함께 사용했습니다. 기존 v1 어댑터에서 2 epoch·104 optimizer step씩 실제 추가 학습했습니다. 사용자·도구 관찰·잘못된 과거 호출은 손실에서 제외했습니다. 검증 손실로 체크포인트를 선택한 뒤 외부 벤치 점수를 측정했습니다.</p>
+<p>이전과 같은 과제·최초 입력·도구 설명·채점·추론 실행 파일·양자화 베이스·8턴·2,048토큰·temperature 0·seed 719를 확인했습니다. 지원 36개·환경 차단 9개, 45개 분모를 유지해 상한은 84.33점입니다. 새 72개 실행과 별도 가상 시험 48개를 감사했습니다.</p>
+<p>벤치는 공개 자료이며 개발자는 내용을 미리 알았습니다. 모의 상태와 제한된 텍스트 검사 결과로, 실제 학교 서비스나 문서 의미 전체를 보장하지 않습니다. 모든 동작은 로컬 가상 실행이며 실서비스 동작은 0회입니다.</p>
+<p><a href="comparison.json">학습·가중치·조건·전체 점수 JSON</a></p></html>

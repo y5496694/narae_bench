@@ -1,0 +1,28 @@
+{
+  "models": [
+    "Narae-0.6B-Tool-LoRA-v2",
+    "EXAONE-Narae-2.4B-Tool-LoRA-v2"
+  ],
+  "epochs": 2,
+  "optimizer_lr": 0.0002,
+  "accumulation": 4,
+  "seed": 719,
+  "max_training_tokens": 2048,
+  "checkpoint_selection": "Lowest validation teacher loss across two trained epochs; external benchmark not used",
+  "source_sha256": {
+    "scripts\\chat_encoding.py": "c032277b1b4d00eaa9c65b32c8fdb8ccb276d5f42fd9be5607f6db5f656b262b",
+    "scripts\\exaone_compat.py": "692ea5fb3dc31d9c360ff964f69abf6272ec21ddf7035c8afe2a0446cfa08ab4",
+    "scripts\\tool_corpus.py": "702537c78c0862aa4bddc092f725c73b71c084b83c668e1221fa468784884456",
+    "scripts\\train_lora.py": "ff2af37668d5ee701b8cb08919446a6ba3260a2bdcbf67561922e7b6b0a4c750",
+    "data\\manifest.json": "51ff76e9172abea87d180ace254cb488091f6b2702dd5d30feaf57bc5ea44b1b",
+    "data\\system.txt": "d0620701f57c80a0b1f8aa8cc9d7289f8bbabe84137fcacec66c640d610bec14",
+    "data\\test.jsonl": "56d3850f4cb781ddb0e98ea1074fd4334c6f0bb7c9297bdd0995bdb9675b1d78",
+    "data\\train.jsonl": "50bc934e68b106e1365e157342b24532e70798b483db844ab330e95f04deee43",
+    "data\\validation.jsonl": "b70336cc3ab2ed097a9e42e4856236d6c311769f726989b530eb5d6e6871f657",
+    "data\\verification.json": "2cdd507cbcbef8fd12f0d13632c5d3242ce977f9d95dc96ea6fe8cf8e46987bb"
+  },
+  "source_benchmark_profile_for_before_after": "high-level-mock-cli-v2.1",
+  "previous_full_model_comparison_commit": "8f3283725bbcb868e640882a6652e28af069fb60",
+  "storage_root": "D:\\Codex\\training\\narae-tool-sft-v2-20261019",
+  "live_service_actions": 0
+}

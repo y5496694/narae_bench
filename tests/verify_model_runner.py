@@ -9,6 +9,7 @@ import threading
 import unittest
 import importlib.util
 import io
+import errno
 from types import SimpleNamespace
 from unittest.mock import patch
 
@@ -147,6 +148,46 @@ class BridgeTests(unittest.TestCase):
         with patch.object(bridge.subprocess, "Popen", return_value=process), patch.object(bridge, "request", return_value=response):
             bridge.evaluate_case(args, "test-timeout", transcript)
         self.assertEqual(json.loads(transcript.getvalue())["observation"]["event"], "closed")
+
+    def test_windows_einval_after_cli_deadline_preserves_closed_event(self):
+        spec = importlib.util.spec_from_file_location("model_bridge", ROOT / "mock/evaluate.py")
+        bridge = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(bridge)
+        class ClosedInput(io.StringIO):
+            def write(self, value):
+                raise OSError(errno.EINVAL, "Invalid argument")
+        initial = {"event": "task", "task": {}, "max_tool_turns": 8}
+        ended = [False]
+        process = SimpleNamespace(stdin=ClosedInput(), stdout=io.StringIO(json.dumps(initial) + '\n{"event":"closed"}\n'),
+                                  poll=lambda: 0 if ended[0] else None, wait=lambda timeout: 0,
+                                  terminate=lambda: None, returncode=0)
+        args = SimpleNamespace(out=self.out, model="scripted-test-fixture", max_tokens=20,
+                               format="text", base_url="http://127.0.0.1/v1", request_timeout=1)
+        def response(*unused):
+            ended[0] = True
+            return {"model": args.model, "choices": [{"message": {"content": '{"tool":"finish","args":{}}'}}]}
+        transcript = io.StringIO()
+        with patch.object(bridge.subprocess, "Popen", return_value=process), patch.object(bridge, "request", side_effect=response):
+            bridge.evaluate_case(args, "test-windows-timeout", transcript)
+        self.assertEqual(json.loads(transcript.getvalue())["observation"]["event"], "closed")
+
+    def test_einval_while_cli_is_alive_still_invalidates_the_run(self):
+        spec = importlib.util.spec_from_file_location("model_bridge", ROOT / "mock/evaluate.py")
+        bridge = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(bridge)
+        class InvalidInput(io.StringIO):
+            def write(self, value):
+                raise OSError(errno.EINVAL, "Invalid argument")
+        initial = {"event": "task", "task": {}, "max_tool_turns": 8}
+        process = SimpleNamespace(stdin=InvalidInput(), stdout=io.StringIO(json.dumps(initial) + '\n'),
+                                  poll=lambda: None, wait=lambda timeout: 0, terminate=lambda: None, returncode=0)
+        args = SimpleNamespace(out=self.out, model="scripted-test-fixture", max_tokens=20,
+                               format="text", base_url="http://127.0.0.1/v1", request_timeout=1)
+        response = {"model": args.model, "choices": [{"message": {"content": '{"tool":"finish","args":{}}'}}]}
+        with patch.object(bridge.subprocess, "Popen", return_value=process), patch.object(bridge, "request", return_value=response):
+            with self.assertRaises(OSError) as raised:
+                bridge.evaluate_case(args, "test-live-io-error", io.StringIO())
+        self.assertEqual(raised.exception.errno, errno.EINVAL)
 
 
 if __name__ == "__main__":

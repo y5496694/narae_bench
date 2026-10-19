@@ -1,0 +1,80 @@
+{
+  "name": "EXAONE-Narae-2.4B-Tool-LoRA-v2",
+  "base_model": {
+    "repo_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+    "revision": "ccce25bd39c141fe053e0bc75818a8f5fe962802",
+    "path": "D:\\Codex\\training\\narae-sft-20261019\\models\\base-2.4b",
+    "role": "Unmodified upstream base files; learned adapters are stored in outputs."
+  },
+  "actual_weight_training": true,
+  "attention_backend": "sdpa",
+  "attention_backend_equivalence_absolute_error": 4.3213367462158203e-07,
+  "trainer_source_sha256": "837b261f54e2b6f16742630b25a034384ef0375bf775ff846d0757e11b4fff88",
+  "method": "NF4 base plus float32 PEFT LoRA on q/v projections of final six decoder blocks",
+  "rank": 16,
+  "alpha": 32,
+  "seed": 719,
+  "epochs": 2,
+  "optimizer_steps": 104,
+  "initial_adapter": "D:\\Codex\\training\\narae-sft-20261019\\outputs\\EXAONE-Narae-2.4B-LoRA-v1\\adapter",
+  "initial_adapter_file_sha256": "292f33e9e8491f3163ef37f8de00eeafc2c21b2c0204d1467dd12fa81603519e",
+  "starting_point": "Actual v1 learned adapter; continued SFT",
+  "test_used_for_checkpoint_selection": false,
+  "corpus_manifest_sha256": "51ff76e9172abea87d180ace254cb488091f6b2702dd5d30feaf57bc5ea44b1b",
+  "assistant_only_loss": true,
+  "incorrect_assistant_prefixes_masked": true,
+  "max_training_tokens": 2048,
+  "trainable_parameters": 798720,
+  "total_parameters": 2406126080,
+  "adapter_sha256_before": "f030a72235e5ac8cd5b878d0a3a84aa9690078a1c1c61b3d866cf5efa8f6785c",
+  "adapter_sha256_after": "4941e86e4ac09864f98b3f2ffa549ceca0e1d936894cc23276283b1daebd15c8",
+  "adapter_parameter_l2_changes": {
+    "base_model.model.transformer.h.24.attn.attention.q_proj.lora_A.default.weight": 0.4265120029449463,
+    "base_model.model.transformer.h.24.attn.attention.q_proj.lora_B.default.weight": 0.40719377994537354,
+    "base_model.model.transformer.h.24.attn.attention.v_proj.lora_A.default.weight": 0.40089237689971924,
+    "base_model.model.transformer.h.24.attn.attention.v_proj.lora_B.default.weight": 0.20082148909568787,
+    "base_model.model.transformer.h.25.attn.attention.q_proj.lora_A.default.weight": 0.44469717144966125,
+    "base_model.model.transformer.h.25.attn.attention.q_proj.lora_B.default.weight": 0.36718428134918213,
+    "base_model.model.transformer.h.25.attn.attention.v_proj.lora_A.default.weight": 0.38636770844459534,
+    "base_model.model.transformer.h.25.attn.attention.v_proj.lora_B.default.weight": 0.1941889226436615,
+    "base_model.model.transformer.h.26.attn.attention.q_proj.lora_A.default.weight": 0.3940329849720001,
+    "base_model.model.transformer.h.26.attn.attention.q_proj.lora_B.default.weight": 0.4124974012374878,
+    "base_model.model.transformer.h.26.attn.attention.v_proj.lora_A.default.weight": 0.3768790364265442,
+    "base_model.model.transformer.h.26.attn.attention.v_proj.lora_B.default.weight": 0.2169865518808365,
+    "base_model.model.transformer.h.27.attn.attention.q_proj.lora_A.default.weight": 0.3650537431240082,
+    "base_model.model.transformer.h.27.attn.attention.q_proj.lora_B.default.weight": 0.38034939765930176,
+    "base_model.model.transformer.h.27.attn.attention.v_proj.lora_A.default.weight": 0.45785340666770935,
+    "base_model.model.transformer.h.27.attn.attention.v_proj.lora_B.default.weight": 0.18583515286445618,
+    "base_model.model.transformer.h.28.attn.attention.q_proj.lora_A.default.weight": 0.36832740902900696,
+    "base_model.model.transformer.h.28.attn.attention.q_proj.lora_B.default.weight": 0.3835379183292389,
+    "base_model.model.transformer.h.28.attn.attention.v_proj.lora_A.default.weight": 0.3532334268093109,
+    "base_model.model.transformer.h.28.attn.attention.v_proj.lora_B.default.weight": 0.2042420506477356,
+    "base_model.model.transformer.h.29.attn.attention.q_proj.lora_A.default.weight": 0.47848522663116455,
+    "base_model.model.transformer.h.29.attn.attention.q_proj.lora_B.default.weight": 0.43478676676750183,
+    "base_model.model.transformer.h.29.attn.attention.v_proj.lora_A.default.weight": 0.4528328478336334,
+    "base_model.model.transformer.h.29.attn.attention.v_proj.lora_B.default.weight": 0.21525001525878906
+  },
+  "baseline_validation_loss": 0.16487075921547026,
+  "best_validation_loss": 0.01456273391643966,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.046774478091510203,
+      "validation_loss": 0.02072558246133364
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.014085015776450186,
+      "validation_loss": 0.01456273391643966
+    }
+  ],
+  "cache_equivalence_absolute_error": 2.9802322387695312e-08,
+  "versions": {
+    "torch": "2.14.1",
+    "transformers": "5.20.1",
+    "peft": "0.21.2",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.15.0"
+  },
+  "adapter_file_sha256": "e8c8c8cf48d63881d979c8b691b38dc1447f386ffe4825cdaff11a4e73011d5d"
+}

@@ -12,9 +12,9 @@
   "model_scores_included": true,
   "current_mock_profile": "high-level-mock-cli-v2.2",
   "mock_v2_regression_tests_passed": 5,
-  "model_score_scope": "Fixed-budget local SFT v1 and upstream 4B model runs on v2.1; historical assisted Codex self-run is separate",
+  "model_score_scope": "Fixed-budget local SFT v1/v2 and upstream 4B model runs on v2.1; historical assisted Codex self-run is separate",
   "self_run_report": "reports/codex-self-20261019.json",
-  "model_runner_regression_tests_passed": 7,
+  "model_runner_regression_tests_passed": 9,
   "single_page_coverage_regression_tests_passed": 4,
   "model_comparison_report": "reports/narae-models-20261019.json",
   "model_case_audit_passed": 108,
@@ -22,5 +22,11 @@
   "full_model_comparison_profile": "high-level-mock-cli-v2.1",
   "windows_reader_lock_integration_tests_passed": 1,
   "contract_v22_diagnostic_report": "reports/contract-v22-20261019/README.md",
-  "contract_v22_diagnostic_model_cases": 9
+  "contract_v22_diagnostic_model_cases": 9,
+  "tool_sft_v2_report": "reports/tool-sft-v2-20261019/README.md",
+  "tool_sft_v2_new_benchmark_model_cases_audited": 72,
+  "tool_sft_v2_private_model_cases_replayed": 48,
+  "tool_sft_v2_optimizer_steps_per_model": 104,
+  "windows_closed_stdin_einval_regressions_passed": 2,
+  "windows_closed_stdin_real_timeout_recovery_verified": true
 }

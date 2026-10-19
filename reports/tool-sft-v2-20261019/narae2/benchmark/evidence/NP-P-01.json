@@ -1,0 +1,63 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "portal.open",
+      "args": {
+        "ref": "portal-neis"
+      },
+      "result": {
+        "ok": true,
+        "system": "NEIS",
+        "organization": "나래초",
+        "page_id": "NEIS-HOME",
+        "authenticated": true
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "system": "NEIS",
+        "organization": "나래초",
+        "page_id": "NEIS-HOME",
+        "authenticated": true
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": true,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "arrival": {
+      "system": "NEIS",
+      "organization": "나래초",
+      "page_id": "NEIS-HOME",
+      "authenticated": true
+    }
+  },
+  "report": {
+    "system": "NEIS",
+    "organization": "나래초",
+    "page_id": "NEIS-HOME",
+    "authenticated": true
+  },
+  "checks": {
+    "K1": true,
+    "K2": true,
+    "K3": true
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

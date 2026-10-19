@@ -1,0 +1,147 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "fields": {
+          "type": "연가-조퇴",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "",
+          "transport": "",
+          "expense": "",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ]
+        }
+      },
+      "result": {
+        "ok": true,
+        "fields": {
+          "type": "연가-조퇴",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "",
+          "transport": "",
+          "expense": "",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "fields": {
+          "type": "연가-조퇴",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "",
+          "transport": "",
+          "expense": "",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "neis": {
+      "type": "연가-조퇴",
+      "date": "2026-11-02",
+      "start": "14:00",
+      "end": "16:00",
+      "reason": "가상 평가 일정",
+      "destination": "",
+      "transport": "",
+      "expense": "",
+      "companions": [],
+      "approval_route": [
+        {
+          "id": "AP-01",
+          "organization": "나래초",
+          "role": "결재"
+        }
+      ]
+    }
+  },
+  "report": {
+    "fields": {
+      "type": "연가-조퇴",
+      "date": "2026-11-02",
+      "start": "14:00",
+      "end": "16:00",
+      "reason": "가상 평가 일정",
+      "destination": "",
+      "transport": "",
+      "expense": "",
+      "companions": [],
+      "approval_route": [
+        {
+          "id": "AP-01",
+          "organization": "나래초",
+          "role": "결재"
+        }
+      ]
+    },
+    "duration_minutes": 120,
+    "ready": true,
+    "submitted": false,
+    "saved_separately": false
+  },
+  "checks": {
+    "K1": true,
+    "K2": true,
+    "K3": true,
+    "K4": true
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

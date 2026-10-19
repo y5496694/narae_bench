@@ -1,0 +1,34 @@
+{
+  "type": "independently generated synthetic multi-turn school tool corpus",
+  "files": {
+    "train": {
+      "records": 208,
+      "sha256": "50bc934e68b106e1365e157342b24532e70798b483db844ab330e95f04deee43",
+      "tool_trajectories": 96,
+      "next_turn_tool_examples": 192,
+      "masked_bad_prefixes": 48
+    },
+    "validation": {
+      "records": 48,
+      "sha256": "b70336cc3ab2ed097a9e42e4856236d6c311769f726989b530eb5d6e6871f657",
+      "tool_trajectories": 24,
+      "next_turn_tool_examples": 48,
+      "masked_bad_prefixes": 16
+    },
+    "test": {
+      "records": 48,
+      "sha256": "56d3850f4cb781ddb0e98ea1074fd4334c6f0bb7c9297bdd0995bdb9675b1d78",
+      "tool_trajectories": 24,
+      "next_turn_tool_examples": 48,
+      "masked_bad_prefixes": 16
+    }
+  },
+  "benchmark_cases_or_answers_read_by_generator": false,
+  "shared_interface": "Public tool names, argument contracts and system prompt only",
+  "split_unit": "Whole trajectory with disjoint seeds, dates and IDs; templates shared, not a novel-workflow test",
+  "error_prefix_loss": "Incorrect initial assistant calls are context only and never supervised targets",
+  "loss_mask": "Native generation prompt plus separately tokenized next assistant answer and EOS. Entire previous multi-turn history is context only.",
+  "replay": "16 examples from v1 training split only; no v1 validation/test replay",
+  "live_service_actions": 0,
+  "builder_sha256": "702537c78c0862aa4bddc092f725c73b71c084b83c668e1221fa468784884456"
+}

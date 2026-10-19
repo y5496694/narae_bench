@@ -1,0 +1,149 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "wxs.save",
+      "args": {
+        "draft_id": "DRAFT-01"
+      },
+      "result": {
+        "ok": true,
+        "draft_id": "DRAFT-01",
+        "fields": {
+          "title": "",
+          "visibility": "공개",
+          "privacy_reasons": [],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [],
+          "recipients": [
+            "ORG-01"
+          ],
+          "attachments": [],
+          "auto_send": true,
+          "body": ""
+        },
+        "saved": true,
+        "verified": false,
+        "submitted": false,
+        "sent": false
+      }
+    },
+    {
+      "tool": "wxs.saved",
+      "args": {
+        "draft_id": "DRAFT-01"
+      },
+      "result": {
+        "ok": true,
+        "draft_id": "DRAFT-01",
+        "fields": {
+          "title": "",
+          "visibility": "공개",
+          "privacy_reasons": [],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [],
+          "recipients": [
+            "ORG-01"
+          ],
+          "attachments": [],
+          "auto_send": true,
+          "body": ""
+        },
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "draft_id": "DRAFT-01",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "",
+        "visibility": "공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "ORG-01"
+        ],
+        "auto_send": true
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": {
+      "title": "",
+      "visibility": "공개",
+      "privacy_reasons": [],
+      "security": "일반",
+      "access_scope": "나래초",
+      "approval_route": [],
+      "recipients": [
+        "ORG-01"
+      ],
+      "attachments": [],
+      "auto_send": true,
+      "body": ""
+    },
+    "verified": true,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "draft": {
+      "title": "",
+      "visibility": "공개",
+      "privacy_reasons": [],
+      "security": "일반",
+      "access_scope": "나래초",
+      "approval_route": [],
+      "recipients": [
+        "ORG-01"
+      ],
+      "attachments": [],
+      "auto_send": true,
+      "body": ""
+    }
+  },
+  "report": {
+    "draft_id": "DRAFT-01",
+    "saved": true,
+    "verified": true,
+    "submitted": false,
+    "sent": false,
+    "title": "",
+    "visibility": "공개",
+    "attachment_count": 0,
+    "recipient_ids": [
+      "ORG-01"
+    ],
+    "auto_send": true
+  },
+  "checks": {
+    "K1": false,
+    "K2": false,
+    "K3": false,
+    "K4": true,
+    "K5": true,
+    "K6": false,
+    "K7": false,
+    "K8": false,
+    "K9": true
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

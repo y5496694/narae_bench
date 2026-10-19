@@ -1,0 +1,488 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": false,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": null
+      },
+      "result": {
+        "ok": true,
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": false,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      }
+    },
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120
+      },
+      "result": {
+        "ok": true,
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      }
+    },
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120
+      },
+      "result": {
+        "ok": true,
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      }
+    },
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120
+      },
+      "result": {
+        "ok": true,
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      }
+    },
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120
+      },
+      "result": {
+        "ok": true,
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      }
+    },
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120
+      },
+      "result": {
+        "ok": true,
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      }
+    },
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120
+      },
+      "result": {
+        "ok": true,
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      }
+    },
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120
+      },
+      "result": {
+        "ok": true,
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "ready": true,
+          "saved_separately": false,
+          "submitted": false
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "neis": {
+      "type": "관외출장",
+      "date": "2026-11-02",
+      "start": "14:00",
+      "end": "16:00",
+      "reason": "가상 평가 일정",
+      "destination": "가상교육지원청",
+      "transport": "공용차량",
+      "expense": "여비 미지급",
+      "companions": [],
+      "approval_route": [
+        {
+          "id": "AP-01",
+          "organization": "나래초",
+          "role": "결재"
+        }
+      ],
+      "ready": true,
+      "saved_separately": false,
+      "submitted": false
+    }
+  },
+  "report": null,
+  "checks": {
+    "K1": false,
+    "K2": false,
+    "K3": false,
+    "K4": false
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

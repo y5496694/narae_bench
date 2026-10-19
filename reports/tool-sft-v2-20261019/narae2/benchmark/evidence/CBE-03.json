@@ -1,0 +1,211 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "cbe.search",
+      "args": {
+        "name": "가상김",
+        "scope": "auto"
+      },
+      "result": {
+        "ok": true,
+        "requested_scope": "auto",
+        "scope": "all",
+        "fallback": true,
+        "searched": [
+          "my",
+          "all"
+        ],
+        "users": [
+          {
+            "id": "U-KIM1",
+            "name": "가상김",
+            "organization": "새봄초",
+            "position": "교사",
+            "scope": "all"
+          },
+          {
+            "id": "U-KIM2",
+            "name": "가상김",
+            "organization": "푸른초",
+            "position": "교감",
+            "scope": "all"
+          }
+        ]
+      }
+    },
+    {
+      "tool": "cbe.select",
+      "args": {
+        "user_id": "U-KIM1"
+      },
+      "result": {
+        "ok": true,
+        "selected_user": {
+          "id": "U-KIM1",
+          "name": "가상김",
+          "organization": "새봄초",
+          "position": "교사",
+          "scope": "all"
+        },
+        "sent": false
+      }
+    },
+    {
+      "tool": "cbe.select",
+      "args": {
+        "user_id": "U-KIM1"
+      },
+      "result": {
+        "ok": true,
+        "selected_user": {
+          "id": "U-KIM1",
+          "name": "가상김",
+          "organization": "새봄초",
+          "position": "교사",
+          "scope": "all"
+        },
+        "sent": false
+      }
+    },
+    {
+      "tool": "cbe.select",
+      "args": {
+        "user_id": "U-KIM1"
+      },
+      "result": {
+        "ok": true,
+        "selected_user": {
+          "id": "U-KIM1",
+          "name": "가상김",
+          "organization": "새봄초",
+          "position": "교사",
+          "scope": "all"
+        },
+        "sent": false
+      }
+    },
+    {
+      "tool": "cbe.select",
+      "args": {
+        "user_id": "U-KIM1"
+      },
+      "result": {
+        "ok": true,
+        "selected_user": {
+          "id": "U-KIM1",
+          "name": "가상김",
+          "organization": "새봄초",
+          "position": "교사",
+          "scope": "all"
+        },
+        "sent": false
+      }
+    },
+    {
+      "tool": "cbe.select",
+      "args": {
+        "user_id": "U-KIM1"
+      },
+      "result": {
+        "ok": true,
+        "selected_user": {
+          "id": "U-KIM1",
+          "name": "가상김",
+          "organization": "새봄초",
+          "position": "교사",
+          "scope": "all"
+        },
+        "sent": false
+      }
+    },
+    {
+      "tool": "cbe.select",
+      "args": {
+        "user_id": "U-KIM1"
+      },
+      "result": {
+        "ok": true,
+        "selected_user": {
+          "id": "U-KIM1",
+          "name": "가상김",
+          "organization": "새봄초",
+          "position": "교사",
+          "scope": "all"
+        },
+        "sent": false
+      }
+    },
+    {
+      "tool": "cbe.select",
+      "args": {
+        "user_id": "U-KIM1"
+      },
+      "result": {
+        "ok": true,
+        "selected_user": {
+          "id": "U-KIM1",
+          "name": "가상김",
+          "organization": "새봄초",
+          "position": "교사",
+          "scope": "all"
+        },
+        "sent": false
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "user_search": {
+      "requested_scope": "auto",
+      "scope": "all",
+      "fallback": true,
+      "searched": [
+        "my",
+        "all"
+      ],
+      "users": [
+        {
+          "id": "U-KIM1",
+          "name": "가상김",
+          "organization": "새봄초",
+          "position": "교사",
+          "scope": "all"
+        },
+        {
+          "id": "U-KIM2",
+          "name": "가상김",
+          "organization": "푸른초",
+          "position": "교감",
+          "scope": "all"
+        }
+      ]
+    },
+    "selected_user": {
+      "id": "U-KIM1",
+      "name": "가상김",
+      "organization": "새봄초",
+      "position": "교사",
+      "scope": "all"
+    }
+  },
+  "report": null,
+  "checks": {
+    "K1": false,
+    "K2": false,
+    "K3": false,
+    "K4": false
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

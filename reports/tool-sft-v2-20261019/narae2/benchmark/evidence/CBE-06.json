@@ -1,0 +1,150 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "cbe.send",
+      "args": {
+        "kind": "chat",
+        "recipient_id": "U-MY",
+        "room_id": "ROOM-01",
+        "title": "가상 평가 원문",
+        "body": "가상 평가 원문을 U-MY에게 전송합니다."
+      },
+      "result": {
+        "ok": true,
+        "message_id": "SENT-01",
+        "message_ids": [
+          "SENT-01"
+        ],
+        "room_id": "ROOM-01",
+        "sent": true,
+        "verified": false
+      }
+    },
+    {
+      "tool": "cbe.verify",
+      "args": {
+        "message_id": "SENT-01"
+      },
+      "result": {
+        "ok": true,
+        "message_id": "SENT-01",
+        "message_ids": [
+          "SENT-01"
+        ],
+        "kind": "chat",
+        "recipient_id": "U-MY",
+        "room_id": "ROOM-01",
+        "title": "가상 평가 원문",
+        "body": "가상 평가 원문을 U-MY에게 전송합니다.",
+        "files": [],
+        "file_receipts": [],
+        "records": [
+          {
+            "kind": "chat",
+            "recipient_id": "U-MY",
+            "room_id": "ROOM-01",
+            "title": "가상 평가 원문",
+            "body": "가상 평가 원문을 U-MY에게 전송합니다.",
+            "files": [],
+            "id": "SENT-01",
+            "file_receipts": []
+          }
+        ],
+        "recipient_ids": [
+          "U-MY"
+        ],
+        "room_ids": [
+          "ROOM-01"
+        ],
+        "sent": true,
+        "verified": true,
+        "partial": false,
+        "send_count": 1,
+        "server_message_count": 1,
+        "resent": false,
+        "new_room_created": false,
+        "new_rooms": [],
+        "existing_room_reused": true
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "message_id": "SENT-01",
+        "recipient_id": "U-MY",
+        "room_id": "ROOM-01",
+        "kind": "chat",
+        "title": "가상 평가 원문",
+        "body": "가상 평가 원문을 U-MY에게 성공적으로 전송하고 재확인하였습니다.",
+        "files": [],
+        "sent": true,
+        "verified": true,
+        "send_count": 1,
+        "new_room_created": false
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [
+      {
+        "kind": "chat",
+        "recipient_id": "U-MY",
+        "room_id": "ROOM-01",
+        "title": "가상 평가 원문",
+        "body": "가상 평가 원문을 U-MY에게 전송합니다.",
+        "files": [],
+        "id": "SENT-01",
+        "file_receipts": []
+      }
+    ],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": true,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "logical_sends": [
+      {
+        "kind": "chat",
+        "recipient_id": "U-MY",
+        "room_id": "ROOM-01",
+        "title": "가상 평가 원문",
+        "body": "가상 평가 원문을 U-MY에게 전송합니다.",
+        "files": []
+      }
+    ],
+    "verified_ids": [
+      "SENT-01"
+    ]
+  },
+  "report": {
+    "message_id": "SENT-01",
+    "recipient_id": "U-MY",
+    "room_id": "ROOM-01",
+    "kind": "chat",
+    "title": "가상 평가 원문",
+    "body": "가상 평가 원문을 U-MY에게 성공적으로 전송하고 재확인하였습니다.",
+    "files": [],
+    "sent": true,
+    "verified": true,
+    "send_count": 1,
+    "new_room_created": false
+  },
+  "checks": {
+    "K1": false,
+    "K2": false,
+    "K3": false,
+    "K4": false
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

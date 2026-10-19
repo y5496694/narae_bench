@@ -1,0 +1,7 @@
+{
+  "type": "Non-model private controller contract test",
+  "correct_stub_tasks_passed": 24,
+  "premature_finish_rejected": 24,
+  "model_performance_score": false,
+  "real_network_services": 0
+}

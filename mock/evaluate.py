@@ -4,6 +4,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import errno
 import subprocess
 import sys
 import time
@@ -63,6 +64,13 @@ def event(process):
     return json.loads(line)
 
 
+def closed_stdin_error(error, process):
+    # Windows can report EINVAL instead of EPIPE after the CLI deadline.
+    # Only accept EINVAL once successful child exit is confirmed; a live
+    # process or unrelated I/O failure must still invalidate the run.
+    return isinstance(error, BrokenPipeError) or (error.errno == errno.EINVAL and process.poll() == 0)
+
+
 def evaluate_case(args, case_id, transcript):
     process = subprocess.Popen([sys.executable, "-X", "utf8", str(PACKAGE / "mock/cli.py"),
                                 "run", "--state", str(args.out), "--case", case_id],
@@ -103,7 +111,9 @@ def evaluate_case(args, case_id, transcript):
             try:
                 process.stdin.write(json.dumps(call, ensure_ascii=False) + "\n")
                 process.stdin.flush()
-            except BrokenPipeError:
+            except OSError as error:
+                if not closed_stdin_error(error, process):
+                    raise
                 # The mock's hard deadline may expire while model inference runs.
                 # Consume its TIMEOUT result instead of inventing a provider failure.
                 if process.poll() is None:
@@ -131,8 +141,9 @@ def evaluate_case(args, case_id, transcript):
                     break
         try:
             process.stdin.close()
-        except BrokenPipeError:
-            pass
+        except OSError as error:
+            if not closed_stdin_error(error, process):
+                raise
         process.wait(timeout=10)
         if process.returncode:
             raise RuntimeError("Mock CLI failed")
@@ -144,8 +155,9 @@ def evaluate_case(args, case_id, transcript):
         if not process.stdin.closed:
             try:
                 process.stdin.close()
-            except BrokenPipeError:
-                pass
+            except OSError as error:
+                if not closed_stdin_error(error, process):
+                    raise
 
 
 def run(args):

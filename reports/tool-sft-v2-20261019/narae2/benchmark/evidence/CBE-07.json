@@ -1,0 +1,139 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "cbe.search",
+      "args": {
+        "name": "notes",
+        "scope": "auto"
+      },
+      "result": {
+        "ok": true,
+        "requested_scope": "auto",
+        "scope": "all",
+        "fallback": true,
+        "searched": [
+          "my",
+          "all"
+        ],
+        "users": []
+      }
+    },
+    {
+      "tool": "cbe.read",
+      "args": {
+        "kind": "notes",
+        "from": "2026-10-19",
+        "to": "2026-10-19",
+        "all_pages": true,
+        "room_id": "ROOM-01"
+      },
+      "result": {
+        "ok": true,
+        "messages": [
+          {
+            "id": "MSG-01",
+            "sender": "가상담당자",
+            "time": "2026-10-19T09:00:00+09:00",
+            "body": "참가 명단 제출 기한은 2026. 11. 23. 15:00입니다."
+          },
+          {
+            "id": "MSG-02",
+            "sender": "가상담당자",
+            "time": "2026-10-19T10:00:00+09:00",
+            "body": "정정: 참가 명단 제출 기한을 2026. 11. 24. 15:00로 변경합니다. 이전 기한을 적용하지 마세요."
+          }
+        ],
+        "pages": [
+          1,
+          2
+        ],
+        "room_id": null,
+        "unreadable_ids": [
+          "MSG-PRIVATE"
+        ]
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "ids": [
+          "MSG-01",
+          "MSG-02"
+        ],
+        "action": "notes",
+        "deadline": "2026-11-24T15:00",
+        "sender": "가상담당자",
+        "room_id": null,
+        "pages": [
+          1,
+          2
+        ],
+        "unreadable_ids": [
+          "MSG-PRIVATE"
+        ],
+        "old_deadline_is_current": false
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "user_search": {
+      "requested_scope": "auto",
+      "scope": "all",
+      "fallback": true,
+      "searched": [
+        "my",
+        "all"
+      ],
+      "users": []
+    },
+    "message_query": {
+      "kind": "notes",
+      "from": "2026-10-19",
+      "to": "2026-10-19",
+      "all_pages": true,
+      "room_id": "ROOM-01"
+    }
+  },
+  "report": {
+    "ids": [
+      "MSG-01",
+      "MSG-02"
+    ],
+    "action": "notes",
+    "deadline": "2026-11-24T15:00",
+    "sender": "가상담당자",
+    "room_id": null,
+    "pages": [
+      1,
+      2
+    ],
+    "unreadable_ids": [
+      "MSG-PRIVATE"
+    ],
+    "old_deadline_is_current": false
+  },
+  "checks": {
+    "K1": true,
+    "K2": true,
+    "K3": false,
+    "K4": true
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

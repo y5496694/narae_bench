@@ -1,0 +1,14 @@
+{
+  "test_trajectories": 24,
+  "benchmark_supported_cases_per_model": 36,
+  "models": [
+    "Narae-0.6B-Tool-LoRA-v2",
+    "EXAONE-Narae-2.4B-Tool-LoRA-v2"
+  ],
+  "condition": "Match prior complete v2.1 benchmark, including original deadlines and JSON Schema; no score-driven retuning",
+  "source_sha256": {
+    "scripts/evaluate_native.py": "81fa333a3a932a1b5db67bcc728a1b8ae7b4267e1ea474d66e553fa125a4b896",
+    "scripts/continue_pipeline.py": "bfc26d5ad85847a0be0e91008069663b004dc42dd6f28492b37ef8c70b3cd810",
+    "exports/verify_exports.py": "5ff773d9165d0b2d4cd57f5e824f353f60262eeccb5db555d2e19a89f4128c41"
+  }
+}

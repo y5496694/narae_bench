@@ -1,0 +1,54 @@
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "initializing", "elapsed_seconds": 0.0, "base": {"repo_id": "Qwen/Qwen3-0.6B", "revision": "c1899de289a04d12100db370d81485cdf75e47ca", "path": "D:\\Codex\\training\\narae-sft-20261019\\models\\base-0.6b", "role": "Unmodified upstream base files; learned adapters are stored in outputs."}}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "loading-base-nf4", "elapsed_seconds": 0.34}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "adapter-created", "elapsed_seconds": 12.0, "trainable_parameters": 491520, "total_parameters": 596541440, "adapted_layers": [22, 23, 24, 25, 26, 27], "adapter_sha256": "b8c60e2ae9797f50a4c54369294664f67ab453f77ef8b127199556d321744190"}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 16.69, "split": "equivalence", "completed": 1, "total": 1, "tokens": 821}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "cache-equivalence-passed", "elapsed_seconds": 23.49, "full_loss": 0.418451189994812, "cached_loss": 0.4184512197971344, "absolute_error": 2.9802322387695312e-08}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 27.21, "split": "train", "completed": 1, "total": 208, "tokens": 821}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 111.77, "split": "train", "completed": 16, "total": 208, "tokens": 1256}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 200.31, "split": "train", "completed": 32, "total": 208, "tokens": 1286}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 277.64, "split": "train", "completed": 48, "total": 208, "tokens": 955}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 377.57, "split": "train", "completed": 64, "total": 208, "tokens": 789}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 464.74, "split": "train", "completed": 80, "total": 208, "tokens": 1568}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 552.22, "split": "train", "completed": 96, "total": 208, "tokens": 279}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 635.0, "split": "train", "completed": 112, "total": 208, "tokens": 1088}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 729.49, "split": "train", "completed": 128, "total": 208, "tokens": 1233}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 824.13, "split": "train", "completed": 144, "total": 208, "tokens": 1042}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 908.03, "split": "train", "completed": 160, "total": 208, "tokens": 1231}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 988.4, "split": "train", "completed": 176, "total": 208, "tokens": 782}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 1082.17, "split": "train", "completed": 192, "total": 208, "tokens": 814}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 1171.9, "split": "train", "completed": 208, "total": 208, "tokens": 872}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 1176.17, "split": "validation", "completed": 1, "total": 48, "tokens": 798}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 1262.2, "split": "validation", "completed": 16, "total": 48, "tokens": 955}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 1364.06, "split": "validation", "completed": 32, "total": 48, "tokens": 1085}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "caching-frozen-prefix", "elapsed_seconds": 1458.77, "split": "validation", "completed": 48, "total": 48, "tokens": 679}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "baseline-validation", "elapsed_seconds": 1544.19, "loss": 0.36167922014525783}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 1595.44, "epoch": 1, "optimizer_step": 4, "total_optimizer_steps": 104, "mean_loss": 0.2219714523816947, "gradient_norm": 1.34566330909729}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 1654.28, "epoch": 1, "optimizer_step": 8, "total_optimizer_steps": 104, "mean_loss": 0.2522689010947943, "gradient_norm": 1.8941634893417358}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 1704.5, "epoch": 1, "optimizer_step": 12, "total_optimizer_steps": 104, "mean_loss": 0.1442383791145403, "gradient_norm": 0.6575801968574524}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 1753.74, "epoch": 1, "optimizer_step": 16, "total_optimizer_steps": 104, "mean_loss": 0.2548680814943509, "gradient_norm": 2.0432047843933105}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 1816.41, "epoch": 1, "optimizer_step": 20, "total_optimizer_steps": 104, "mean_loss": 0.19090645655523986, "gradient_norm": 0.31174036860466003}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 1878.59, "epoch": 1, "optimizer_step": 24, "total_optimizer_steps": 104, "mean_loss": 0.12180631399678532, "gradient_norm": 0.6240534782409668}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 1931.42, "epoch": 1, "optimizer_step": 28, "total_optimizer_steps": 104, "mean_loss": 0.0843806469347328, "gradient_norm": 0.3170933425426483}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 1991.72, "epoch": 1, "optimizer_step": 32, "total_optimizer_steps": 104, "mean_loss": 0.09475168987410143, "gradient_norm": 0.8360586762428284}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2046.61, "epoch": 1, "optimizer_step": 36, "total_optimizer_steps": 104, "mean_loss": 0.04361739143496379, "gradient_norm": 0.24948981404304504}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2103.3, "epoch": 1, "optimizer_step": 40, "total_optimizer_steps": 104, "mean_loss": 0.06601523628341965, "gradient_norm": 1.1046936511993408}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2154.37, "epoch": 1, "optimizer_step": 44, "total_optimizer_steps": 104, "mean_loss": 0.11905654374277219, "gradient_norm": 0.4657476246356964}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2217.91, "epoch": 1, "optimizer_step": 48, "total_optimizer_steps": 104, "mean_loss": 0.14401738053857116, "gradient_norm": 0.30008265376091003}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2285.5, "epoch": 1, "optimizer_step": 52, "total_optimizer_steps": 104, "mean_loss": 0.03254289245523978, "gradient_norm": 0.4819728136062622}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "epoch-completed", "elapsed_seconds": 2372.48, "epoch": 1, "train_loss": 0.13618779737701586, "validation_loss": 0.06434926574244552}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2439.51, "epoch": 2, "optimizer_step": 56, "total_optimizer_steps": 104, "mean_loss": 0.03567333875253098, "gradient_norm": 0.47510990500450134}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2491.74, "epoch": 2, "optimizer_step": 60, "total_optimizer_steps": 104, "mean_loss": 0.05530148072284646, "gradient_norm": 0.18941153585910797}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2549.67, "epoch": 2, "optimizer_step": 64, "total_optimizer_steps": 104, "mean_loss": 0.06505465661757626, "gradient_norm": 0.5405156016349792}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2604.09, "epoch": 2, "optimizer_step": 68, "total_optimizer_steps": 104, "mean_loss": 0.08811175654409453, "gradient_norm": 0.3170013725757599}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2667.92, "epoch": 2, "optimizer_step": 72, "total_optimizer_steps": 104, "mean_loss": 0.05554348595615011, "gradient_norm": 0.29454663395881653}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2716.69, "epoch": 2, "optimizer_step": 76, "total_optimizer_steps": 104, "mean_loss": 0.03419679353828542, "gradient_norm": 0.4918610155582428}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2773.91, "epoch": 2, "optimizer_step": 80, "total_optimizer_steps": 104, "mean_loss": 0.050300074319238774, "gradient_norm": 0.3328651785850525}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2816.81, "epoch": 2, "optimizer_step": 84, "total_optimizer_steps": 104, "mean_loss": 0.016162208819878288, "gradient_norm": 0.17447133362293243}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2870.21, "epoch": 2, "optimizer_step": 88, "total_optimizer_steps": 104, "mean_loss": 0.052629222605901305, "gradient_norm": 0.3960665166378021}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2927.54, "epoch": 2, "optimizer_step": 92, "total_optimizer_steps": 104, "mean_loss": 0.019037913967622444, "gradient_norm": 0.1789398342370987}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 2991.29, "epoch": 2, "optimizer_step": 96, "total_optimizer_steps": 104, "mean_loss": 0.04065319193614414, "gradient_norm": 0.14433827996253967}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 3044.98, "epoch": 2, "optimizer_step": 100, "total_optimizer_steps": 104, "mean_loss": 0.06266582320677117, "gradient_norm": 0.1919686496257782}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training", "elapsed_seconds": 3112.45, "epoch": 2, "optimizer_step": 104, "total_optimizer_steps": 104, "mean_loss": 0.015676834213081747, "gradient_norm": 0.14836670458316803}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "epoch-completed", "elapsed_seconds": 3199.37, "epoch": 2, "train_loss": 0.04546206009231705, "validation_loss": 0.0451042677523219}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "training-completed", "elapsed_seconds": 3199.77, "optimizer_steps": 104, "adapter_sha256": "9379e9696e8d0c8fbbc37d0bdbe79b4c82bf0753fbed5cec01e3ecc232408988"}
+{"model": "Narae-0.6B-Tool-LoRA-v2", "stage": "complete", "elapsed_seconds": 3199.92, "actual_weight_training": true, "optimizer_steps": 104, "best_validation_loss": 0.0451042677523219, "initial_validation_loss": 0.36167922014525783}

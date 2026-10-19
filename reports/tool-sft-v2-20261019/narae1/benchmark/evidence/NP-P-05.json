@@ -1,0 +1,111 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "portal.extend",
+      "args": {
+        "systems": [
+          "portal",
+          "edufine"
+        ],
+        "extended_systems": [
+          "portal",
+          "edufine"
+        ],
+        "failed_systems": [
+          "portal"
+        ],
+        "needs_login": false,
+        "next_action": "session not extended",
+        "success": false
+      },
+      "result": {
+        "ok": false,
+        "results": {
+          "portal": {
+            "ok": true,
+            "timer_before": 900,
+            "timer_after": 1800
+          },
+          "edufine": {
+            "ok": false,
+            "error": "AUTH",
+            "timer_before": 0,
+            "timer_after": 0
+          }
+        },
+        "failed_systems": [
+          "edufine"
+        ],
+        "extended_systems": [
+          "portal"
+        ],
+        "needs_login": true,
+        "next_action": "USER_LOGIN"
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "failed_systems": [
+          "edufine"
+        ],
+        "extended_systems": [
+          "portal"
+        ],
+        "needs_login": true,
+        "success": false,
+        "next_action": "USER_LOGIN"
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "extended": {
+      "portal": {
+        "ok": true,
+        "timer_before": 900,
+        "timer_after": 1800
+      },
+      "edufine": {
+        "ok": false,
+        "error": "AUTH",
+        "timer_before": 0,
+        "timer_after": 0
+      }
+    }
+  },
+  "report": {
+    "failed_systems": [
+      "edufine"
+    ],
+    "extended_systems": [
+      "portal"
+    ],
+    "needs_login": true,
+    "success": false,
+    "next_action": "USER_LOGIN"
+  },
+  "checks": {
+    "K1": true,
+    "K2": true,
+    "K3": true,
+    "K4": true
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

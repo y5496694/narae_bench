@@ -1,0 +1,246 @@
+{
+  "complete": true,
+  "passed": 2,
+  "planned": 24,
+  "results": [
+    {
+      "id": "episode-query-953000",
+      "kind": "query",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-query-953001",
+      "kind": "query",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 7
+    },
+    {
+      "id": "episode-query-953002",
+      "kind": "query",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 8
+    },
+    {
+      "id": "episode-query-953003",
+      "kind": "query",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-query-953004",
+      "kind": "query",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 9
+    },
+    {
+      "id": "episode-query-953005",
+      "kind": "query",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 8
+    },
+    {
+      "id": "episode-neis-953100",
+      "kind": "neis",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 9
+    },
+    {
+      "id": "episode-neis-953101",
+      "kind": "neis",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 8
+    },
+    {
+      "id": "episode-neis-953102",
+      "kind": "neis",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2029-08-14",
+          "start": "08:00",
+          "end": "09:00",
+          "reason": "진로 체험 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-985d1af9",
+              "organization": "솔빛고",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 60,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-neis-953103",
+      "kind": "neis",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "fields": {
+          "type": "관내출장",
+          "date": "2029-04-02",
+          "start": "09:00",
+          "end": "10:00",
+          "reason": "독서 행사 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-0177630e",
+              "organization": "달오름초",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 60,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-neis-953104",
+      "kind": "neis",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 9
+    },
+    {
+      "id": "episode-neis-953105",
+      "kind": "neis",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 8
+    },
+    {
+      "id": "episode-write-953200",
+      "kind": "write",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 9
+    },
+    {
+      "id": "episode-write-953201",
+      "kind": "write",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-write-953202",
+      "kind": "write",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-write-953203",
+      "kind": "write",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-write-953204",
+      "kind": "write",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 1
+    },
+    {
+      "id": "episode-write-953205",
+      "kind": "write",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-message-953300",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 9
+    },
+    {
+      "id": "episode-message-953301",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 7
+    },
+    {
+      "id": "episode-message-953302",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 4
+    },
+    {
+      "id": "episode-message-953303",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 0
+    },
+    {
+      "id": "episode-message-953304",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 9
+    },
+    {
+      "id": "episode-message-953305",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "tool_errors": 4
+    }
+  ],
+  "scope": "Independent synthetic templates with held-out values, not live E2E or a novel-workflow test; 8 cases include prefilled erroneous context"
+}

@@ -1,0 +1,22 @@
+{
+  "converter_commit": "412a363c655b479279d3050d0d1c67a5733697b4",
+  "verification": [
+    {
+      "model": "Narae-0.6B-Tool-LoRA-v2",
+      "tensors": 24,
+      "all_f32_tensors_bitwise_equal": true,
+      "source_sha256": "e2ae6b76c87bc408086b6205fbddbbf5fc9f954fe9654f5eef8b30f40c74f1f5",
+      "export_sha256": "d757ca1461bcf98e5ff561f42df16c171d8fcf016ccf1abe1093c30e1ee35b48",
+      "file": "D:\\Codex\\training\\narae-tool-sft-v2-20261019\\exports\\Narae-0.6B-Tool-LoRA-v2-f32.gguf"
+    },
+    {
+      "model": "EXAONE-Narae-2.4B-Tool-LoRA-v2",
+      "tensors": 24,
+      "all_f32_tensors_bitwise_equal": true,
+      "source_sha256": "e8c8c8cf48d63881d979c8b691b38dc1447f386ffe4825cdaff11a4e73011d5d",
+      "export_sha256": "66b0bfd8efbd6c41d2f26c22212fc6dc0c75ac0a05a27bce56b8f62999764607",
+      "file": "D:\\Codex\\training\\narae-tool-sft-v2-20261019\\exports\\EXAONE-Narae-2.4B-Tool-LoRA-v2-f32.gguf"
+    }
+  ],
+  "scope": "Adapter conversion only; no inference equivalence or Ollama installation claim. Native API benchmark uses Q4_K_M base plus the verified F32 LoRA."
+}

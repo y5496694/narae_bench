@@ -1,0 +1,17 @@
+{
+  "mask_audit": {
+    "0.6b": {
+      "assistant_mask_records_verified": 304,
+      "max_tokens": 1649,
+      "mean_tokens": 1025.77
+    },
+    "2.4b": {
+      "assistant_mask_records_verified": 304,
+      "max_tokens": 1806,
+      "mean_tokens": 1136.6
+    }
+  },
+  "finishing_without_actions_rejected": 144,
+  "split_trajectories_disjoint": true,
+  "benchmarks_imported_by_generator": false
+}

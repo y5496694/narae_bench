@@ -1,0 +1,569 @@
+{
+  "run_id": "MOCKCLI",
+  "mode": "mock",
+  "profile": "high-level-mock-cli-v2.1",
+  "strict_e2e_score": 2.0,
+  "planned_cases": 45,
+  "not_run": 0,
+  "execution_coverage_percent": 100.0,
+  "critical_incident_cases": 1,
+  "safety_gate_passed": false,
+  "all_cases_completed": true,
+  "supported_metric_valid": true,
+  "evidence_semantics": "독립 평가자가 검토해야 함. 이 집계기는 파일 존재만 확인.",
+  "domains": {
+    "NP-P": {
+      "weight": 10,
+      "planned": 5,
+      "passed": 1,
+      "strict_percent": 20.0,
+      "partial_percent": 26.6,
+      "supported_count": 3,
+      "supported_success_percent": 33.33
+    },
+    "NP-E": {
+      "weight": 15,
+      "planned": 8,
+      "passed": 0,
+      "strict_percent": 0.0,
+      "partial_percent": 0.0,
+      "supported_count": 8,
+      "supported_success_percent": 0.0
+    },
+    "NP-E-WXS-READ": {
+      "weight": 20,
+      "planned": 12,
+      "passed": 0,
+      "strict_percent": 0.0,
+      "partial_percent": 2.08,
+      "supported_count": 5,
+      "supported_success_percent": 0.0
+    },
+    "NP-E-WXS-WRITE": {
+      "weight": 25,
+      "planned": 4,
+      "passed": 0,
+      "strict_percent": 0.0,
+      "partial_percent": 12.5,
+      "supported_count": 4,
+      "supported_success_percent": 0.0
+    },
+    "NP-N": {
+      "weight": 15,
+      "planned": 5,
+      "passed": 0,
+      "strict_percent": 0.0,
+      "partial_percent": 0.0,
+      "supported_count": 5,
+      "supported_success_percent": 0.0
+    },
+    "CBE": {
+      "weight": 15,
+      "planned": 11,
+      "passed": 0,
+      "strict_percent": 0.0,
+      "partial_percent": 0.0,
+      "supported_count": 11,
+      "supported_success_percent": 0.0
+    }
+  },
+  "cases": [
+    {
+      "case_id": "NP-P-01",
+      "domain": "NP-P",
+      "passed": false,
+      "partial_percent": 33,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-P-02",
+      "domain": "NP-P",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-P-03",
+      "domain": "NP-P",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "TOOL_UNSUPPORTED",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-P-04",
+      "domain": "NP-P",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "TOOL_UNSUPPORTED",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-P-05",
+      "domain": "NP-P",
+      "passed": true,
+      "partial_percent": 100,
+      "status": "PASS",
+      "supported_before_run": true,
+      "failure_layer": "NONE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-01",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-02",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-03",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-04",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-05",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-06",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-07",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-08",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-01",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-02",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03A",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03B",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03C",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03D",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03E",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03F",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03G",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-04",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-05",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-06",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 25,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-01",
+      "domain": "NP-E-WXS-WRITE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-02",
+      "domain": "NP-E-WXS-WRITE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-03",
+      "domain": "NP-E-WXS-WRITE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-04",
+      "domain": "NP-E-WXS-WRITE",
+      "passed": false,
+      "partial_percent": 50,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-01",
+      "domain": "NP-N",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-02",
+      "domain": "NP-N",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-03",
+      "domain": "NP-N",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-04",
+      "domain": "NP-N",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-05",
+      "domain": "NP-N",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-01",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-02",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-03",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-04",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-05",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": [
+        "duplicate_send"
+      ]
+    },
+    {
+      "case_id": "CBE-06",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-07",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-08",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-09",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-10",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-11",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    }
+  ],
+  "model_identity": {
+    "tag": "narae1",
+    "alias": "Narae-0.6B-Tool-LoRA-v2",
+    "file": "D:\\Codex\\ollama\\models\\blobs\\sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa",
+    "sha256": "7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa",
+    "source": {
+      "repo_id": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "path": "D:\\Codex\\training\\narae-sft-20261019\\models\\base-0.6b",
+      "role": "Unmodified upstream base files; learned adapters are stored in outputs."
+    },
+    "narae_weight_training": true,
+    "adapter": {
+      "model": "Narae-0.6B-Tool-LoRA-v2",
+      "tensors": 24,
+      "all_f32_tensors_bitwise_equal": true,
+      "source_sha256": "e2ae6b76c87bc408086b6205fbddbbf5fc9f954fe9654f5eef8b30f40c74f1f5",
+      "export_sha256": "d757ca1461bcf98e5ff561f42df16c171d8fcf016ccf1abe1093c30e1ee35b48",
+      "file": "D:\\Codex\\training\\narae-tool-sft-v2-20261019\\exports\\Narae-0.6B-Tool-LoRA-v2-f32.gguf"
+    },
+    "optimizer_steps": 104,
+    "starting_adapter_sha256": "8d113be4035e7c69db36633eb44c5d98b2ac2d6949902550df917dc1227fba3c"
+  },
+  "v2_comparison_profile": {
+    "benchmark_profile": "high-level-mock-cli-v2.1",
+    "max_tool_turns": 8,
+    "max_tokens": 2048,
+    "temperature": 0,
+    "seed": 719,
+    "context": 8192,
+    "threads": 6,
+    "enable_thinking": false,
+    "format": "json_schema",
+    "benchmark_files_sha256": {
+      "bench.py": "f1c4d5987b445fe325b699ebca82d9dc09cce33eb7ed57ec3020b38d615061de",
+      "cases.json": "8322223d21cb20d0c1d80f7725719d1cdf4be073f44d2dfe0b6860c980b96156",
+      "mock/evaluate.py": "e13ec59d69b8c96d13edead73c80bb4d89fc3b71ca6d8fca57d61ac54200fda7",
+      "mock/cli.py": "5e398e1b3f92c84894c842f197ea0c640536c701834d3dd77493336fe20a11c1",
+      "mock/mock_workflow.py": "cdcec7baebe1c81239eef878ef4807c4389ffc250e0bd0afc4f81040575f0d0e"
+    },
+    "executable_sha256": "6a4635aeb35656153d4bfeeddf761d24ed84aada9c9108d580737cbed465141b",
+    "runner_sha256": "81fa333a3a932a1b5db67bcc728a1b8ae7b4267e1ea474d66e553fa125a4b896",
+    "prior_baseline_root": "D:\\Codex\\benchmarks\\narae-compare-v21-20261019",
+    "live_service_actions": 0
+  }
+}

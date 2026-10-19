@@ -1,0 +1,381 @@
+{
+  "verified_new_benchmark_model_cases": 72,
+  "identical_before_after_initial_messages": true,
+  "same_frozen_benchmark_files": true,
+  "unchanged_model_outputs_forwarded": true,
+  "native_token_usage_verified": true,
+  "training_and_evaluation_sources_verified": true,
+  "private_model_cases": 48,
+  "recovery": {
+    "narae2": {
+      "preserved": 15,
+      "restarted": 21,
+      "partial_case_excluded": "NP-E-WXS-READ-06",
+      "same_weights_prompts_grading_and_budgets": true,
+      "transport_fix_only": true
+    }
+  },
+  "live_service_actions": 0,
+  "details": [
+    {
+      "tag": "narae1",
+      "case_id": "NP-P-01",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-P-02",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-P-05",
+      "passed": true
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-01",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-02",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-03",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-04",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-05",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-06",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-07",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-08",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-WXS-READ-01",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-WXS-READ-02",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-WXS-READ-04",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-WXS-READ-05",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-WXS-READ-06",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-WXS-WRITE-01",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-WXS-WRITE-02",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-WXS-WRITE-03",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-E-WXS-WRITE-04",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-N-01",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-N-02",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-N-03",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-N-04",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "NP-N-05",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-01",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-02",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-03",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-04",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-05",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-06",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-07",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-08",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-09",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-10",
+      "passed": false
+    },
+    {
+      "tag": "narae1",
+      "case_id": "CBE-11",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-P-01",
+      "passed": true
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-P-02",
+      "passed": true
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-P-05",
+      "passed": true
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-01",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-02",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-03",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-04",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-05",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-06",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-07",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-08",
+      "passed": true
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-WXS-READ-01",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-WXS-READ-02",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-WXS-READ-04",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-WXS-READ-05",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-WXS-READ-06",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-WXS-WRITE-01",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-WXS-WRITE-02",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-WXS-WRITE-03",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-E-WXS-WRITE-04",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-N-01",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-N-02",
+      "passed": true
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-N-03",
+      "passed": true
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-N-04",
+      "passed": true
+    },
+    {
+      "tag": "narae2",
+      "case_id": "NP-N-05",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-01",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-02",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-03",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-04",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-05",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-06",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-07",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-08",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-09",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-10",
+      "passed": false
+    },
+    {
+      "tag": "narae2",
+      "case_id": "CBE-11",
+      "passed": true
+    }
+  ]
+}

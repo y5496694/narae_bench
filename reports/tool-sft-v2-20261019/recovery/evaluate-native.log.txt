@@ -1,0 +1,9 @@
+{"model":"narae1","strict_score":2.0,"private_passed":2}
+Traceback (most recent call last):
+  File "D:\Codex\training\narae-tool-sft-v2-20261019\scripts\evaluate_native.py", line 157, in <module>
+    main()
+    ~~~~^^
+  File "D:\Codex\training\narae-tool-sft-v2-20261019\scripts\evaluate_native.py", line 143, in main
+    assert worker.returncode == 0, str(folder)
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: D:\Codex\training\narae-tool-sft-v2-20261019\evaluation\runs\narae2
