@@ -1,0 +1,659 @@
+{
+  "verified_model_cases": 108,
+  "identical_initial_prompt_cases_across_models": 36,
+  "frozen_source_files_verified": true,
+  "native_api_token_usage_verified": true,
+  "unmodified_model_calls_matched_to_cli_evidence": true,
+  "prior_invalid_native_decoder_scores_excluded": true,
+  "live_service_actions": 0,
+  "details": [
+    {
+      "model": "narae1",
+      "case_id": "NP-P-01",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-P-02",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-P-05",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-01",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-02",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-03",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-04",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-05",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-06",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-07",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-08",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-WXS-READ-01",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-WXS-READ-02",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-WXS-READ-04",
+      "turns": 1,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-WXS-READ-05",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-WXS-READ-06",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-WXS-WRITE-01",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-WXS-WRITE-02",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-WXS-WRITE-03",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-E-WXS-WRITE-04",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-N-01",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-N-02",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-N-03",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-N-04",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae1",
+      "case_id": "NP-N-05",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-01",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-02",
+      "turns": 1,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-03",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-04",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-05",
+      "turns": 1,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-06",
+      "turns": 1,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-07",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-08",
+      "turns": 1,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-09",
+      "turns": 1,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-10",
+      "turns": 1,
+      "passed": false
+    },
+    {
+      "model": "narae1",
+      "case_id": "CBE-11",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-P-01",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-P-02",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-P-05",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-01",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-02",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-03",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-04",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-05",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-06",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-07",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-08",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-WXS-READ-01",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-WXS-READ-02",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-WXS-READ-04",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-WXS-READ-05",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-WXS-READ-06",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-WXS-WRITE-01",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-WXS-WRITE-02",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-WXS-WRITE-03",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-E-WXS-WRITE-04",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-N-01",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-N-02",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-N-03",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-N-04",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "NP-N-05",
+      "turns": 3,
+      "passed": true
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-01",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-02",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-03",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-04",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-05",
+      "turns": 4,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-06",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-07",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-08",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-09",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-10",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "narae2",
+      "case_id": "CBE-11",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-P-01",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-P-02",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-P-05",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-01",
+      "turns": 4,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-02",
+      "turns": 4,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-03",
+      "turns": 4,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-04",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-05",
+      "turns": 4,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-06",
+      "turns": 4,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-07",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-08",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-WXS-READ-01",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-WXS-READ-02",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-WXS-READ-04",
+      "turns": 2,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-WXS-READ-05",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-WXS-READ-06",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-WXS-WRITE-01",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-WXS-WRITE-02",
+      "turns": 8,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-WXS-WRITE-03",
+      "turns": 4,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-E-WXS-WRITE-04",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-N-01",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-N-02",
+      "turns": 4,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-N-03",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-N-04",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "NP-N-05",
+      "turns": 6,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-01",
+      "turns": 3,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-02",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-03",
+      "turns": 4,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-04",
+      "turns": 3,
+      "passed": true
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-05",
+      "turns": 5,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-06",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-07",
+      "turns": 2,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-08",
+      "turns": 3,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-09",
+      "turns": 7,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-10",
+      "turns": 5,
+      "passed": false
+    },
+    {
+      "model": "qwen4b",
+      "case_id": "CBE-11",
+      "turns": 2,
+      "passed": true
+    }
+  ]
+}

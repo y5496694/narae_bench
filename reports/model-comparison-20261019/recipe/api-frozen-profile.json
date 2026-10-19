@@ -1,0 +1,33 @@
+{
+  "benchmark_profile": "high-level-mock-cli-v2.1",
+  "transport": "UTF-8 API message.content, no token-ID reconstruction",
+  "native_engine": "llama.cpp b11669 CPU Q4_K_M, learned F32 LoRA for narae1/2",
+  "threads": 6,
+  "context": 8192,
+  "parallel": 1,
+  "temperature": 0,
+  "seed": 719,
+  "max_generated_tokens_per_turn": 2048,
+  "max_tool_turns": 8,
+  "response_format": "json_schema",
+  "enable_thinking": false,
+  "model_request_timeout_seconds": 600,
+  "live_service_actions": 0,
+  "models": [
+    "narae1",
+    "narae2",
+    "qwen4b"
+  ],
+  "source_sha256": {
+    "D:\\Codex\\benchmarks\\narae-compare-v21-20261019\\runner\\compare_api.py": "326e7759ae701981af7cd524af9a09790f1619326f5a7b3c5339929eee302edb",
+    "D:\\Codex\\benchmarks\\narae-compare-v21-20261019\\Start-NaraeModel.ps1": "fb91c7b17544bf58d95570f3b19a6a2ba31e90adf2c2f6ef0fe7e310a5ddd424",
+    "D:\\Codex\\workspaces\\narae_bench\\mock\\evaluate.py": "e13ec59d69b8c96d13edead73c80bb4d89fc3b71ca6d8fca57d61ac54200fda7",
+    "D:\\Codex\\workspaces\\narae_bench\\mock\\cli.py": "5e398e1b3f92c84894c842f197ea0c640536c701834d3dd77493336fe20a11c1",
+    "D:\\Codex\\workspaces\\narae_bench\\mock\\mock_workflow.py": "cdcec7baebe1c81239eef878ef4807c4389ffc250e0bd0afc4f81040575f0d0e",
+    "D:\\Codex\\workspaces\\narae_bench\\bench.py": "f1c4d5987b445fe325b699ebca82d9dc09cce33eb7ed57ec3020b38d615061de",
+    "D:\\Codex\\workspaces\\narae_bench\\cases.json": "8322223d21cb20d0c1d80f7725719d1cdf4be073f44d2dfe0b6860c980b96156"
+  },
+  "executable_sha256": "6a4635aeb35656153d4bfeeddf761d24ed84aada9c9108d580737cbed465141b",
+  "prior_invalid_run": "D:\\Codex\\benchmarks\\narae-compare-v2-20261019\\transport-invalid.json",
+  "sha256": "5c5790c967b247f0dd9ed240f5e99828339ef1972870eba197300b54ee57755e"
+}

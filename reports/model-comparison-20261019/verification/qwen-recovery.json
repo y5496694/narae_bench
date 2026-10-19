@@ -1,0 +1,17 @@
+{
+  "cause": "Windows status-file os.replace PermissionError closed the orchestrator; its finally block stopped the healthy inference server, resetting the controller connection.",
+  "model": "qwen4b",
+  "completed_cases_preserved": 32,
+  "cases_restarted_from_fresh_state": [
+    "CBE-08",
+    "CBE-09",
+    "CBE-10",
+    "CBE-11"
+  ],
+  "partial_interrupted_case_excluded": "CBE-08",
+  "weights_and_serving_manifest_identical": true,
+  "source_sha256": "012550ce5f2694959ade85a561ea328ace62e292280689d2e1cca59175dc8967",
+  "prior_invalid_partial_artifacts": "D:\\Codex\\benchmarks\\narae-compare-v21-20261019\\recovery\\qwen4b",
+  "no_model_or_grading_changes": true,
+  "status_file_replace_retries_added_in_recovery_writer": true
+}

@@ -1,0 +1,21 @@
+{
+  "executable_sha256": "6a4635aeb35656153d4bfeeddf761d24ed84aada9c9108d580737cbed465141b",
+  "context_tokens": 8192,
+  "engine": "llama.cpp b11669 CPU",
+  "parallel_slots": 1,
+  "threads": 6,
+  "cpu": "13th Gen Intel(R) Core(TM) i5-13500",
+  "note": "Wall timings include host activity and are diagnostic, not a controlled throughput benchmark",
+  "logical_processors": 20,
+  "base_hash_checks": {
+    "0.6b": {
+      "sha256": "7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa",
+      "matches_expected": true
+    },
+    "2.4b": {
+      "sha256": "d6e077ce2bb2d36ad179739ea96d8b8d387f024b0bedede04741745d21c41b28",
+      "matches_expected": true
+    }
+  },
+  "ram_bytes": 16905089024
+}

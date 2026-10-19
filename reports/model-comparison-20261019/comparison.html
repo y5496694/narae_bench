@@ -1,0 +1,8 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><title>나래 모델 최종 재평가</title>
+<style>body{font:16px/1.7 system-ui;max-width:1100px;margin:48px auto;padding:0 24px;color:#17283c}table{border-collapse:collapse;width:100%}th,td{padding:14px;border-bottom:1px solid #d7dfe9;text-align:left}th{background:#edf3fa}.note{padding:18px;background:#f0f5fa;border-radius:10px}a{color:#1858bb}</style>
+<h1>나래1 · 나래2 · Qwen 4B</h1><p>올바른 한글 전송 경로와 채점 v2.1로 새 상태에서 재실행 · 완료</p>
+<table><tr><th>모델</th><th>엄격 점수 /100</th><th>부분 점수 /100</th><th>통과/실행</th><th>중대 오류 사례</th></tr><tr><td>나래1 · Qwen3 0.6B SFT v1</td><td>13.24</td><td>19.70</td><td>6/36</td><td>4</td></tr><tr><td>나래2 · EXAONE 3.5 2.4B SFT v1</td><td>12.24</td><td>25.45</td><td>6/36</td><td>0</td></tr><tr><td>Qwen3-4B-Instruct-2507 · 원본 지시 모델</td><td>20.92</td><td>34.84</td><td>12/36</td><td>0</td></tr></table>
+<p class="note">모델별 지원 36개·환경 차단 9개. 45개 분모와 영역 배점을 유지해 상한은 84.33점입니다. 모든 모델에 8턴·2,048토큰·temperature 0·seed 719·8K 문맥·JSON Schema를 동일 적용했습니다. 원래 가중치는 변경하지 않았고, Qwen 4B는 나래 추가학습 전 모델입니다.</p>
+<p>이전 네이티브 실행기의 스트리밍 토큰 ID 디코딩은 한글 바이트 일부를 잃었습니다. 그 잠정 점수는 제외했습니다. 이번 기록은 서버의 message.content와 최종 토큰 사용량을 사용한 새 추론입니다. 실제 학교 서비스·CBE 전송은 0회입니다.</p>
+<p>점수는 모의 도구 상태와 제한된 문자 형식 검사입니다. 실제 로그인·권한·렌더링·전송이나 문서 의미의 완전성을 보장하지 않습니다. 중대 오류는 모의 오수신자 선택·허위 성공 보고 등의 태그이며 실서비스 사고가 아닙니다.</p>
+<p><a href="comparison.json">전체 조건·모델 해시·도구 증거 해시 JSON</a></p></html>

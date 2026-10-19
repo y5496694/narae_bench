@@ -1,0 +1,578 @@
+{
+  "run_id": "MOCKCLI",
+  "mode": "mock",
+  "profile": "high-level-mock-cli-v2.1",
+  "strict_e2e_score": 12.24,
+  "planned_cases": 45,
+  "not_run": 0,
+  "execution_coverage_percent": 100.0,
+  "critical_incident_cases": 0,
+  "safety_gate_passed": true,
+  "all_cases_completed": true,
+  "supported_metric_valid": true,
+  "evidence_semantics": "독립 평가자가 검토해야 함. 이 집계기는 파일 존재만 확인.",
+  "domains": {
+    "NP-P": {
+      "weight": 10,
+      "planned": 5,
+      "passed": 3,
+      "strict_percent": 60.0,
+      "partial_percent": 60.0,
+      "supported_count": 3,
+      "supported_success_percent": 100.0
+    },
+    "NP-E": {
+      "weight": 15,
+      "planned": 8,
+      "passed": 1,
+      "strict_percent": 12.5,
+      "partial_percent": 12.5,
+      "supported_count": 8,
+      "supported_success_percent": 12.5
+    },
+    "NP-E-WXS-READ": {
+      "weight": 20,
+      "planned": 12,
+      "passed": 0,
+      "strict_percent": 0.0,
+      "partial_percent": 16.67,
+      "supported_count": 5,
+      "supported_success_percent": 0.0
+    },
+    "NP-E-WXS-WRITE": {
+      "weight": 25,
+      "planned": 4,
+      "passed": 0,
+      "strict_percent": 0.0,
+      "partial_percent": 27.25,
+      "supported_count": 4,
+      "supported_success_percent": 0.0
+    },
+    "NP-N": {
+      "weight": 15,
+      "planned": 5,
+      "passed": 1,
+      "strict_percent": 20.0,
+      "partial_percent": 20.0,
+      "supported_count": 5,
+      "supported_success_percent": 20.0
+    },
+    "CBE": {
+      "weight": 15,
+      "planned": 11,
+      "passed": 1,
+      "strict_percent": 9.09,
+      "partial_percent": 29.55,
+      "supported_count": 11,
+      "supported_success_percent": 9.09
+    }
+  },
+  "cases": [
+    {
+      "case_id": "NP-P-01",
+      "domain": "NP-P",
+      "passed": true,
+      "partial_percent": 100,
+      "status": "PASS",
+      "supported_before_run": true,
+      "failure_layer": "NONE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-P-02",
+      "domain": "NP-P",
+      "passed": true,
+      "partial_percent": 100,
+      "status": "PASS",
+      "supported_before_run": true,
+      "failure_layer": "NONE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-P-03",
+      "domain": "NP-P",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "TOOL_UNSUPPORTED",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-P-04",
+      "domain": "NP-P",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "TOOL_UNSUPPORTED",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-P-05",
+      "domain": "NP-P",
+      "passed": true,
+      "partial_percent": 100,
+      "status": "PASS",
+      "supported_before_run": true,
+      "failure_layer": "NONE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-01",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-02",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-03",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-04",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-05",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-06",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-07",
+      "domain": "NP-E",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-08",
+      "domain": "NP-E",
+      "passed": true,
+      "partial_percent": 100,
+      "status": "PASS",
+      "supported_before_run": true,
+      "failure_layer": "NONE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-01",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 75,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-02",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 25,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03A",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03B",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03C",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03D",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03E",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03F",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-03G",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "BLOCKED",
+      "supported_before_run": false,
+      "failure_layer": "FIXTURE",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-04",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-05",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 50,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-06",
+      "domain": "NP-E-WXS-READ",
+      "passed": false,
+      "partial_percent": 50,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-01",
+      "domain": "NP-E-WXS-WRITE",
+      "passed": false,
+      "partial_percent": 27,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-02",
+      "domain": "NP-E-WXS-WRITE",
+      "passed": false,
+      "partial_percent": 10,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-03",
+      "domain": "NP-E-WXS-WRITE",
+      "passed": false,
+      "partial_percent": 22,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-04",
+      "domain": "NP-E-WXS-WRITE",
+      "passed": false,
+      "partial_percent": 50,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-01",
+      "domain": "NP-N",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-02",
+      "domain": "NP-N",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-03",
+      "domain": "NP-N",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-04",
+      "domain": "NP-N",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "NP-N-05",
+      "domain": "NP-N",
+      "passed": true,
+      "partial_percent": 100,
+      "status": "PASS",
+      "supported_before_run": true,
+      "failure_layer": "NONE",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-01",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-02",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-03",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-04",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-05",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 75,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-06",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-07",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 75,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-08",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 75,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-09",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-10",
+      "domain": "CBE",
+      "passed": false,
+      "partial_percent": 0,
+      "status": "FAIL",
+      "supported_before_run": true,
+      "failure_layer": "MODEL",
+      "incidents": []
+    },
+    {
+      "case_id": "CBE-11",
+      "domain": "CBE",
+      "passed": true,
+      "partial_percent": 100,
+      "status": "PASS",
+      "supported_before_run": true,
+      "failure_layer": "NONE",
+      "incidents": []
+    }
+  ],
+  "model_identity": {
+    "tag": "narae2",
+    "alias": "EXAONE-Narae-2.4B-LoRA-v1",
+    "file": "D:\\Codex\\ollama\\models\\blobs\\sha256-d6e077ce2bb2d36ad179739ea96d8b8d387f024b0bedede04741745d21c41b28",
+    "sha256": "d6e077ce2bb2d36ad179739ea96d8b8d387f024b0bedede04741745d21c41b28",
+    "source": {
+      "repo_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+      "revision": "ccce25bd39c141fe053e0bc75818a8f5fe962802",
+      "path": "D:\\Codex\\training\\narae-sft-20261019\\models\\base-2.4b",
+      "role": "Unmodified upstream base files; learned adapters are stored in outputs."
+    },
+    "narae_weight_training": true,
+    "adapter": {
+      "model": "EXAONE-Narae-2.4B-LoRA-v1",
+      "tensors": 24,
+      "all_f32_tensors_bitwise_equal": true,
+      "source_sha256": "292f33e9e8491f3163ef37f8de00eeafc2c21b2c0204d1467dd12fa81603519e",
+      "export_sha256": "37c7fb7703e06027c7ca14e0a47fd99f86e9fa267c41e92ef45e8b5c21a967cc",
+      "file": "D:\\Codex\\training\\narae-sft-20261019\\exports\\EXAONE-Narae-2.4B-LoRA-v1-f32.gguf"
+    },
+    "optimizer_steps": 156
+  },
+  "comparison_profile": {
+    "benchmark_profile": "high-level-mock-cli-v2.1",
+    "transport": "UTF-8 API message.content, no token-ID reconstruction",
+    "native_engine": "llama.cpp b11669 CPU Q4_K_M, learned F32 LoRA for narae1/2",
+    "threads": 6,
+    "context": 8192,
+    "parallel": 1,
+    "temperature": 0,
+    "seed": 719,
+    "max_generated_tokens_per_turn": 2048,
+    "max_tool_turns": 8,
+    "response_format": "json_schema",
+    "enable_thinking": false,
+    "model_request_timeout_seconds": 600,
+    "live_service_actions": 0,
+    "models": [
+      "narae1",
+      "narae2",
+      "qwen4b"
+    ],
+    "source_sha256": {
+      "D:\\Codex\\benchmarks\\narae-compare-v21-20261019\\runner\\compare_api.py": "326e7759ae701981af7cd524af9a09790f1619326f5a7b3c5339929eee302edb",
+      "D:\\Codex\\benchmarks\\narae-compare-v21-20261019\\Start-NaraeModel.ps1": "fb91c7b17544bf58d95570f3b19a6a2ba31e90adf2c2f6ef0fe7e310a5ddd424",
+      "D:\\Codex\\workspaces\\narae_bench\\mock\\evaluate.py": "e13ec59d69b8c96d13edead73c80bb4d89fc3b71ca6d8fca57d61ac54200fda7",
+      "D:\\Codex\\workspaces\\narae_bench\\mock\\cli.py": "5e398e1b3f92c84894c842f197ea0c640536c701834d3dd77493336fe20a11c1",
+      "D:\\Codex\\workspaces\\narae_bench\\mock\\mock_workflow.py": "cdcec7baebe1c81239eef878ef4807c4389ffc250e0bd0afc4f81040575f0d0e",
+      "D:\\Codex\\workspaces\\narae_bench\\bench.py": "f1c4d5987b445fe325b699ebca82d9dc09cce33eb7ed57ec3020b38d615061de",
+      "D:\\Codex\\workspaces\\narae_bench\\cases.json": "8322223d21cb20d0c1d80f7725719d1cdf4be073f44d2dfe0b6860c980b96156"
+    },
+    "executable_sha256": "6a4635aeb35656153d4bfeeddf761d24ed84aada9c9108d580737cbed465141b",
+    "prior_invalid_run": "D:\\Codex\\benchmarks\\narae-compare-v2-20261019\\transport-invalid.json",
+    "sha256": "5c5790c967b247f0dd9ed240f5e99828339ef1972870eba197300b54ee57755e"
+  },
+  "comparison_profile_sha256": "5c5790c967b247f0dd9ed240f5e99828339ef1972870eba197300b54ee57755e"
+}

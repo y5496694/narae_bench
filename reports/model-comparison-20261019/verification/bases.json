@@ -1,0 +1,14 @@
+{
+  "2.4b": {
+    "path": "D:\\Codex\\ollama\\models\\blobs\\sha256-d6e077ce2bb2d36ad179739ea96d8b8d387f024b0bedede04741745d21c41b28",
+    "blob": "d6e077ce2bb2d36ad179739ea96d8b8d387f024b0bedede04741745d21c41b28",
+    "manifest": "D:\\Codex\\ollama\\models\\manifests\\registry.ollama.ai\\library\\exaone3.5\\2.4b",
+    "sha256": "d6e077ce2bb2d36ad179739ea96d8b8d387f024b0bedede04741745d21c41b28"
+  },
+  "0.6b": {
+    "path": "D:\\Codex\\ollama\\models\\blobs\\sha256-7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa",
+    "blob": "7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa",
+    "manifest": "D:\\Codex\\ollama\\models\\manifests\\registry.ollama.ai\\library\\qwen3\\0.6b",
+    "sha256": "7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa"
+  }
+}

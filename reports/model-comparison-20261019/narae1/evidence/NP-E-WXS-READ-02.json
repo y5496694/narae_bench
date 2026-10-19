@@ -1,0 +1,117 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "wxs.read",
+      "args": {
+        "document_id": "DOC-01"
+      },
+      "result": {
+        "ok": true,
+        "window_id": null,
+        "metadata": {
+          "id": "DOC-01",
+          "title": "가상 연수 참가 안내",
+          "number": "교육지원과-1200",
+          "subject": "가상 연수",
+          "visibility": "비공개",
+          "privacy_reasons": [
+            6
+          ],
+          "security": "일반",
+          "access_scope": null,
+          "approval_route": [
+            {
+              "id": "AP-02",
+              "organization": "나래초",
+              "role": "검토",
+              "status": "완료"
+            },
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재",
+              "status": "대기"
+            }
+          ],
+          "recipients": [
+            "ORG-01"
+          ],
+          "sender": "나래초등학교장",
+          "auto_send": false
+        },
+        "body": {
+          "p1": "목적: 가상 연수 참가 안내",
+          "table.r1": "대상: 담당 교사 1명",
+          "table.r2": "연수 일시: 2026. 11. 25. 14:00~16:00",
+          "table.r3": "제출 기한: 2026. 11. 24. 15:00",
+          "p2": "해야 할 일: 참가 명단 제출",
+          "p3": "예외: 기제출자는 재제출하지 않음"
+        },
+        "source_prefix": "DOC-01:",
+        "unchanged": true,
+        "unread_objects": []
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "document_id": "DOC-01",
+        "facts": {
+          "purpose": "가상 연수 참가 안내",
+          "audience": "담당 교사 1명",
+          "event": "가상 연수"
+        },
+        "sources": {
+          "purpose": "가상 연수 참가 안내",
+          "audience": "담당 교사 1명",
+          "event": "가상 연수"
+        },
+        "original_unchanged": true,
+        "unread_objects": []
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [
+      "DOC-01"
+    ],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false
+  },
+  "report": {
+    "document_id": "DOC-01",
+    "facts": {
+      "purpose": "가상 연수 참가 안내",
+      "audience": "담당 교사 1명",
+      "event": "가상 연수"
+    },
+    "sources": {
+      "purpose": "가상 연수 참가 안내",
+      "audience": "담당 교사 1명",
+      "event": "가상 연수"
+    },
+    "original_unchanged": true,
+    "unread_objects": []
+  },
+  "checks": {
+    "K1": true,
+    "K2": false,
+    "K3": false,
+    "K4": false
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

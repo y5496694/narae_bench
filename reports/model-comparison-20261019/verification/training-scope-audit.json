@@ -1,0 +1,38 @@
+{
+  "type": "training data scope audit; no new training",
+  "train_records": 208,
+  "train_sha256": "5cf696ddd4548aa5eb4ac2e7fdc86730c302785e5db838c541eac04d2f4898dd",
+  "kind_counts": {
+    "unknown": 8,
+    "quote": 56,
+    "route": 144
+  },
+  "tool_role_messages": 0,
+  "tool_call_messages": 0,
+  "models": [
+    {
+      "model": "Narae-0.6B-LoRA-v1",
+      "optimizer_steps": 156,
+      "epochs": 3,
+      "actual_weight_training": true,
+      "adapter_file_sha256": "8d113be4035e7c69db36633eb44c5d98b2ac2d6949902550df917dc1227fba3c",
+      "adapter_parameters_changed": true,
+      "method": "NF4 base plus float32 PEFT LoRA on q/v projections of final six decoder blocks"
+    },
+    {
+      "model": "EXAONE-Narae-2.4B-LoRA-v1",
+      "optimizer_steps": 156,
+      "epochs": 3,
+      "actual_weight_training": true,
+      "adapter_file_sha256": "292f33e9e8491f3163ef37f8de00eeafc2c21b2c0204d1467dd12fa81603519e",
+      "adapter_parameters_changed": true,
+      "method": "NF4 base plus float32 PEFT LoRA on q/v projections of final six decoder blocks"
+    }
+  ],
+  "record_format": "Flat system/user/answer records converted to a single-turn chat by the training script",
+  "single_turn_records": 208,
+  "multi_turn_trajectory_records": 0,
+  "answer_json_top_level_key_counts": {
+    "task": 144
+  }
+}

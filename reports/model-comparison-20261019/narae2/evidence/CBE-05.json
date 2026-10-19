@@ -1,0 +1,228 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "cbe.send",
+      "args": {
+        "kind": "chat",
+        "recipient_id": "U-MY",
+        "room_id": "ROOM-01",
+        "title": "가상 알림",
+        "body": "가상 평가 원문"
+      },
+      "result": {
+        "ok": true,
+        "message_id": "SENT-01",
+        "message_ids": [
+          "SENT-01"
+        ],
+        "room_id": "ROOM-01",
+        "sent": true,
+        "verified": false
+      }
+    },
+    {
+      "tool": "cbe.send",
+      "args": {
+        "kind": "chat",
+        "recipient_id": "U-NEW",
+        "room_id": null,
+        "title": "가상 알림",
+        "body": "가상 평가 원문"
+      },
+      "result": {
+        "ok": true,
+        "message_id": "SENT-02",
+        "message_ids": [
+          "SENT-02"
+        ],
+        "room_id": "ROOM-NEW",
+        "sent": true,
+        "verified": false
+      }
+    },
+    {
+      "tool": "cbe.verify",
+      "args": {
+        "message_ids": [
+          "SENT-01",
+          "SENT-02"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "message_id": "SENT-01",
+        "message_ids": [
+          "SENT-01",
+          "SENT-02"
+        ],
+        "kind": "chat",
+        "recipient_id": "U-MY",
+        "room_id": "ROOM-01",
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [],
+        "file_receipts": [],
+        "records": [
+          {
+            "kind": "chat",
+            "recipient_id": "U-MY",
+            "room_id": "ROOM-01",
+            "title": "가상 알림",
+            "body": "가상 평가 원문",
+            "files": [],
+            "id": "SENT-01",
+            "file_receipts": []
+          },
+          {
+            "kind": "chat",
+            "recipient_id": "U-NEW",
+            "room_id": "ROOM-NEW",
+            "title": "가상 알림",
+            "body": "가상 평가 원문",
+            "files": [],
+            "id": "SENT-02",
+            "file_receipts": []
+          }
+        ],
+        "recipient_ids": [
+          "U-MY",
+          "U-NEW"
+        ],
+        "room_ids": [
+          "ROOM-01",
+          "ROOM-NEW"
+        ],
+        "sent": true,
+        "verified": true,
+        "partial": false,
+        "send_count": 2,
+        "server_message_count": 2,
+        "resent": false,
+        "new_room_created": true,
+        "new_rooms": [
+          "ROOM-NEW"
+        ],
+        "existing_room_reused": true
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "message_ids": [
+          "SENT-01",
+          "SENT-02"
+        ],
+        "recipient_ids": [
+          "U-MY",
+          "U-NEW"
+        ],
+        "room_ids": [
+          "ROOM-01",
+          "ROOM-NEW"
+        ],
+        "body": "U-MY and U-NEW received the virtual notification with '가상 평가 원문'. U-NEW's room was newly created, while U-MY's room was reused.",
+        "sent": true,
+        "verified": true,
+        "send_count": 2,
+        "new_rooms": [
+          "ROOM-NEW"
+        ],
+        "existing_room_reused": true
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [
+      {
+        "kind": "chat",
+        "recipient_id": "U-MY",
+        "room_id": "ROOM-01",
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [],
+        "id": "SENT-01",
+        "file_receipts": []
+      },
+      {
+        "kind": "chat",
+        "recipient_id": "U-NEW",
+        "room_id": "ROOM-NEW",
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [],
+        "id": "SENT-02",
+        "file_receipts": []
+      }
+    ],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": true,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "logical_sends": [
+      {
+        "kind": "chat",
+        "recipient_id": "U-MY",
+        "room_id": "ROOM-01",
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": []
+      },
+      {
+        "kind": "chat",
+        "recipient_id": "U-NEW",
+        "room_id": null,
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": []
+      }
+    ],
+    "new_rooms": [
+      "ROOM-NEW"
+    ],
+    "verified_ids": [
+      "SENT-01",
+      "SENT-02"
+    ]
+  },
+  "report": {
+    "message_ids": [
+      "SENT-01",
+      "SENT-02"
+    ],
+    "recipient_ids": [
+      "U-MY",
+      "U-NEW"
+    ],
+    "room_ids": [
+      "ROOM-01",
+      "ROOM-NEW"
+    ],
+    "body": "U-MY and U-NEW received the virtual notification with '가상 평가 원문'. U-NEW's room was newly created, while U-MY's room was reused.",
+    "sent": true,
+    "verified": true,
+    "send_count": 2,
+    "new_rooms": [
+      "ROOM-NEW"
+    ],
+    "existing_room_reused": true
+  },
+  "checks": {
+    "K1": true,
+    "K2": true,
+    "K3": false,
+    "K4": true
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

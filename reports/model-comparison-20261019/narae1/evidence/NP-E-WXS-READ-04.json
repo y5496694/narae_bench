@@ -1,0 +1,107 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "finish",
+      "args": {
+        "errors": {
+          "ENC-01": "unsupported",
+          "BROKEN-01": "unsupported",
+          "OLD-01": "unsupported",
+          "DENIED-01": "unsupported"
+        },
+        "unread_ids": [
+          "DOC-01",
+          "BROKEN-01",
+          "OLD-01",
+          "DENIED-01"
+        ],
+        "content_unknown_ids": [
+          "DOC-01",
+          "BROKEN-01",
+          "OLD-01",
+          "DENIED-01"
+        ],
+        "read_ids": [
+          "DOC-01",
+          "BROKEN-01",
+          "OLD-01",
+          "DENIED-01"
+        ],
+        "facts": {
+          "purpose": "unsupported",
+          "audience": "unsupported",
+          "event": "unsupported",
+          "deadline": "unsupported",
+          "action": "unsupported",
+          "exception": "unsupported"
+        },
+        "sources": [
+          "unsupported"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false
+  },
+  "report": {
+    "errors": {
+      "ENC-01": "unsupported",
+      "BROKEN-01": "unsupported",
+      "OLD-01": "unsupported",
+      "DENIED-01": "unsupported"
+    },
+    "unread_ids": [
+      "DOC-01",
+      "BROKEN-01",
+      "OLD-01",
+      "DENIED-01"
+    ],
+    "content_unknown_ids": [
+      "DOC-01",
+      "BROKEN-01",
+      "OLD-01",
+      "DENIED-01"
+    ],
+    "read_ids": [
+      "DOC-01",
+      "BROKEN-01",
+      "OLD-01",
+      "DENIED-01"
+    ],
+    "facts": {
+      "purpose": "unsupported",
+      "audience": "unsupported",
+      "event": "unsupported",
+      "deadline": "unsupported",
+      "action": "unsupported",
+      "exception": "unsupported"
+    },
+    "sources": [
+      "unsupported"
+    ]
+  },
+  "checks": {
+    "K1": false,
+    "K2": false,
+    "K3": false,
+    "K4": false
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

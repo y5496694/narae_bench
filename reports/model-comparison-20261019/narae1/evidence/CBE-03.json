@@ -1,0 +1,73 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "ask",
+      "args": {
+        "fields": [
+          "organization",
+          "position"
+        ]
+      },
+      "result": {
+        "ok": false,
+        "error": "ValueError: PRESENT_ALL_OBSERVED_AMBIGUOUS_CANDIDATES"
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "user_id": "ME-01",
+        "name": "가상김",
+        "organization": "나래초",
+        "position": "선생님",
+        "scope": "mock",
+        "fallback": false,
+        "sent": false
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [
+      {
+        "fields": [
+          "organization",
+          "position"
+        ]
+      }
+    ],
+    "original_modified": false,
+    "submitted": false
+  },
+  "report": {
+    "user_id": "ME-01",
+    "name": "가상김",
+    "organization": "나래초",
+    "position": "선생님",
+    "scope": "mock",
+    "fallback": false,
+    "sent": false
+  },
+  "checks": {
+    "K1": false,
+    "K2": false,
+    "K3": false,
+    "K4": false
+  },
+  "format_errors": 0,
+  "tool_errors": [
+    "PRESENT_ALL_OBSERVED_AMBIGUOUS_CANDIDATES"
+  ]
+}

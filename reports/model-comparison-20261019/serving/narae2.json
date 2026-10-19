@@ -1,0 +1,69 @@
+{
+  "identity": {
+    "tag": "narae2",
+    "alias": "EXAONE-Narae-2.4B-LoRA-v1",
+    "file": "D:\\Codex\\ollama\\models\\blobs\\sha256-d6e077ce2bb2d36ad179739ea96d8b8d387f024b0bedede04741745d21c41b28",
+    "sha256": "d6e077ce2bb2d36ad179739ea96d8b8d387f024b0bedede04741745d21c41b28",
+    "source": {
+      "repo_id": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+      "revision": "ccce25bd39c141fe053e0bc75818a8f5fe962802",
+      "path": "D:\\Codex\\training\\narae-sft-20261019\\models\\base-2.4b",
+      "role": "Unmodified upstream base files; learned adapters are stored in outputs."
+    },
+    "narae_weight_training": true,
+    "adapter": {
+      "model": "EXAONE-Narae-2.4B-LoRA-v1",
+      "tensors": 24,
+      "all_f32_tensors_bitwise_equal": true,
+      "source_sha256": "292f33e9e8491f3163ef37f8de00eeafc2c21b2c0204d1467dd12fa81603519e",
+      "export_sha256": "37c7fb7703e06027c7ca14e0a47fd99f86e9fa267c41e92ef45e8b5c21a967cc",
+      "file": "D:\\Codex\\training\\narae-sft-20261019\\exports\\EXAONE-Narae-2.4B-LoRA-v1-f32.gguf"
+    },
+    "optimizer_steps": 156
+  },
+  "loaded_adapters": [
+    {
+      "id": 0,
+      "path": "D:\\Codex\\training\\narae-sft-20261019\\exports\\EXAONE-Narae-2.4B-LoRA-v1-f32.gguf",
+      "scale": 1.0,
+      "task_name": "",
+      "prompt_prefix": ""
+    }
+  ],
+  "command": [
+    "D:\\Codex\\tools\\llama-b11669-win-cpu\\llama-server.exe",
+    "--model",
+    "D:\\Codex\\ollama\\models\\blobs\\sha256-d6e077ce2bb2d36ad179739ea96d8b8d387f024b0bedede04741745d21c41b28",
+    "--alias",
+    "EXAONE-Narae-2.4B-LoRA-v1",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18464",
+    "--threads",
+    "6",
+    "--threads-batch",
+    "6",
+    "--ctx-size",
+    "8192",
+    "--parallel",
+    "1",
+    "--batch-size",
+    "512",
+    "--ubatch-size",
+    "128",
+    "--cache-ram",
+    "0",
+    "--no-context-shift",
+    "--no-warmup",
+    "--no-webui",
+    "--seed",
+    "719",
+    "--chat-template-kwargs",
+    "{\"enable_thinking\":false}",
+    "--lora",
+    "D:\\Codex\\training\\narae-sft-20261019\\exports\\EXAONE-Narae-2.4B-LoRA-v1-f32.gguf"
+  ],
+  "executable_sha256": "6a4635aeb35656153d4bfeeddf761d24ed84aada9c9108d580737cbed465141b",
+  "output_protocol": "OpenAI-compatible UTF-8 JSON message.content; native final usage counters"
+}

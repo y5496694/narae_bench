@@ -1,0 +1,105 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "cbe.verify",
+      "args": {
+        "message_id": "SENT-01"
+      },
+      "result": {
+        "ok": true,
+        "message_id": "SENT-01",
+        "message_ids": [
+          "SENT-01"
+        ],
+        "recipient_id": "U-MY",
+        "kind": "note",
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [],
+        "file_receipts": [],
+        "records": [
+          {
+            "id": "SENT-01",
+            "recipient_id": "U-MY",
+            "kind": "note",
+            "title": "가상 알림",
+            "body": "가상 평가 원문",
+            "files": []
+          }
+        ],
+        "recipient_ids": [
+          "U-MY"
+        ],
+        "room_ids": [
+          null
+        ],
+        "sent": true,
+        "verified": true,
+        "partial": false,
+        "send_count": 1,
+        "server_message_count": 1,
+        "resent": false,
+        "new_room_created": false,
+        "new_rooms": [],
+        "existing_room_reused": false
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "message_id": "SENT-01",
+        "recipient_id": "U-MY",
+        "sent": true,
+        "verified": true,
+        "partial": false,
+        "resent": false
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [
+      {
+        "id": "SENT-01",
+        "recipient_id": "U-MY",
+        "kind": "note",
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": []
+      }
+    ],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": true,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "verified_ids": [
+      "SENT-01"
+    ]
+  },
+  "report": {
+    "message_id": "SENT-01",
+    "recipient_id": "U-MY",
+    "sent": true,
+    "verified": true,
+    "partial": false,
+    "resent": false
+  },
+  "checks": {
+    "K1": true,
+    "K2": true,
+    "K3": true,
+    "K4": true
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}
