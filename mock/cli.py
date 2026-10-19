@@ -115,7 +115,7 @@ def prepare(args):
     from mock_workflow import fixture_files
     fixture_files()
     run = json.loads((state / "common-fixture/results.json").read_text(encoding="utf-8"))
-    run.update(mode="mock", profile="high-level-mock-cli-v2", model="external-agent-not-specified",
+    run.update(mode="mock", profile="high-level-mock-cli-v2.1", model="external-agent-not-specified",
                support_frozen_before_run=True, reviewer="automated mock state checks; no independent human semantic review")
     for case, row in zip(catalog, run["results"]):
         reason = blocked(case["id"])
@@ -144,8 +144,8 @@ def run_case(args):
 def execute_case(state, case, World):
     with lock(state / "locks" / "results.lock"):
         results = json.loads((state / "results.json").read_text(encoding="utf-8"))
-    if results["profile"] != "high-level-mock-cli-v2":
-        raise ValueError("This evaluator requires a fresh v2 state; historical v1 runs are preserved")
+    if results["profile"] != "high-level-mock-cli-v2.1":
+        raise ValueError("This evaluator requires a fresh v2.1 state; historical runs are preserved")
     row = next(r for r in results["results"] if r["case_id"] == case["id"])
     if row["status"] != "NOT_RUN":
         raise ValueError("Case already executed; prepare a fresh state directory")

@@ -490,7 +490,13 @@ class World:
             n=int(cid[-2:])
             if n<=4:
                 good=self.oracle[0][1]
-                require(checks,any(all(q.get(k)==v for k,v in good.items()) for q in s["queries"]))
+                # Coverage is an observed result, not a redundant request flag.
+                # A complete single-page response is sufficient; requested filters
+                # still have to match, and has_more=true must never count as full.
+                require(checks,any(t["tool"]=="documents.query" and t["result"].get("ok") is True
+                                   and t["result"].get("has_more") is False
+                                   and all(t["args"].get(k)==v for k,v in good.items() if k!="all_pages")
+                                   for t in self.trace))
             elif n==5:
                 require(["K1","K2"],any(q.get("condition")=="A" and q.get("all_pages") is True for q in s["queries"]))
                 require(["K3"],any(q.get("condition")=="B" for q in s["queries"]))
