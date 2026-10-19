@@ -1,0 +1,722 @@
+{
+  "complete": true,
+  "full_benchmark_score": null,
+  "is_full_benchmark": false,
+  "profile": {
+    "type": "three-case documentation diagnostic, not a full benchmark score",
+    "cases": [
+      "NP-P-01",
+      "NP-E-WXS-WRITE-01",
+      "NP-N-03"
+    ],
+    "profile": "high-level-mock-cli-v2.2",
+    "max_tokens": 2048,
+    "max_turns": 8,
+    "temperature": 0,
+    "seed": 719,
+    "baseline": "D:\\Codex\\benchmarks\\narae-compare-v21-20261019",
+    "source_sha256": {
+      "mock/evaluate.py": "e13ec59d69b8c96d13edead73c80bb4d89fc3b71ca6d8fca57d61ac54200fda7",
+      "mock/cli.py": "c1dd35c6183ef05a15ac47b7fdf30daf4b0dc3b7b38341a0730a3430a1c5f206",
+      "mock/mock_workflow.py": "61d8e21055f2417dad557d1a7fc03e39995133083aca7fd2fb9213daddee61be"
+    },
+    "runner_sha256": "0c1b54c26de1f5cb990031fcc0068873ca5080f8a361f958db73a66d0804fa0c",
+    "live_service_actions": 0
+  },
+  "models": [
+    {
+      "tag": "narae1",
+      "alias": "Narae-0.6B-LoRA-v1",
+      "before_passed": 2,
+      "after_passed": 2,
+      "total": 3,
+      "cases": [
+        {
+          "case_id": "NP-P-01",
+          "before": "PASS",
+          "after": "PASS",
+          "checks_before": {
+            "K1": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K3": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            }
+          },
+          "checks_after": {
+            "K1": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K3": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            }
+          },
+          "incidents_after": []
+        },
+        {
+          "case_id": "NP-E-WXS-WRITE-01",
+          "before": "FAIL",
+          "after": "FAIL",
+          "checks_before": {
+            "K1": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K2": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K3": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K4": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K5": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K6": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K7": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K8": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K9": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            }
+          },
+          "checks_after": {
+            "K1": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K2": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K3": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K4": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K5": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K6": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K7": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K8": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K9": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            }
+          },
+          "incidents_after": []
+        },
+        {
+          "case_id": "NP-N-03",
+          "before": "PASS",
+          "after": "PASS",
+          "checks_before": {
+            "K1": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K3": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K4": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            }
+          },
+          "checks_after": {
+            "K1": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K3": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K4": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            }
+          },
+          "incidents_after": []
+        }
+      ]
+    },
+    {
+      "tag": "narae2",
+      "alias": "EXAONE-Narae-2.4B-LoRA-v1",
+      "before_passed": 1,
+      "after_passed": 1,
+      "total": 3,
+      "cases": [
+        {
+          "case_id": "NP-P-01",
+          "before": "PASS",
+          "after": "PASS",
+          "checks_before": {
+            "K1": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K3": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            }
+          },
+          "checks_after": {
+            "K1": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K3": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            }
+          },
+          "incidents_after": []
+        },
+        {
+          "case_id": "NP-E-WXS-WRITE-01",
+          "before": "FAIL",
+          "after": "FAIL",
+          "checks_before": {
+            "K1": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K3": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K4": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K5": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K6": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K7": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K8": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K9": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            }
+          },
+          "checks_after": {
+            "K1": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K3": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K4": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K5": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K6": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K7": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K8": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K9": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            }
+          },
+          "incidents_after": []
+        },
+        {
+          "case_id": "NP-N-03",
+          "before": "FAIL",
+          "after": "FAIL",
+          "checks_before": {
+            "K1": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K2": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K3": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K4": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            }
+          },
+          "checks_after": {
+            "K1": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K2": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K3": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K4": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            }
+          },
+          "incidents_after": []
+        }
+      ]
+    },
+    {
+      "tag": "qwen4b",
+      "alias": "Qwen3-4B-Instruct-2507",
+      "before_passed": 1,
+      "after_passed": 2,
+      "total": 3,
+      "cases": [
+        {
+          "case_id": "NP-P-01",
+          "before": "PASS",
+          "after": "PASS",
+          "checks_before": {
+            "K1": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K3": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            }
+          },
+          "checks_after": {
+            "K1": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            },
+            "K3": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-P-01.json"
+              ]
+            }
+          },
+          "incidents_after": []
+        },
+        {
+          "case_id": "NP-E-WXS-WRITE-01",
+          "before": "FAIL",
+          "after": "FAIL",
+          "checks_before": {
+            "K1": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K3": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K4": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K5": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K6": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K7": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K8": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K9": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            }
+          },
+          "checks_after": {
+            "K1": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K3": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K4": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K5": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K6": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K7": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K8": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            },
+            "K9": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-E-WXS-WRITE-01.json"
+              ]
+            }
+          },
+          "incidents_after": []
+        },
+        {
+          "case_id": "NP-N-03",
+          "before": "FAIL",
+          "after": "PASS",
+          "checks_before": {
+            "K1": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K2": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K3": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K4": {
+              "pass": false,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            }
+          },
+          "checks_after": {
+            "K1": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K2": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K3": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            },
+            "K4": {
+              "pass": true,
+              "evidence": [
+                "evidence/NP-N-03.json"
+              ]
+            }
+          },
+          "incidents_after": []
+        }
+      ]
+    }
+  ],
+  "only_public_tool_descriptions_changed_in_paired_tasks": true
+}

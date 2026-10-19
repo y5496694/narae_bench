@@ -1,0 +1,27 @@
+{
+  "type": "three-case synthetic diagnostic, not full benchmark",
+  "files": {
+    "diagnostic.json": "7cfa6dee358243dc4231eeebbdcede232ca1b3f36d2e8d2c7902394790f16809",
+    "narae1/evidence/NP-E-WXS-WRITE-01.json": "67b801fe0cc60683aab02d595b6006927a020960ed0567953dfc38ea0283aeda",
+    "narae1/evidence/NP-N-03.json": "a4f3033abb8007d04eb32573c8e95b46c5f1a6a96654b84fe206031be510bbe6",
+    "narae1/evidence/NP-P-01.json": "9e2f306bffb487d038b6aa73d106be4fb9203658b868cf97cfa0f1ea1eb66ecc",
+    "narae1/model-transcript.jsonl": "ad3c0063bae6625e678d1ebcb3393f29521b4105f2a0955f0fc2ddd85196e8ce",
+    "narae1/selected-results.json": "4fa318516011ebc178c4aa6d6c817874459d5bb31b41e8d40f842c61c699471b",
+    "narae2/evidence/NP-E-WXS-WRITE-01.json": "67508053b6a1aba7cdf4d10a84ae2bf2209e5e9ba150ec2dcb1d095482eeef52",
+    "narae2/evidence/NP-N-03.json": "a1325bb448dfa1ee93a0d0a3bf6ccbed025a42124600acfaf5e585a792213305",
+    "narae2/evidence/NP-P-01.json": "2de5a8f11df8804865f1712569ed924c54bec6825e6c471f4f33e78d6343fa6c",
+    "narae2/model-transcript.jsonl": "d2329f610288fcca3b86637bf7e28e61410d9d4b28f3c03f3acbfa0393575ffb",
+    "narae2/selected-results.json": "0d8bea2f4e787f8fb8cfb2b76be0b3dc78bc240fd263e2beacbe7f9d42e6c37b",
+    "profile.json": "1b454de4bdeffcabe14e8680820f66500572f4d425541314a5012112b3bdc637",
+    "qwen4b/evidence/NP-E-WXS-WRITE-01.json": "6725c3f8392daf06d0fa7f5f095dcc66b6b68dd3ad967d1bac8eb044aae1b4ba",
+    "qwen4b/evidence/NP-N-03.json": "a4f3033abb8007d04eb32573c8e95b46c5f1a6a96654b84fe206031be510bbe6",
+    "qwen4b/evidence/NP-P-01.json": "2de5a8f11df8804865f1712569ed924c54bec6825e6c471f4f33e78d6343fa6c",
+    "qwen4b/model-transcript.jsonl": "18e15e86f583eca8da1d3874f8b3242e5099ef56c1c72def39c26712bad53a5a",
+    "qwen4b/selected-results.json": "5294e011f04cda549e3c56f9207b629a1e71d15e123d86d09a6513aa68855528",
+    "README.md": "980376f215fa3d38fa9fde829e1954cae4908c15addad45d07fb382212bee5d5",
+    "recipe/run_diagnostic.py": "0c1b54c26de1f5cb990031fcc0068873ca5080f8a361f958db73a66d0804fa0c",
+    "serving/narae1.json": "979dafb67f6d732ff035f2398b0d5c9e5904bc73e5e0906bba4262fc0ba31a7b",
+    "serving/narae2.json": "0f36343968b072c47f8002ddb621c30b905683cc060ed84794a161656ef4f2c7",
+    "serving/qwen4b.json": "85e0bf0e76586bcf22bf5d84cc2bc5e5791544d7e4c0bd9153958137b87b2f42"
+  }
+}

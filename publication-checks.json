@@ -10,7 +10,7 @@
   "live_service_actions": 0,
   "model_weights_included": false,
   "model_scores_included": true,
-  "current_mock_profile": "high-level-mock-cli-v2.1",
+  "current_mock_profile": "high-level-mock-cli-v2.2",
   "mock_v2_regression_tests_passed": 5,
   "model_score_scope": "Fixed-budget local SFT v1 and upstream 4B model runs on v2.1; historical assisted Codex self-run is separate",
   "self_run_report": "reports/codex-self-20261019.json",
@@ -18,5 +18,9 @@
   "single_page_coverage_regression_tests_passed": 4,
   "model_comparison_report": "reports/narae-models-20261019.json",
   "model_case_audit_passed": 108,
-  "identical_initial_prompt_cases_verified": 36
+  "identical_initial_prompt_cases_verified": 36,
+  "full_model_comparison_profile": "high-level-mock-cli-v2.1",
+  "windows_reader_lock_integration_tests_passed": 1,
+  "contract_v22_diagnostic_report": "reports/contract-v22-20261019/README.md",
+  "contract_v22_diagnostic_model_cases": 9
 }

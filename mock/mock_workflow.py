@@ -199,7 +199,7 @@ class World:
             self.state["saved"]=copy.deepcopy(self.state["draft"])
             self.initial["draft"]=copy.deepcopy(self.state["draft"]);self.initial["save_result"]="unknown"
             self.initial["completed_steps"]=["title","visibility","approval_route","recipients","attachment_1","body"];self.initial["attempted_step"]="save"
-        self.tool("wxs.apply","args: fields object. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.")
+        self.tool("wxs.apply",'args JSON structure: {"fields": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.')
         self.tool("wxs.save","args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.")
         self.tool("wxs.saved","args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown.")
         gold={"draft_id":"DRAFT-01","saved":True,"verified":True,"submitted":False,"sent":False,"title":fields["title"],"visibility":fields["visibility"],"attachment_count":len(files),"recipient_ids":recipients,"auto_send":fields["auto_send"]}
@@ -226,7 +226,7 @@ class World:
             if n==5:public.pop("end");public["approval_route"]=[{"name":"가상교장"}]
             self.request="다음 허용된 가상 복무 값을 상신 직전까지만 준비하세요. 최종 상신 금지.\n"+json.dumps(public,ensure_ascii=False)
             self.initial["form"]={"type":"","date":"","start":"","end":"","approval_route":[]};self.initial["working_hours"]="08:30~16:30"
-            self.tool("neis.prepare","args: fields object matching request, including type,date,start,end,reason,destination,transport,expense,companions,approval_route. Does not submit. Returns calculated duration and final preparation state.")
+            self.tool("neis.prepare",'args JSON structure: {"fields": {}}. Put the complete requested leave/travel object inside args.fields, including type,date,start,end,reason,destination,transport,expense,companions,approval_route. Does not submit. Returns calculated duration and final preparation state.')
             if n==5:self.tool("ask","args: fields=[end,approver_organization], candidates=[AP-01,AP-OTHER]. A scripted user provides only the missing information after a specific question.")
             gold={"fields":fields,"duration_minutes":120,"ready":True,"submitted":False,"saved_separately":False}
             steps=[]

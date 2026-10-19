@@ -1,0 +1,143 @@
+{
+  "is_full_benchmark": false,
+  "cases": [
+    {
+      "case_id": "NP-P-01",
+      "status": "PASS",
+      "failure_layer": "NONE",
+      "declared_supported": true,
+      "active_seconds": 7.583,
+      "wall_seconds": 7.583,
+      "tool_calls": 1,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-P-01.json"
+          ]
+        },
+        "K2": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-P-01.json"
+          ]
+        },
+        "K3": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-P-01.json"
+          ]
+        }
+      },
+      "notes": "Automated high-level mock state checks; stdin session duration includes caller wait time."
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-01",
+      "status": "FAIL",
+      "failure_layer": "MODEL",
+      "declared_supported": true,
+      "active_seconds": 27.214,
+      "wall_seconds": 27.214,
+      "tool_calls": 2,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K2": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K3": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K4": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K5": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K6": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K7": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K8": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K9": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        }
+      },
+      "notes": "Automated high-level mock state checks; stdin session duration includes caller wait time."
+    },
+    {
+      "case_id": "NP-N-03",
+      "status": "FAIL",
+      "failure_layer": "MODEL",
+      "declared_supported": true,
+      "active_seconds": 25.096,
+      "wall_seconds": 25.096,
+      "tool_calls": 8,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-N-03.json"
+          ]
+        },
+        "K2": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-N-03.json"
+          ]
+        },
+        "K3": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-N-03.json"
+          ]
+        },
+        "K4": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-N-03.json"
+          ]
+        }
+      },
+      "notes": "Automated high-level mock state checks; stdin session duration includes caller wait time."
+    }
+  ]
+}
