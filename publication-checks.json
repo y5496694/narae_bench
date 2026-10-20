@@ -10,7 +10,7 @@
   "live_service_actions": 0,
   "model_weights_included": false,
   "model_scores_included": true,
-  "current_mock_profile": "high-level-mock-cli-v2.2",
+  "current_mock_profile": "high-level-mock-cli-v2.3",
   "mock_v2_regression_tests_passed": 5,
   "model_score_scope": "Fixed-budget local SFT v1/v2, actual Qwen-based Narae3 LoRA and historical upstream 4B runs on v2.1; assisted Codex self-run and v2.2 diagnostics are separate",
   "self_run_report": "reports/codex-self-20261019.json",
@@ -41,5 +41,14 @@
   "narae3_discarded_first_attempt_updates": 41,
   "narae3_actual_learned_adapter_launcher_verified": true,
   "narae3_model_weights_included": false,
-  "narae3_raw_training_records_included": false
+  "narae3_raw_training_records_included": false,
+  "write_benchmark_audit_report": "reports/write-bench-audit-20261020/README.md",
+  "write_grader_regression_tests_passed": 5,
+  "write_audit_historical_model_cases_replayed": 24,
+  "write_audit_historical_checksets_unchanged": 24,
+  "write_audit_public_only_controls_per_revision": 9,
+  "write_audit_valid_public_workflow_controls_per_revision": 4,
+  "write_audit_actual_model_format_diagnostic_cases": 2,
+  "write_audit_weight_training_performed": false,
+  "write_audit_old_model_scores_changed": false
 }

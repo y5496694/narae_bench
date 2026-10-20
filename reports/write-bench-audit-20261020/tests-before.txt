@@ -1,0 +1,50 @@
+FF..FFF
+======================================================================
+FAIL: test_multiple_attachments_require_each_label_quantity_and_number (__main__.WritingContracts.test_multiple_attachments_require_each_label_quantity_and_number)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_write_contracts.py", line 52, in test_multiple_attachments_require_each_label_quantity_and_number
+    self.assertFalse(execute('NP-E-WXS-WRITE-02',omit_number).grade()['K8'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_recovery_accepts_windows_line_endings (__main__.WritingContracts.test_recovery_accepts_windows_line_endings)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_write_contracts.py", line 56, in test_recovery_accepts_windows_line_endings
+    self.assertTrue(all(execute('NP-E-WXS-WRITE-04',crlf).grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_wrong_attachment_label_quantity_and_number_are_rejected (__main__.WritingContracts.test_wrong_attachment_label_quantity_and_number_are_rejected) (suffix='붙임  다른 문서 999부.  끝.')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_write_contracts.py", line 47, in test_wrong_attachment_label_quantity_and_number_are_rejected
+    self.assertFalse(w.grade()['K8'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_wrong_attachment_label_quantity_and_number_are_rejected (__main__.WritingContracts.test_wrong_attachment_label_quantity_and_number_are_rejected) (suffix='붙임  {label} 2부.  끝.')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_write_contracts.py", line 47, in test_wrong_attachment_label_quantity_and_number_are_rejected
+    self.assertFalse(w.grade()['K8'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_wrong_attachment_label_quantity_and_number_are_rejected (__main__.WritingContracts.test_wrong_attachment_label_quantity_and_number_are_rejected) (suffix='붙임  7. {label} 1부.  끝.')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_write_contracts.py", line 47, in test_wrong_attachment_label_quantity_and_number_are_rejected
+    self.assertFalse(w.grade()['K8'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.006s
+
+FAILED (failures=5)

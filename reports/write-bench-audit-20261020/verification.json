@@ -1,0 +1,32 @@
+{
+  "verified": true,
+  "historical_write_model_cases_replayed": 24,
+  "unchanged_checksets": 24,
+  "old_model_scores_changed": false,
+  "successful_apply_calls_in_recorded_cases": 0,
+  "nonrecovery_cases_without_body_input": 18,
+  "public_only_controls_per_revision": 9,
+  "valid_public_workflow_controls_passed_before": 4,
+  "valid_public_workflow_controls_passed_after": 4,
+  "wrong_attachment_controls_accepted_before": 2,
+  "wrong_attachment_controls_accepted_after": 0,
+  "windows_newline_recovery_accepted_before": false,
+  "windows_newline_recovery_accepted_after": true,
+  "invalid_body_and_missing_attachment_still_rejected": true,
+  "new_writing_unit_tests_passed": 5,
+  "other_checked_suites": {
+    "mock_positive_cases": 36,
+    "mock_negative_cases": 4,
+    "v2_regressions": 5,
+    "model_runner_regressions": 9,
+    "coverage_regressions": 4,
+    "windows_storage_regressions": 1
+  },
+  "paired_actual_model_format_diagnostic_cases": 2,
+  "paired_format_first_messages_equal": true,
+  "paired_schema_request_matches_previous_v22_run": true,
+  "paired_same_actual_weights_and_strength": true,
+  "no_new_full_model_benchmark": true,
+  "weight_training_performed": false,
+  "live_service_actions": 0
+}

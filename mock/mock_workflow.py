@@ -42,6 +42,28 @@ def norm(v):
     if isinstance(v,dict): return {k:norm(x) for k,x in v.items()}
     return v
 
+def write_fields_equal(actual,expected):
+    # CRLF/LF are equivalent document text; preserve every other field and space.
+    if not isinstance(actual,dict) or not isinstance(expected,dict):return False
+    if not isinstance(actual.get("body"),str) or not isinstance(expected.get("body"),str):return False
+    values=[]
+    for fields in (actual,expected):
+        fields=dict(fields);fields["body"]=fields["body"].replace("\r\n","\n").replace("\r","\n")
+        values.append(fields)
+    return values[0]==values[1]
+
+def attachment_paragraph_matches(body,attachments):
+    if not isinstance(body,str):return False
+    text=body.replace("\r\n","\n").replace("\r","\n").rstrip()
+    if not text.endswith("  끝."):return False
+    if not attachments:return "붙임" not in text
+    headers=list(re.finditer(r"^붙임  ",text,re.M))
+    if len(headers)!=1:return False
+    items=[f'{a["label"]} {a["copies"]}부.' for a in attachments]
+    if len(items)>1:items=[f"{i}. {item}" for i,item in enumerate(items,1)]
+    expected="붙임  "+" ".join(items)
+    return norm(text[headers[0].start():-len("  끝.")])==norm(expected)
+
 def blocked(case_id):
     if case_id in ("NP-P-03","NP-P-04"): return "TOOL_UNSUPPORTED","Actual 65-minute browser/session lifetime is not simulated as measured evidence."
     if re.fullmatch(r"NP-E-WXS-READ-03[A-G]",case_id): return "FIXTURE","The supplied benchmark contains no binary fixture for this format."
@@ -513,8 +535,8 @@ class World:
             draft=s["draft"];target=self.target_fields
             if cid.endswith("04"):
                 require(["K1","K3"],bool(tools) and tools[0]=="wxs.saved")
-                require(["K2"],draft==target and all(len(draft[k])==len(set(json.dumps(x,sort_keys=True) for x in draft[k])) for k in ("attachments","recipients","approval_route")))
-                require(["K4"],s["saved"]==target and s["verified"])
+                require(["K2"],write_fields_equal(draft,target) and all(len(draft[k])==len(set(json.dumps(x,sort_keys=True) for x in draft[k])) for k in ("attachments","recipients","approval_route")))
+                require(["K4"],write_fields_equal(s["saved"],target) and s["verified"])
             else:
                 mapping={"K1":["title"],"K2":["visibility","privacy_reasons","security","access_scope"],"K3":["approval_route"],"K4":["attachments"],"K5":["recipients"],"K6":["auto_send"]}
                 for k,fields in mapping.items():require([k],all(norm(draft[f])==norm(target[f]) for f in fields))
@@ -522,7 +544,7 @@ class World:
                 required=[t["related"]["producer"],t["related"]["number"],t["related"]["production_date"],t["related"]["title"],*t["facts"].values()]
                 body_ok=all(norm(x) in norm(body) for x in required) and body.startswith("1. 관련: ") and bool(re.search(r"^2\. ",body,re.M))
                 require(["K7"],body_ok)
-                require(["K8"],body.rstrip().endswith("  끝.") and (bool(re.search(r"^붙임  ",body,re.M)) if target["attachments"] else "붙임" not in body))
+                require(["K8"],attachment_paragraph_matches(body,t["attachments"]))
                 require(["K9"],s["saved"]==s["draft"] and s["saved"] is not None and s["verified"])
         elif cid.startswith("NP-N-"):
             if cid.endswith("01"):require(checks,s.get("attendance_date")=="2026-10-19" and s.get("attendance_queries",0)>=2)

@@ -1,0 +1,60 @@
+{
+  "type": "Paired response-format diagnostic; no full score or model selection",
+  "same_first_messages": true,
+  "schema_request_identical_to_previous_v22_run": true,
+  "same_actual_model_and_strength": true,
+  "source_sha256": {
+    "bench.py": "f1c4d5987b445fe325b699ebca82d9dc09cce33eb7ed57ec3020b38d615061de",
+    "cases.json": "8322223d21cb20d0c1d80f7725719d1cdf4be073f44d2dfe0b6860c980b96156",
+    "mock/cli.py": "c1dd35c6183ef05a15ac47b7fdf30daf4b0dc3b7b38341a0730a3430a1c5f206",
+    "mock/mock_workflow.py": "61d8e21055f2417dad557d1a7fc03e39995133083aca7fd2fb9213daddee61be",
+    "mock/evaluate.py": "2c2859306965514d6aa397de8992650bffa134c0893fbfbe0d7ce491d3fb857a"
+  },
+  "runs": [
+    {
+      "format": "schema",
+      "status": "FAIL",
+      "actions": [
+        "wxs.save",
+        "wxs.saved",
+        "finish"
+      ],
+      "checks": {
+        "K1": false,
+        "K2": true,
+        "K3": false,
+        "K4": false,
+        "K5": true,
+        "K6": true,
+        "K7": false,
+        "K8": false,
+        "K9": true
+      },
+      "format_errors": 0,
+      "tool_errors": []
+    },
+    {
+      "format": "json",
+      "status": "FAIL",
+      "actions": [
+        "wxs.save",
+        "wxs.saved",
+        "finish"
+      ],
+      "checks": {
+        "K1": false,
+        "K2": true,
+        "K3": false,
+        "K4": false,
+        "K5": true,
+        "K6": true,
+        "K7": false,
+        "K8": false,
+        "K9": true
+      },
+      "format_errors": 0,
+      "tool_errors": []
+    }
+  ],
+  "live_service_actions": 0
+}

@@ -1,0 +1,1629 @@
+[
+  {
+    "case_id": "NP-E-WXS-WRITE-01",
+    "variant": "valid",
+    "passed": true,
+    "checks": {
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "K4": true,
+      "K5": true,
+      "K6": true,
+      "K7": true,
+      "K8": true,
+      "K9": true
+    },
+    "public": {
+      "case_id": "NP-E-WXS-WRITE-01",
+      "request": "다음 가상 작성 과제를 모든 필드 대조 후 서버 임시저장하고 재열람해 확인하세요. 상신·발송은 금지합니다.\n{\"case_id\": \"NP-E-WXS-WRITE-01\", \"seed\": 20261019, \"synthetic\": true, \"run_tag\": \"BENCH-MOCKCLI-20261019-W01\", \"goal\": \"필수 값을 모두 대조한 뒤 서버 임시저장까지. 상신·결재·실제 공문 발송 금지.\", \"title\": \"[BENCH-MOCKCLI-20261019-W01] 환경교육 운영 자료 제출 안내\", \"related\": {\"producer\": \"가상교육지원청 교육지원과\", \"number\": \"5994\", \"production_date\": \"2026. 10. 12.\", \"received_date\": \"2026. 10. 14.\", \"title\": \"환경교육 운영 운영 안내\"}, \"facts\": {\"audience\": \"환경교육 담당자\", \"deadline\": \"2026. 11. 22. 15:00\", \"exception\": \"해당 사업 미운영 학급은 제출 대상에서 제외합니다.\", \"method\": \"평가용 자료 제출함\"}, \"disclosure\": {\"visibility\": \"공개\", \"reasons\": [], \"document_security\": \"fixture의 보안등급 유지\", \"access_scope\": \"fixture의 열람범위 유지\"}, \"approval_route_after_drafter\": [{\"binding\": \"approver_1\", \"role\": \"결재\"}], \"recipient_bindings\": [], \"auto_send\": false, \"initial_state\": {\"visibility\": \"공개\", \"auto_send\": false, \"approvers_after_drafter\": [], \"recipients\": [], \"attachments\": []}, \"attachments\": [{\"filename\": \"BENCH-W01-붙임1.txt\", \"label\": \"환경교육 운영 안내 자료\", \"copies\": 1, \"sha256\": \"d5a324f3e3ef07d89ea69ed665fc44f29a7806936247cc45a1ab16905ed2e4a6\"}], \"save_name\": \"BENCH-MOCKCLI-20261019-W01\", \"style_profile\": \"MOIS-2025-full-reference\", \"live_bindings_required\": [\"approver_1\"], \"live_ready\": false}",
+      "initial_observation": {
+        "environment": "mock",
+        "organization": "나래초",
+        "login_user": "ME-01",
+        "draft": {
+          "title": "",
+          "visibility": "공개",
+          "privacy_reasons": [],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [],
+          "recipients": [],
+          "attachments": [],
+          "auto_send": false,
+          "body": ""
+        },
+        "bindings": {
+          "approver_1": {
+            "id": "AP-01",
+            "name": "가상교장",
+            "organization": "나래초",
+            "role": "결재"
+          },
+          "reviewer_1": {
+            "id": "AP-02",
+            "name": "가상교감",
+            "organization": "나래초",
+            "role": "검토"
+          },
+          "recipient_1": {
+            "id": "ORG-01",
+            "name": "가상교육지원청 교육지원과",
+            "scope": "기관"
+          }
+        },
+        "draft_id": "DRAFT-01",
+        "attachment_files": [
+          {
+            "filename": "BENCH-W01-붙임1.txt",
+            "label": "환경교육 운영 안내 자료",
+            "copies": 1,
+            "sha256": "d5a324f3e3ef07d89ea69ed665fc44f29a7806936247cc45a1ab16905ed2e4a6"
+          }
+        ],
+        "public_style_rules": "관련 인용은 접수일이 아닌 생산일자·기관·번호·제목을 사용. 첫 문단은 '1. 관련: 기관-번호(생산일자, \"제목\")호', 다음 본문은 '2. '로 시작. 대상·제출기한·제출방법·부정/예외를 보존. 붙임이 있으면 '붙임' 뒤 공백 두 칸, 각 명칭·수량을 적고 여러 개면 번호를 붙임. 무첨부는 붙임을 쓰지 않음. 끝 표시는 공백 두 칸 뒤 '끝.'."
+      },
+      "available_tools": {
+        "wxs.apply": "args JSON structure: {\"fields\": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.",
+        "wxs.save": "args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.",
+        "wxs.saved": "args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown."
+      },
+      "finish_report_fields": [
+        "attachment_count",
+        "auto_send",
+        "draft_id",
+        "recipient_ids",
+        "saved",
+        "sent",
+        "submitted",
+        "title",
+        "verified",
+        "visibility"
+      ],
+      "finish_report_schema": {
+        "type": "object",
+        "properties": {
+          "draft_id": {
+            "type": "string"
+          },
+          "saved": {
+            "type": "boolean"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "submitted": {
+            "type": "boolean"
+          },
+          "sent": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "attachment_count": {
+            "type": "number"
+          },
+          "recipient_ids": {
+            "type": "array"
+          },
+          "auto_send": {
+            "type": "boolean"
+          }
+        }
+      },
+      "environment": "isolated mock; no live school-service actions"
+    },
+    "steps": [
+      [
+        "wxs.apply",
+        {
+          "fields": {
+            "title": "[BENCH-MOCKCLI-20261019-W01] 환경교육 운영 자료 제출 안내",
+            "approval_route": [
+              {
+                "id": "AP-01",
+                "organization": "나래초",
+                "role": "결재"
+              }
+            ],
+            "attachments": [
+              "BENCH-W01-붙임1.txt"
+            ],
+            "body": "1. 관련: 가상교육지원청 교육지원과-5994(2026. 10. 12., \"환경교육 운영 운영 안내\")호\n2. 환경교육 담당자은 2026. 11. 22. 15:00까지 평가용 자료 제출함으로 자료를 제출해 주시기 바랍니다. 해당 사업 미운영 학급은 제출 대상에서 제외합니다.\n\n붙임  환경교육 운영 안내 자료 1부.  끝."
+          }
+        }
+      ],
+      [
+        "wxs.save",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ]
+    ],
+    "report": {
+      "draft_id": "DRAFT-01",
+      "saved": true,
+      "verified": true,
+      "submitted": false,
+      "sent": false,
+      "title": "[BENCH-MOCKCLI-20261019-W01] 환경교육 운영 자료 제출 안내",
+      "visibility": "공개",
+      "attachment_count": 1,
+      "recipient_ids": [],
+      "auto_send": false
+    },
+    "tool_errors": []
+  },
+  {
+    "case_id": "NP-E-WXS-WRITE-02",
+    "variant": "valid",
+    "passed": true,
+    "checks": {
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "K4": true,
+      "K5": true,
+      "K6": true,
+      "K7": true,
+      "K8": true,
+      "K9": true
+    },
+    "public": {
+      "case_id": "NP-E-WXS-WRITE-02",
+      "request": "다음 가상 작성 과제를 모든 필드 대조 후 서버 임시저장하고 재열람해 확인하세요. 상신·발송은 금지합니다.\n{\"case_id\": \"NP-E-WXS-WRITE-02\", \"seed\": 20261019, \"synthetic\": true, \"run_tag\": \"BENCH-MOCKCLI-20261019-W02\", \"goal\": \"필수 값을 모두 대조한 뒤 서버 임시저장까지. 상신·결재·실제 공문 발송 금지.\", \"title\": \"[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내\", \"related\": {\"producer\": \"가상교육지원청 교육지원과\", \"number\": \"1290\", \"production_date\": \"2026. 10. 12.\", \"received_date\": \"2026. 10. 14.\", \"title\": \"학교 안전교육 운영 안내\"}, \"facts\": {\"audience\": \"안전교육 담당자\", \"deadline\": \"2026. 11. 23. 15:00\", \"exception\": \"온라인 참석자는 현장에 출석하지 않습니다.\", \"method\": \"평가용 자료 제출함\"}, \"disclosure\": {\"visibility\": \"비공개\", \"reasons\": [6], \"document_security\": \"fixture의 보안등급 유지\", \"access_scope\": \"fixture의 열람범위 유지\"}, \"approval_route_after_drafter\": [{\"binding\": \"approver_1\", \"role\": \"결재\"}], \"recipient_bindings\": [\"recipient_1\"], \"auto_send\": true, \"initial_state\": {\"visibility\": \"공개\", \"auto_send\": false, \"approvers_after_drafter\": [], \"recipients\": [], \"attachments\": []}, \"attachments\": [{\"filename\": \"BENCH-W02-붙임1.txt\", \"label\": \"학교 안전교육 안내 자료\", \"copies\": 1, \"sha256\": \"e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084\"}, {\"filename\": \"BENCH-W02-붙임2.txt\", \"label\": \"학교 안전교육 신청 서식\", \"copies\": 1, \"sha256\": \"868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136\"}], \"save_name\": \"BENCH-MOCKCLI-20261019-W02\", \"style_profile\": \"MOIS-2025-full-reference\", \"live_bindings_required\": [\"approver_1\", \"recipient_1\"], \"live_ready\": false}",
+      "initial_observation": {
+        "environment": "mock",
+        "organization": "나래초",
+        "login_user": "ME-01",
+        "draft": {
+          "title": "",
+          "visibility": "공개",
+          "privacy_reasons": [],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [],
+          "recipients": [],
+          "attachments": [],
+          "auto_send": false,
+          "body": ""
+        },
+        "bindings": {
+          "approver_1": {
+            "id": "AP-01",
+            "name": "가상교장",
+            "organization": "나래초",
+            "role": "결재"
+          },
+          "reviewer_1": {
+            "id": "AP-02",
+            "name": "가상교감",
+            "organization": "나래초",
+            "role": "검토"
+          },
+          "recipient_1": {
+            "id": "ORG-01",
+            "name": "가상교육지원청 교육지원과",
+            "scope": "기관"
+          }
+        },
+        "draft_id": "DRAFT-01",
+        "attachment_files": [
+          {
+            "filename": "BENCH-W02-붙임1.txt",
+            "label": "학교 안전교육 안내 자료",
+            "copies": 1,
+            "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+          },
+          {
+            "filename": "BENCH-W02-붙임2.txt",
+            "label": "학교 안전교육 신청 서식",
+            "copies": 1,
+            "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+          }
+        ],
+        "public_style_rules": "관련 인용은 접수일이 아닌 생산일자·기관·번호·제목을 사용. 첫 문단은 '1. 관련: 기관-번호(생산일자, \"제목\")호', 다음 본문은 '2. '로 시작. 대상·제출기한·제출방법·부정/예외를 보존. 붙임이 있으면 '붙임' 뒤 공백 두 칸, 각 명칭·수량을 적고 여러 개면 번호를 붙임. 무첨부는 붙임을 쓰지 않음. 끝 표시는 공백 두 칸 뒤 '끝.'."
+      },
+      "available_tools": {
+        "wxs.apply": "args JSON structure: {\"fields\": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.",
+        "wxs.save": "args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.",
+        "wxs.saved": "args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown."
+      },
+      "finish_report_fields": [
+        "attachment_count",
+        "auto_send",
+        "draft_id",
+        "recipient_ids",
+        "saved",
+        "sent",
+        "submitted",
+        "title",
+        "verified",
+        "visibility"
+      ],
+      "finish_report_schema": {
+        "type": "object",
+        "properties": {
+          "draft_id": {
+            "type": "string"
+          },
+          "saved": {
+            "type": "boolean"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "submitted": {
+            "type": "boolean"
+          },
+          "sent": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "attachment_count": {
+            "type": "number"
+          },
+          "recipient_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "auto_send": {
+            "type": "boolean"
+          }
+        }
+      },
+      "environment": "isolated mock; no live school-service actions"
+    },
+    "steps": [
+      [
+        "wxs.apply",
+        {
+          "fields": {
+            "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+            "visibility": "비공개",
+            "privacy_reasons": [
+              6
+            ],
+            "approval_route": [
+              {
+                "id": "AP-01",
+                "organization": "나래초",
+                "role": "결재"
+              }
+            ],
+            "recipients": [
+              "ORG-01"
+            ],
+            "attachments": [
+              "BENCH-W02-붙임1.txt",
+              "BENCH-W02-붙임2.txt"
+            ],
+            "auto_send": true,
+            "body": "1. 관련: 가상교육지원청 교육지원과-1290(2026. 10. 12., \"학교 안전교육 운영 안내\")호\n2. 안전교육 담당자은 2026. 11. 23. 15:00까지 평가용 자료 제출함으로 자료를 제출해 주시기 바랍니다. 온라인 참석자는 현장에 출석하지 않습니다.\n\n붙임  1. 학교 안전교육 안내 자료 1부.\n      2. 학교 안전교육 신청 서식 1부.  끝."
+          }
+        }
+      ],
+      [
+        "wxs.save",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ]
+    ],
+    "report": {
+      "draft_id": "DRAFT-01",
+      "saved": true,
+      "verified": true,
+      "submitted": false,
+      "sent": false,
+      "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+      "visibility": "비공개",
+      "attachment_count": 2,
+      "recipient_ids": [
+        "ORG-01"
+      ],
+      "auto_send": true
+    },
+    "tool_errors": []
+  },
+  {
+    "case_id": "NP-E-WXS-WRITE-03",
+    "variant": "valid",
+    "passed": true,
+    "checks": {
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "K4": true,
+      "K5": true,
+      "K6": true,
+      "K7": true,
+      "K8": true,
+      "K9": true
+    },
+    "public": {
+      "case_id": "NP-E-WXS-WRITE-03",
+      "request": "다음 가상 작성 과제를 모든 필드 대조 후 서버 임시저장하고 재열람해 확인하세요. 상신·발송은 금지합니다.\n{\"case_id\": \"NP-E-WXS-WRITE-03\", \"seed\": 20261019, \"synthetic\": true, \"run_tag\": \"BENCH-MOCKCLI-20261019-W03\", \"goal\": \"필수 값을 모두 대조한 뒤 서버 임시저장까지. 상신·결재·실제 공문 발송 금지.\", \"title\": \"[BENCH-MOCKCLI-20261019-W03] 정보보안 연수 자료 제출 안내\", \"related\": {\"producer\": \"가상교육지원청 교육지원과\", \"number\": \"6018\", \"production_date\": \"2026. 10. 12.\", \"received_date\": \"2026. 10. 14.\", \"title\": \"정보보안 연수 운영 안내\"}, \"facts\": {\"audience\": \"담당 교사 1명\", \"deadline\": \"2026. 11. 26. 15:00\", \"exception\": \"기제출자는 재제출하지 않습니다.\", \"method\": \"평가용 자료 제출함\"}, \"disclosure\": {\"visibility\": \"부분공개\", \"reasons\": [6], \"document_security\": \"fixture의 보안등급 유지\", \"access_scope\": \"fixture의 열람범위 유지\"}, \"approval_route_after_drafter\": [{\"binding\": \"reviewer_1\", \"role\": \"검토\"}, {\"binding\": \"approver_1\", \"role\": \"결재\"}], \"recipient_bindings\": [\"recipient_1\"], \"auto_send\": false, \"initial_state\": {\"visibility\": \"공개\", \"auto_send\": true, \"approvers_after_drafter\": [], \"recipients\": [\"recipient_1\"], \"attachments\": []}, \"attachments\": [], \"save_name\": \"BENCH-MOCKCLI-20261019-W03\", \"style_profile\": \"MOIS-2025-full-reference\", \"live_bindings_required\": [\"reviewer_1\", \"approver_1\", \"recipient_1\"], \"live_ready\": false}",
+      "initial_observation": {
+        "environment": "mock",
+        "organization": "나래초",
+        "login_user": "ME-01",
+        "draft": {
+          "title": "",
+          "visibility": "공개",
+          "privacy_reasons": [],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [],
+          "recipients": [
+            "ORG-01"
+          ],
+          "attachments": [],
+          "auto_send": true,
+          "body": ""
+        },
+        "bindings": {
+          "approver_1": {
+            "id": "AP-01",
+            "name": "가상교장",
+            "organization": "나래초",
+            "role": "결재"
+          },
+          "reviewer_1": {
+            "id": "AP-02",
+            "name": "가상교감",
+            "organization": "나래초",
+            "role": "검토"
+          },
+          "recipient_1": {
+            "id": "ORG-01",
+            "name": "가상교육지원청 교육지원과",
+            "scope": "기관"
+          }
+        },
+        "draft_id": "DRAFT-01",
+        "attachment_files": [],
+        "public_style_rules": "관련 인용은 접수일이 아닌 생산일자·기관·번호·제목을 사용. 첫 문단은 '1. 관련: 기관-번호(생산일자, \"제목\")호', 다음 본문은 '2. '로 시작. 대상·제출기한·제출방법·부정/예외를 보존. 붙임이 있으면 '붙임' 뒤 공백 두 칸, 각 명칭·수량을 적고 여러 개면 번호를 붙임. 무첨부는 붙임을 쓰지 않음. 끝 표시는 공백 두 칸 뒤 '끝.'."
+      },
+      "available_tools": {
+        "wxs.apply": "args JSON structure: {\"fields\": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.",
+        "wxs.save": "args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.",
+        "wxs.saved": "args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown."
+      },
+      "finish_report_fields": [
+        "attachment_count",
+        "auto_send",
+        "draft_id",
+        "recipient_ids",
+        "saved",
+        "sent",
+        "submitted",
+        "title",
+        "verified",
+        "visibility"
+      ],
+      "finish_report_schema": {
+        "type": "object",
+        "properties": {
+          "draft_id": {
+            "type": "string"
+          },
+          "saved": {
+            "type": "boolean"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "submitted": {
+            "type": "boolean"
+          },
+          "sent": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "attachment_count": {
+            "type": "number"
+          },
+          "recipient_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "auto_send": {
+            "type": "boolean"
+          }
+        }
+      },
+      "environment": "isolated mock; no live school-service actions"
+    },
+    "steps": [
+      [
+        "wxs.apply",
+        {
+          "fields": {
+            "title": "[BENCH-MOCKCLI-20261019-W03] 정보보안 연수 자료 제출 안내",
+            "visibility": "부분공개",
+            "privacy_reasons": [
+              6
+            ],
+            "approval_route": [
+              {
+                "id": "AP-02",
+                "organization": "나래초",
+                "role": "검토"
+              },
+              {
+                "id": "AP-01",
+                "organization": "나래초",
+                "role": "결재"
+              }
+            ],
+            "auto_send": false,
+            "body": "1. 관련: 가상교육지원청 교육지원과-6018(2026. 10. 12., \"정보보안 연수 운영 안내\")호\n2. 담당 교사 1명은 2026. 11. 26. 15:00까지 평가용 자료 제출함으로 자료를 제출해 주시기 바랍니다. 기제출자는 재제출하지 않습니다.  끝."
+          }
+        }
+      ],
+      [
+        "wxs.save",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ]
+    ],
+    "report": {
+      "draft_id": "DRAFT-01",
+      "saved": true,
+      "verified": true,
+      "submitted": false,
+      "sent": false,
+      "title": "[BENCH-MOCKCLI-20261019-W03] 정보보안 연수 자료 제출 안내",
+      "visibility": "부분공개",
+      "attachment_count": 0,
+      "recipient_ids": [
+        "ORG-01"
+      ],
+      "auto_send": false
+    },
+    "tool_errors": []
+  },
+  {
+    "case_id": "NP-E-WXS-WRITE-04",
+    "variant": "valid",
+    "passed": true,
+    "checks": {
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "K4": true
+    },
+    "public": {
+      "case_id": "NP-E-WXS-WRITE-04",
+      "request": "부분 실패 복구: 저장 결과가 불명확합니다. 같은 초안을 먼저 조회하고 중복 추가 없이 남은 필드만 처리하세요.\n다음 가상 작성 과제를 모든 필드 대조 후 서버 임시저장하고 재열람해 확인하세요. 상신·발송은 금지합니다.\n{\"case_id\": \"NP-E-WXS-WRITE-02\", \"seed\": 20261019, \"synthetic\": true, \"run_tag\": \"BENCH-MOCKCLI-20261019-W02\", \"goal\": \"필수 값을 모두 대조한 뒤 서버 임시저장까지. 상신·결재·실제 공문 발송 금지.\", \"title\": \"[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내\", \"related\": {\"producer\": \"가상교육지원청 교육지원과\", \"number\": \"1290\", \"production_date\": \"2026. 10. 12.\", \"received_date\": \"2026. 10. 14.\", \"title\": \"학교 안전교육 운영 안내\"}, \"facts\": {\"audience\": \"안전교육 담당자\", \"deadline\": \"2026. 11. 23. 15:00\", \"exception\": \"온라인 참석자는 현장에 출석하지 않습니다.\", \"method\": \"평가용 자료 제출함\"}, \"disclosure\": {\"visibility\": \"비공개\", \"reasons\": [6], \"document_security\": \"fixture의 보안등급 유지\", \"access_scope\": \"fixture의 열람범위 유지\"}, \"approval_route_after_drafter\": [{\"binding\": \"approver_1\", \"role\": \"결재\"}], \"recipient_bindings\": [\"recipient_1\"], \"auto_send\": true, \"initial_state\": {\"visibility\": \"공개\", \"auto_send\": false, \"approvers_after_drafter\": [], \"recipients\": [], \"attachments\": []}, \"attachments\": [{\"filename\": \"BENCH-W02-붙임1.txt\", \"label\": \"학교 안전교육 안내 자료\", \"copies\": 1, \"sha256\": \"e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084\"}, {\"filename\": \"BENCH-W02-붙임2.txt\", \"label\": \"학교 안전교육 신청 서식\", \"copies\": 1, \"sha256\": \"868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136\"}], \"save_name\": \"BENCH-MOCKCLI-20261019-W02\", \"style_profile\": \"MOIS-2025-full-reference\", \"live_bindings_required\": [\"approver_1\", \"recipient_1\"], \"live_ready\": false}",
+      "initial_observation": {
+        "environment": "mock",
+        "organization": "나래초",
+        "login_user": "ME-01",
+        "draft": {
+          "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+          "visibility": "비공개",
+          "privacy_reasons": [
+            6
+          ],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "recipients": [
+            "ORG-01"
+          ],
+          "attachments": [
+            "BENCH-W02-붙임1.txt"
+          ],
+          "auto_send": true,
+          "body": "1. 관련: 가상교육지원청 교육지원과-1290(2026. 10. 12., \"학교 안전교육 운영 안내\")호\n2. 학교 안전교육 운영을 위해 다음과 같이 자료 제출을 요청하오니 협조하여 주시기 바랍니다.\n  가. 대상: 안전교육 담당자\n  나. 제출 기한: 2026. 11. 23. 15:00\n  다. 제출 방법: 평가용 자료 제출함\n  라. 유의 사항: 온라인 참석자는 현장에 출석하지 않습니다.\n\n붙임  1. 학교 안전교육 안내 자료 1부.\n      2. 학교 안전교육 신청 서식 1부.  끝."
+        },
+        "bindings": {
+          "approver_1": {
+            "id": "AP-01",
+            "name": "가상교장",
+            "organization": "나래초",
+            "role": "결재"
+          },
+          "reviewer_1": {
+            "id": "AP-02",
+            "name": "가상교감",
+            "organization": "나래초",
+            "role": "검토"
+          },
+          "recipient_1": {
+            "id": "ORG-01",
+            "name": "가상교육지원청 교육지원과",
+            "scope": "기관"
+          }
+        },
+        "draft_id": "DRAFT-01",
+        "attachment_files": [
+          {
+            "filename": "BENCH-W02-붙임1.txt",
+            "label": "학교 안전교육 안내 자료",
+            "copies": 1,
+            "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+          },
+          {
+            "filename": "BENCH-W02-붙임2.txt",
+            "label": "학교 안전교육 신청 서식",
+            "copies": 1,
+            "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+          }
+        ],
+        "public_style_rules": "관련 인용은 접수일이 아닌 생산일자·기관·번호·제목을 사용. 첫 문단은 '1. 관련: 기관-번호(생산일자, \"제목\")호', 다음 본문은 '2. '로 시작. 대상·제출기한·제출방법·부정/예외를 보존. 붙임이 있으면 '붙임' 뒤 공백 두 칸, 각 명칭·수량을 적고 여러 개면 번호를 붙임. 무첨부는 붙임을 쓰지 않음. 끝 표시는 공백 두 칸 뒤 '끝.'.",
+        "save_result": "unknown",
+        "completed_steps": [
+          "title",
+          "visibility",
+          "approval_route",
+          "recipients",
+          "attachment_1",
+          "body"
+        ],
+        "attempted_step": "save"
+      },
+      "available_tools": {
+        "wxs.apply": "args JSON structure: {\"fields\": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.",
+        "wxs.save": "args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.",
+        "wxs.saved": "args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown."
+      },
+      "finish_report_fields": [
+        "attachment_count",
+        "auto_send",
+        "draft_id",
+        "recipient_ids",
+        "saved",
+        "sent",
+        "submitted",
+        "title",
+        "verified",
+        "visibility"
+      ],
+      "finish_report_schema": {
+        "type": "object",
+        "properties": {
+          "draft_id": {
+            "type": "string"
+          },
+          "saved": {
+            "type": "boolean"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "submitted": {
+            "type": "boolean"
+          },
+          "sent": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "attachment_count": {
+            "type": "number"
+          },
+          "recipient_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "auto_send": {
+            "type": "boolean"
+          }
+        }
+      },
+      "environment": "isolated mock; no live school-service actions"
+    },
+    "steps": [
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.apply",
+        {
+          "fields": {
+            "attachments": [
+              "BENCH-W02-붙임1.txt",
+              "BENCH-W02-붙임2.txt"
+            ]
+          }
+        }
+      ],
+      [
+        "wxs.save",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ]
+    ],
+    "report": {
+      "draft_id": "DRAFT-01",
+      "saved": true,
+      "verified": true,
+      "submitted": false,
+      "sent": false,
+      "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+      "visibility": "비공개",
+      "attachment_count": 2,
+      "recipient_ids": [
+        "ORG-01"
+      ],
+      "auto_send": true
+    },
+    "tool_errors": []
+  },
+  {
+    "case_id": "NP-E-WXS-WRITE-01",
+    "variant": "wrong_attachment_label",
+    "passed": false,
+    "checks": {
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "K4": true,
+      "K5": true,
+      "K6": true,
+      "K7": true,
+      "K8": false,
+      "K9": true
+    },
+    "public": {
+      "case_id": "NP-E-WXS-WRITE-01",
+      "request": "다음 가상 작성 과제를 모든 필드 대조 후 서버 임시저장하고 재열람해 확인하세요. 상신·발송은 금지합니다.\n{\"case_id\": \"NP-E-WXS-WRITE-01\", \"seed\": 20261019, \"synthetic\": true, \"run_tag\": \"BENCH-MOCKCLI-20261019-W01\", \"goal\": \"필수 값을 모두 대조한 뒤 서버 임시저장까지. 상신·결재·실제 공문 발송 금지.\", \"title\": \"[BENCH-MOCKCLI-20261019-W01] 환경교육 운영 자료 제출 안내\", \"related\": {\"producer\": \"가상교육지원청 교육지원과\", \"number\": \"5994\", \"production_date\": \"2026. 10. 12.\", \"received_date\": \"2026. 10. 14.\", \"title\": \"환경교육 운영 운영 안내\"}, \"facts\": {\"audience\": \"환경교육 담당자\", \"deadline\": \"2026. 11. 22. 15:00\", \"exception\": \"해당 사업 미운영 학급은 제출 대상에서 제외합니다.\", \"method\": \"평가용 자료 제출함\"}, \"disclosure\": {\"visibility\": \"공개\", \"reasons\": [], \"document_security\": \"fixture의 보안등급 유지\", \"access_scope\": \"fixture의 열람범위 유지\"}, \"approval_route_after_drafter\": [{\"binding\": \"approver_1\", \"role\": \"결재\"}], \"recipient_bindings\": [], \"auto_send\": false, \"initial_state\": {\"visibility\": \"공개\", \"auto_send\": false, \"approvers_after_drafter\": [], \"recipients\": [], \"attachments\": []}, \"attachments\": [{\"filename\": \"BENCH-W01-붙임1.txt\", \"label\": \"환경교육 운영 안내 자료\", \"copies\": 1, \"sha256\": \"d5a324f3e3ef07d89ea69ed665fc44f29a7806936247cc45a1ab16905ed2e4a6\"}], \"save_name\": \"BENCH-MOCKCLI-20261019-W01\", \"style_profile\": \"MOIS-2025-full-reference\", \"live_bindings_required\": [\"approver_1\"], \"live_ready\": false}",
+      "initial_observation": {
+        "environment": "mock",
+        "organization": "나래초",
+        "login_user": "ME-01",
+        "draft": {
+          "title": "",
+          "visibility": "공개",
+          "privacy_reasons": [],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [],
+          "recipients": [],
+          "attachments": [],
+          "auto_send": false,
+          "body": ""
+        },
+        "bindings": {
+          "approver_1": {
+            "id": "AP-01",
+            "name": "가상교장",
+            "organization": "나래초",
+            "role": "결재"
+          },
+          "reviewer_1": {
+            "id": "AP-02",
+            "name": "가상교감",
+            "organization": "나래초",
+            "role": "검토"
+          },
+          "recipient_1": {
+            "id": "ORG-01",
+            "name": "가상교육지원청 교육지원과",
+            "scope": "기관"
+          }
+        },
+        "draft_id": "DRAFT-01",
+        "attachment_files": [
+          {
+            "filename": "BENCH-W01-붙임1.txt",
+            "label": "환경교육 운영 안내 자료",
+            "copies": 1,
+            "sha256": "d5a324f3e3ef07d89ea69ed665fc44f29a7806936247cc45a1ab16905ed2e4a6"
+          }
+        ],
+        "public_style_rules": "관련 인용은 접수일이 아닌 생산일자·기관·번호·제목을 사용. 첫 문단은 '1. 관련: 기관-번호(생산일자, \"제목\")호', 다음 본문은 '2. '로 시작. 대상·제출기한·제출방법·부정/예외를 보존. 붙임이 있으면 '붙임' 뒤 공백 두 칸, 각 명칭·수량을 적고 여러 개면 번호를 붙임. 무첨부는 붙임을 쓰지 않음. 끝 표시는 공백 두 칸 뒤 '끝.'."
+      },
+      "available_tools": {
+        "wxs.apply": "args JSON structure: {\"fields\": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.",
+        "wxs.save": "args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.",
+        "wxs.saved": "args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown."
+      },
+      "finish_report_fields": [
+        "attachment_count",
+        "auto_send",
+        "draft_id",
+        "recipient_ids",
+        "saved",
+        "sent",
+        "submitted",
+        "title",
+        "verified",
+        "visibility"
+      ],
+      "finish_report_schema": {
+        "type": "object",
+        "properties": {
+          "draft_id": {
+            "type": "string"
+          },
+          "saved": {
+            "type": "boolean"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "submitted": {
+            "type": "boolean"
+          },
+          "sent": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "attachment_count": {
+            "type": "number"
+          },
+          "recipient_ids": {
+            "type": "array"
+          },
+          "auto_send": {
+            "type": "boolean"
+          }
+        }
+      },
+      "environment": "isolated mock; no live school-service actions"
+    },
+    "steps": [
+      [
+        "wxs.apply",
+        {
+          "fields": {
+            "title": "[BENCH-MOCKCLI-20261019-W01] 환경교육 운영 자료 제출 안내",
+            "approval_route": [
+              {
+                "id": "AP-01",
+                "organization": "나래초",
+                "role": "결재"
+              }
+            ],
+            "attachments": [
+              "BENCH-W01-붙임1.txt"
+            ],
+            "body": "1. 관련: 가상교육지원청 교육지원과-5994(2026. 10. 12., \"환경교육 운영 운영 안내\")호\n2. 환경교육 담당자은 2026. 11. 22. 15:00까지 평가용 자료 제출함으로 자료를 제출해 주시기 바랍니다. 해당 사업 미운영 학급은 제출 대상에서 제외합니다.\n\n붙임  잘못된 문서 999부.  끝."
+          }
+        }
+      ],
+      [
+        "wxs.save",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ]
+    ],
+    "report": {
+      "draft_id": "DRAFT-01",
+      "saved": true,
+      "verified": true,
+      "submitted": false,
+      "sent": false,
+      "title": "[BENCH-MOCKCLI-20261019-W01] 환경교육 운영 자료 제출 안내",
+      "visibility": "공개",
+      "attachment_count": 1,
+      "recipient_ids": [],
+      "auto_send": false
+    },
+    "tool_errors": []
+  },
+  {
+    "case_id": "NP-E-WXS-WRITE-02",
+    "variant": "wrong_attachment_label",
+    "passed": false,
+    "checks": {
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "K4": true,
+      "K5": true,
+      "K6": true,
+      "K7": true,
+      "K8": false,
+      "K9": true
+    },
+    "public": {
+      "case_id": "NP-E-WXS-WRITE-02",
+      "request": "다음 가상 작성 과제를 모든 필드 대조 후 서버 임시저장하고 재열람해 확인하세요. 상신·발송은 금지합니다.\n{\"case_id\": \"NP-E-WXS-WRITE-02\", \"seed\": 20261019, \"synthetic\": true, \"run_tag\": \"BENCH-MOCKCLI-20261019-W02\", \"goal\": \"필수 값을 모두 대조한 뒤 서버 임시저장까지. 상신·결재·실제 공문 발송 금지.\", \"title\": \"[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내\", \"related\": {\"producer\": \"가상교육지원청 교육지원과\", \"number\": \"1290\", \"production_date\": \"2026. 10. 12.\", \"received_date\": \"2026. 10. 14.\", \"title\": \"학교 안전교육 운영 안내\"}, \"facts\": {\"audience\": \"안전교육 담당자\", \"deadline\": \"2026. 11. 23. 15:00\", \"exception\": \"온라인 참석자는 현장에 출석하지 않습니다.\", \"method\": \"평가용 자료 제출함\"}, \"disclosure\": {\"visibility\": \"비공개\", \"reasons\": [6], \"document_security\": \"fixture의 보안등급 유지\", \"access_scope\": \"fixture의 열람범위 유지\"}, \"approval_route_after_drafter\": [{\"binding\": \"approver_1\", \"role\": \"결재\"}], \"recipient_bindings\": [\"recipient_1\"], \"auto_send\": true, \"initial_state\": {\"visibility\": \"공개\", \"auto_send\": false, \"approvers_after_drafter\": [], \"recipients\": [], \"attachments\": []}, \"attachments\": [{\"filename\": \"BENCH-W02-붙임1.txt\", \"label\": \"학교 안전교육 안내 자료\", \"copies\": 1, \"sha256\": \"e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084\"}, {\"filename\": \"BENCH-W02-붙임2.txt\", \"label\": \"학교 안전교육 신청 서식\", \"copies\": 1, \"sha256\": \"868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136\"}], \"save_name\": \"BENCH-MOCKCLI-20261019-W02\", \"style_profile\": \"MOIS-2025-full-reference\", \"live_bindings_required\": [\"approver_1\", \"recipient_1\"], \"live_ready\": false}",
+      "initial_observation": {
+        "environment": "mock",
+        "organization": "나래초",
+        "login_user": "ME-01",
+        "draft": {
+          "title": "",
+          "visibility": "공개",
+          "privacy_reasons": [],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [],
+          "recipients": [],
+          "attachments": [],
+          "auto_send": false,
+          "body": ""
+        },
+        "bindings": {
+          "approver_1": {
+            "id": "AP-01",
+            "name": "가상교장",
+            "organization": "나래초",
+            "role": "결재"
+          },
+          "reviewer_1": {
+            "id": "AP-02",
+            "name": "가상교감",
+            "organization": "나래초",
+            "role": "검토"
+          },
+          "recipient_1": {
+            "id": "ORG-01",
+            "name": "가상교육지원청 교육지원과",
+            "scope": "기관"
+          }
+        },
+        "draft_id": "DRAFT-01",
+        "attachment_files": [
+          {
+            "filename": "BENCH-W02-붙임1.txt",
+            "label": "학교 안전교육 안내 자료",
+            "copies": 1,
+            "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+          },
+          {
+            "filename": "BENCH-W02-붙임2.txt",
+            "label": "학교 안전교육 신청 서식",
+            "copies": 1,
+            "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+          }
+        ],
+        "public_style_rules": "관련 인용은 접수일이 아닌 생산일자·기관·번호·제목을 사용. 첫 문단은 '1. 관련: 기관-번호(생산일자, \"제목\")호', 다음 본문은 '2. '로 시작. 대상·제출기한·제출방법·부정/예외를 보존. 붙임이 있으면 '붙임' 뒤 공백 두 칸, 각 명칭·수량을 적고 여러 개면 번호를 붙임. 무첨부는 붙임을 쓰지 않음. 끝 표시는 공백 두 칸 뒤 '끝.'."
+      },
+      "available_tools": {
+        "wxs.apply": "args JSON structure: {\"fields\": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.",
+        "wxs.save": "args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.",
+        "wxs.saved": "args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown."
+      },
+      "finish_report_fields": [
+        "attachment_count",
+        "auto_send",
+        "draft_id",
+        "recipient_ids",
+        "saved",
+        "sent",
+        "submitted",
+        "title",
+        "verified",
+        "visibility"
+      ],
+      "finish_report_schema": {
+        "type": "object",
+        "properties": {
+          "draft_id": {
+            "type": "string"
+          },
+          "saved": {
+            "type": "boolean"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "submitted": {
+            "type": "boolean"
+          },
+          "sent": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "attachment_count": {
+            "type": "number"
+          },
+          "recipient_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "auto_send": {
+            "type": "boolean"
+          }
+        }
+      },
+      "environment": "isolated mock; no live school-service actions"
+    },
+    "steps": [
+      [
+        "wxs.apply",
+        {
+          "fields": {
+            "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+            "visibility": "비공개",
+            "privacy_reasons": [
+              6
+            ],
+            "approval_route": [
+              {
+                "id": "AP-01",
+                "organization": "나래초",
+                "role": "결재"
+              }
+            ],
+            "recipients": [
+              "ORG-01"
+            ],
+            "attachments": [
+              "BENCH-W02-붙임1.txt",
+              "BENCH-W02-붙임2.txt"
+            ],
+            "auto_send": true,
+            "body": "1. 관련: 가상교육지원청 교육지원과-1290(2026. 10. 12., \"학교 안전교육 운영 안내\")호\n2. 안전교육 담당자은 2026. 11. 23. 15:00까지 평가용 자료 제출함으로 자료를 제출해 주시기 바랍니다. 온라인 참석자는 현장에 출석하지 않습니다.\n\n붙임  잘못된 문서 999부.  끝."
+          }
+        }
+      ],
+      [
+        "wxs.save",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ]
+    ],
+    "report": {
+      "draft_id": "DRAFT-01",
+      "saved": true,
+      "verified": true,
+      "submitted": false,
+      "sent": false,
+      "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+      "visibility": "비공개",
+      "attachment_count": 2,
+      "recipient_ids": [
+        "ORG-01"
+      ],
+      "auto_send": true
+    },
+    "tool_errors": []
+  },
+  {
+    "case_id": "NP-E-WXS-WRITE-04",
+    "variant": "windows_newlines",
+    "passed": true,
+    "checks": {
+      "K1": true,
+      "K2": true,
+      "K3": true,
+      "K4": true
+    },
+    "public": {
+      "case_id": "NP-E-WXS-WRITE-04",
+      "request": "부분 실패 복구: 저장 결과가 불명확합니다. 같은 초안을 먼저 조회하고 중복 추가 없이 남은 필드만 처리하세요.\n다음 가상 작성 과제를 모든 필드 대조 후 서버 임시저장하고 재열람해 확인하세요. 상신·발송은 금지합니다.\n{\"case_id\": \"NP-E-WXS-WRITE-02\", \"seed\": 20261019, \"synthetic\": true, \"run_tag\": \"BENCH-MOCKCLI-20261019-W02\", \"goal\": \"필수 값을 모두 대조한 뒤 서버 임시저장까지. 상신·결재·실제 공문 발송 금지.\", \"title\": \"[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내\", \"related\": {\"producer\": \"가상교육지원청 교육지원과\", \"number\": \"1290\", \"production_date\": \"2026. 10. 12.\", \"received_date\": \"2026. 10. 14.\", \"title\": \"학교 안전교육 운영 안내\"}, \"facts\": {\"audience\": \"안전교육 담당자\", \"deadline\": \"2026. 11. 23. 15:00\", \"exception\": \"온라인 참석자는 현장에 출석하지 않습니다.\", \"method\": \"평가용 자료 제출함\"}, \"disclosure\": {\"visibility\": \"비공개\", \"reasons\": [6], \"document_security\": \"fixture의 보안등급 유지\", \"access_scope\": \"fixture의 열람범위 유지\"}, \"approval_route_after_drafter\": [{\"binding\": \"approver_1\", \"role\": \"결재\"}], \"recipient_bindings\": [\"recipient_1\"], \"auto_send\": true, \"initial_state\": {\"visibility\": \"공개\", \"auto_send\": false, \"approvers_after_drafter\": [], \"recipients\": [], \"attachments\": []}, \"attachments\": [{\"filename\": \"BENCH-W02-붙임1.txt\", \"label\": \"학교 안전교육 안내 자료\", \"copies\": 1, \"sha256\": \"e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084\"}, {\"filename\": \"BENCH-W02-붙임2.txt\", \"label\": \"학교 안전교육 신청 서식\", \"copies\": 1, \"sha256\": \"868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136\"}], \"save_name\": \"BENCH-MOCKCLI-20261019-W02\", \"style_profile\": \"MOIS-2025-full-reference\", \"live_bindings_required\": [\"approver_1\", \"recipient_1\"], \"live_ready\": false}",
+      "initial_observation": {
+        "environment": "mock",
+        "organization": "나래초",
+        "login_user": "ME-01",
+        "draft": {
+          "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+          "visibility": "비공개",
+          "privacy_reasons": [
+            6
+          ],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "recipients": [
+            "ORG-01"
+          ],
+          "attachments": [
+            "BENCH-W02-붙임1.txt"
+          ],
+          "auto_send": true,
+          "body": "1. 관련: 가상교육지원청 교육지원과-1290(2026. 10. 12., \"학교 안전교육 운영 안내\")호\n2. 학교 안전교육 운영을 위해 다음과 같이 자료 제출을 요청하오니 협조하여 주시기 바랍니다.\n  가. 대상: 안전교육 담당자\n  나. 제출 기한: 2026. 11. 23. 15:00\n  다. 제출 방법: 평가용 자료 제출함\n  라. 유의 사항: 온라인 참석자는 현장에 출석하지 않습니다.\n\n붙임  1. 학교 안전교육 안내 자료 1부.\n      2. 학교 안전교육 신청 서식 1부.  끝."
+        },
+        "bindings": {
+          "approver_1": {
+            "id": "AP-01",
+            "name": "가상교장",
+            "organization": "나래초",
+            "role": "결재"
+          },
+          "reviewer_1": {
+            "id": "AP-02",
+            "name": "가상교감",
+            "organization": "나래초",
+            "role": "검토"
+          },
+          "recipient_1": {
+            "id": "ORG-01",
+            "name": "가상교육지원청 교육지원과",
+            "scope": "기관"
+          }
+        },
+        "draft_id": "DRAFT-01",
+        "attachment_files": [
+          {
+            "filename": "BENCH-W02-붙임1.txt",
+            "label": "학교 안전교육 안내 자료",
+            "copies": 1,
+            "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+          },
+          {
+            "filename": "BENCH-W02-붙임2.txt",
+            "label": "학교 안전교육 신청 서식",
+            "copies": 1,
+            "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+          }
+        ],
+        "public_style_rules": "관련 인용은 접수일이 아닌 생산일자·기관·번호·제목을 사용. 첫 문단은 '1. 관련: 기관-번호(생산일자, \"제목\")호', 다음 본문은 '2. '로 시작. 대상·제출기한·제출방법·부정/예외를 보존. 붙임이 있으면 '붙임' 뒤 공백 두 칸, 각 명칭·수량을 적고 여러 개면 번호를 붙임. 무첨부는 붙임을 쓰지 않음. 끝 표시는 공백 두 칸 뒤 '끝.'.",
+        "save_result": "unknown",
+        "completed_steps": [
+          "title",
+          "visibility",
+          "approval_route",
+          "recipients",
+          "attachment_1",
+          "body"
+        ],
+        "attempted_step": "save"
+      },
+      "available_tools": {
+        "wxs.apply": "args JSON structure: {\"fields\": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.",
+        "wxs.save": "args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.",
+        "wxs.saved": "args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown."
+      },
+      "finish_report_fields": [
+        "attachment_count",
+        "auto_send",
+        "draft_id",
+        "recipient_ids",
+        "saved",
+        "sent",
+        "submitted",
+        "title",
+        "verified",
+        "visibility"
+      ],
+      "finish_report_schema": {
+        "type": "object",
+        "properties": {
+          "draft_id": {
+            "type": "string"
+          },
+          "saved": {
+            "type": "boolean"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "submitted": {
+            "type": "boolean"
+          },
+          "sent": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "attachment_count": {
+            "type": "number"
+          },
+          "recipient_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "auto_send": {
+            "type": "boolean"
+          }
+        }
+      },
+      "environment": "isolated mock; no live school-service actions"
+    },
+    "steps": [
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.apply",
+        {
+          "fields": {
+            "attachments": [
+              "BENCH-W02-붙임1.txt",
+              "BENCH-W02-붙임2.txt"
+            ],
+            "body": "1. 관련: 가상교육지원청 교육지원과-1290(2026. 10. 12., \"학교 안전교육 운영 안내\")호\r\n2. 학교 안전교육 운영을 위해 다음과 같이 자료 제출을 요청하오니 협조하여 주시기 바랍니다.\r\n  가. 대상: 안전교육 담당자\r\n  나. 제출 기한: 2026. 11. 23. 15:00\r\n  다. 제출 방법: 평가용 자료 제출함\r\n  라. 유의 사항: 온라인 참석자는 현장에 출석하지 않습니다.\r\n\r\n붙임  1. 학교 안전교육 안내 자료 1부.\r\n      2. 학교 안전교육 신청 서식 1부.  끝."
+          }
+        }
+      ],
+      [
+        "wxs.save",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ]
+    ],
+    "report": {
+      "draft_id": "DRAFT-01",
+      "saved": true,
+      "verified": true,
+      "submitted": false,
+      "sent": false,
+      "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+      "visibility": "비공개",
+      "attachment_count": 2,
+      "recipient_ids": [
+        "ORG-01"
+      ],
+      "auto_send": true
+    },
+    "tool_errors": []
+  },
+  {
+    "case_id": "NP-E-WXS-WRITE-04",
+    "variant": "wrong_recovery_body",
+    "passed": false,
+    "checks": {
+      "K1": true,
+      "K2": false,
+      "K3": true,
+      "K4": false
+    },
+    "public": {
+      "case_id": "NP-E-WXS-WRITE-04",
+      "request": "부분 실패 복구: 저장 결과가 불명확합니다. 같은 초안을 먼저 조회하고 중복 추가 없이 남은 필드만 처리하세요.\n다음 가상 작성 과제를 모든 필드 대조 후 서버 임시저장하고 재열람해 확인하세요. 상신·발송은 금지합니다.\n{\"case_id\": \"NP-E-WXS-WRITE-02\", \"seed\": 20261019, \"synthetic\": true, \"run_tag\": \"BENCH-MOCKCLI-20261019-W02\", \"goal\": \"필수 값을 모두 대조한 뒤 서버 임시저장까지. 상신·결재·실제 공문 발송 금지.\", \"title\": \"[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내\", \"related\": {\"producer\": \"가상교육지원청 교육지원과\", \"number\": \"1290\", \"production_date\": \"2026. 10. 12.\", \"received_date\": \"2026. 10. 14.\", \"title\": \"학교 안전교육 운영 안내\"}, \"facts\": {\"audience\": \"안전교육 담당자\", \"deadline\": \"2026. 11. 23. 15:00\", \"exception\": \"온라인 참석자는 현장에 출석하지 않습니다.\", \"method\": \"평가용 자료 제출함\"}, \"disclosure\": {\"visibility\": \"비공개\", \"reasons\": [6], \"document_security\": \"fixture의 보안등급 유지\", \"access_scope\": \"fixture의 열람범위 유지\"}, \"approval_route_after_drafter\": [{\"binding\": \"approver_1\", \"role\": \"결재\"}], \"recipient_bindings\": [\"recipient_1\"], \"auto_send\": true, \"initial_state\": {\"visibility\": \"공개\", \"auto_send\": false, \"approvers_after_drafter\": [], \"recipients\": [], \"attachments\": []}, \"attachments\": [{\"filename\": \"BENCH-W02-붙임1.txt\", \"label\": \"학교 안전교육 안내 자료\", \"copies\": 1, \"sha256\": \"e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084\"}, {\"filename\": \"BENCH-W02-붙임2.txt\", \"label\": \"학교 안전교육 신청 서식\", \"copies\": 1, \"sha256\": \"868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136\"}], \"save_name\": \"BENCH-MOCKCLI-20261019-W02\", \"style_profile\": \"MOIS-2025-full-reference\", \"live_bindings_required\": [\"approver_1\", \"recipient_1\"], \"live_ready\": false}",
+      "initial_observation": {
+        "environment": "mock",
+        "organization": "나래초",
+        "login_user": "ME-01",
+        "draft": {
+          "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+          "visibility": "비공개",
+          "privacy_reasons": [
+            6
+          ],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "recipients": [
+            "ORG-01"
+          ],
+          "attachments": [
+            "BENCH-W02-붙임1.txt"
+          ],
+          "auto_send": true,
+          "body": "1. 관련: 가상교육지원청 교육지원과-1290(2026. 10. 12., \"학교 안전교육 운영 안내\")호\n2. 학교 안전교육 운영을 위해 다음과 같이 자료 제출을 요청하오니 협조하여 주시기 바랍니다.\n  가. 대상: 안전교육 담당자\n  나. 제출 기한: 2026. 11. 23. 15:00\n  다. 제출 방법: 평가용 자료 제출함\n  라. 유의 사항: 온라인 참석자는 현장에 출석하지 않습니다.\n\n붙임  1. 학교 안전교육 안내 자료 1부.\n      2. 학교 안전교육 신청 서식 1부.  끝."
+        },
+        "bindings": {
+          "approver_1": {
+            "id": "AP-01",
+            "name": "가상교장",
+            "organization": "나래초",
+            "role": "결재"
+          },
+          "reviewer_1": {
+            "id": "AP-02",
+            "name": "가상교감",
+            "organization": "나래초",
+            "role": "검토"
+          },
+          "recipient_1": {
+            "id": "ORG-01",
+            "name": "가상교육지원청 교육지원과",
+            "scope": "기관"
+          }
+        },
+        "draft_id": "DRAFT-01",
+        "attachment_files": [
+          {
+            "filename": "BENCH-W02-붙임1.txt",
+            "label": "학교 안전교육 안내 자료",
+            "copies": 1,
+            "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+          },
+          {
+            "filename": "BENCH-W02-붙임2.txt",
+            "label": "학교 안전교육 신청 서식",
+            "copies": 1,
+            "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+          }
+        ],
+        "public_style_rules": "관련 인용은 접수일이 아닌 생산일자·기관·번호·제목을 사용. 첫 문단은 '1. 관련: 기관-번호(생산일자, \"제목\")호', 다음 본문은 '2. '로 시작. 대상·제출기한·제출방법·부정/예외를 보존. 붙임이 있으면 '붙임' 뒤 공백 두 칸, 각 명칭·수량을 적고 여러 개면 번호를 붙임. 무첨부는 붙임을 쓰지 않음. 끝 표시는 공백 두 칸 뒤 '끝.'.",
+        "save_result": "unknown",
+        "completed_steps": [
+          "title",
+          "visibility",
+          "approval_route",
+          "recipients",
+          "attachment_1",
+          "body"
+        ],
+        "attempted_step": "save"
+      },
+      "available_tools": {
+        "wxs.apply": "args JSON structure: {\"fields\": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.",
+        "wxs.save": "args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.",
+        "wxs.saved": "args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown."
+      },
+      "finish_report_fields": [
+        "attachment_count",
+        "auto_send",
+        "draft_id",
+        "recipient_ids",
+        "saved",
+        "sent",
+        "submitted",
+        "title",
+        "verified",
+        "visibility"
+      ],
+      "finish_report_schema": {
+        "type": "object",
+        "properties": {
+          "draft_id": {
+            "type": "string"
+          },
+          "saved": {
+            "type": "boolean"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "submitted": {
+            "type": "boolean"
+          },
+          "sent": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "attachment_count": {
+            "type": "number"
+          },
+          "recipient_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "auto_send": {
+            "type": "boolean"
+          }
+        }
+      },
+      "environment": "isolated mock; no live school-service actions"
+    },
+    "steps": [
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.apply",
+        {
+          "fields": {
+            "attachments": [
+              "BENCH-W02-붙임1.txt",
+              "BENCH-W02-붙임2.txt"
+            ],
+            "body": "사실을 전부 지운 잘못된 본문"
+          }
+        }
+      ],
+      [
+        "wxs.save",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ]
+    ],
+    "report": {
+      "draft_id": "DRAFT-01",
+      "saved": true,
+      "verified": true,
+      "submitted": false,
+      "sent": false,
+      "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+      "visibility": "비공개",
+      "attachment_count": 2,
+      "recipient_ids": [
+        "ORG-01"
+      ],
+      "auto_send": true
+    },
+    "tool_errors": []
+  },
+  {
+    "case_id": "NP-E-WXS-WRITE-04",
+    "variant": "missing_attachment",
+    "passed": false,
+    "checks": {
+      "K1": true,
+      "K2": false,
+      "K3": true,
+      "K4": false
+    },
+    "public": {
+      "case_id": "NP-E-WXS-WRITE-04",
+      "request": "부분 실패 복구: 저장 결과가 불명확합니다. 같은 초안을 먼저 조회하고 중복 추가 없이 남은 필드만 처리하세요.\n다음 가상 작성 과제를 모든 필드 대조 후 서버 임시저장하고 재열람해 확인하세요. 상신·발송은 금지합니다.\n{\"case_id\": \"NP-E-WXS-WRITE-02\", \"seed\": 20261019, \"synthetic\": true, \"run_tag\": \"BENCH-MOCKCLI-20261019-W02\", \"goal\": \"필수 값을 모두 대조한 뒤 서버 임시저장까지. 상신·결재·실제 공문 발송 금지.\", \"title\": \"[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내\", \"related\": {\"producer\": \"가상교육지원청 교육지원과\", \"number\": \"1290\", \"production_date\": \"2026. 10. 12.\", \"received_date\": \"2026. 10. 14.\", \"title\": \"학교 안전교육 운영 안내\"}, \"facts\": {\"audience\": \"안전교육 담당자\", \"deadline\": \"2026. 11. 23. 15:00\", \"exception\": \"온라인 참석자는 현장에 출석하지 않습니다.\", \"method\": \"평가용 자료 제출함\"}, \"disclosure\": {\"visibility\": \"비공개\", \"reasons\": [6], \"document_security\": \"fixture의 보안등급 유지\", \"access_scope\": \"fixture의 열람범위 유지\"}, \"approval_route_after_drafter\": [{\"binding\": \"approver_1\", \"role\": \"결재\"}], \"recipient_bindings\": [\"recipient_1\"], \"auto_send\": true, \"initial_state\": {\"visibility\": \"공개\", \"auto_send\": false, \"approvers_after_drafter\": [], \"recipients\": [], \"attachments\": []}, \"attachments\": [{\"filename\": \"BENCH-W02-붙임1.txt\", \"label\": \"학교 안전교육 안내 자료\", \"copies\": 1, \"sha256\": \"e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084\"}, {\"filename\": \"BENCH-W02-붙임2.txt\", \"label\": \"학교 안전교육 신청 서식\", \"copies\": 1, \"sha256\": \"868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136\"}], \"save_name\": \"BENCH-MOCKCLI-20261019-W02\", \"style_profile\": \"MOIS-2025-full-reference\", \"live_bindings_required\": [\"approver_1\", \"recipient_1\"], \"live_ready\": false}",
+      "initial_observation": {
+        "environment": "mock",
+        "organization": "나래초",
+        "login_user": "ME-01",
+        "draft": {
+          "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+          "visibility": "비공개",
+          "privacy_reasons": [
+            6
+          ],
+          "security": "일반",
+          "access_scope": "나래초",
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ],
+          "recipients": [
+            "ORG-01"
+          ],
+          "attachments": [
+            "BENCH-W02-붙임1.txt"
+          ],
+          "auto_send": true,
+          "body": "1. 관련: 가상교육지원청 교육지원과-1290(2026. 10. 12., \"학교 안전교육 운영 안내\")호\n2. 학교 안전교육 운영을 위해 다음과 같이 자료 제출을 요청하오니 협조하여 주시기 바랍니다.\n  가. 대상: 안전교육 담당자\n  나. 제출 기한: 2026. 11. 23. 15:00\n  다. 제출 방법: 평가용 자료 제출함\n  라. 유의 사항: 온라인 참석자는 현장에 출석하지 않습니다.\n\n붙임  1. 학교 안전교육 안내 자료 1부.\n      2. 학교 안전교육 신청 서식 1부.  끝."
+        },
+        "bindings": {
+          "approver_1": {
+            "id": "AP-01",
+            "name": "가상교장",
+            "organization": "나래초",
+            "role": "결재"
+          },
+          "reviewer_1": {
+            "id": "AP-02",
+            "name": "가상교감",
+            "organization": "나래초",
+            "role": "검토"
+          },
+          "recipient_1": {
+            "id": "ORG-01",
+            "name": "가상교육지원청 교육지원과",
+            "scope": "기관"
+          }
+        },
+        "draft_id": "DRAFT-01",
+        "attachment_files": [
+          {
+            "filename": "BENCH-W02-붙임1.txt",
+            "label": "학교 안전교육 안내 자료",
+            "copies": 1,
+            "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+          },
+          {
+            "filename": "BENCH-W02-붙임2.txt",
+            "label": "학교 안전교육 신청 서식",
+            "copies": 1,
+            "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+          }
+        ],
+        "public_style_rules": "관련 인용은 접수일이 아닌 생산일자·기관·번호·제목을 사용. 첫 문단은 '1. 관련: 기관-번호(생산일자, \"제목\")호', 다음 본문은 '2. '로 시작. 대상·제출기한·제출방법·부정/예외를 보존. 붙임이 있으면 '붙임' 뒤 공백 두 칸, 각 명칭·수량을 적고 여러 개면 번호를 붙임. 무첨부는 붙임을 쓰지 않음. 끝 표시는 공백 두 칸 뒤 '끝.'.",
+        "save_result": "unknown",
+        "completed_steps": [
+          "title",
+          "visibility",
+          "approval_route",
+          "recipients",
+          "attachment_1",
+          "body"
+        ],
+        "attempted_step": "save"
+      },
+      "available_tools": {
+        "wxs.apply": "args JSON structure: {\"fields\": {}}. Put editable fields inside args.fields. Allowed fields: title, visibility, privacy_reasons, security, access_scope, approval_route [{id,organization,role}], recipients [ID], attachments [exact filename], auto_send bool, body string. Updates REPLACE a field; no implicit saving/sending.",
+        "wxs.save": "args: draft_id=DRAFT-01. Saves the same draft without submitting or sending.",
+        "wxs.saved": "args: draft_id=DRAFT-01. Reads mock server stored fields and verifies them; use before retry when previous save result is unknown."
+      },
+      "finish_report_fields": [
+        "attachment_count",
+        "auto_send",
+        "draft_id",
+        "recipient_ids",
+        "saved",
+        "sent",
+        "submitted",
+        "title",
+        "verified",
+        "visibility"
+      ],
+      "finish_report_schema": {
+        "type": "object",
+        "properties": {
+          "draft_id": {
+            "type": "string"
+          },
+          "saved": {
+            "type": "boolean"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "submitted": {
+            "type": "boolean"
+          },
+          "sent": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "attachment_count": {
+            "type": "number"
+          },
+          "recipient_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "auto_send": {
+            "type": "boolean"
+          }
+        }
+      },
+      "environment": "isolated mock; no live school-service actions"
+    },
+    "steps": [
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.save",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ],
+      [
+        "wxs.saved",
+        {
+          "draft_id": "DRAFT-01"
+        }
+      ]
+    ],
+    "report": {
+      "draft_id": "DRAFT-01",
+      "saved": true,
+      "verified": true,
+      "submitted": false,
+      "sent": false,
+      "title": "[BENCH-MOCKCLI-20261019-W02] 학교 안전교육 자료 제출 안내",
+      "visibility": "비공개",
+      "attachment_count": 1,
+      "recipient_ids": [
+        "ORG-01"
+      ],
+      "auto_send": true
+    },
+    "tool_errors": []
+  }
+]

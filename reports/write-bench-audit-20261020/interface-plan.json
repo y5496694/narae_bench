@@ -1,0 +1,22 @@
+{
+  "model": "Narae3-Qwen3-4B-LoRA-v1",
+  "strength": 1,
+  "case": "NP-E-WXS-WRITE-01",
+  "formats": [
+    "schema",
+    "json"
+  ],
+  "max_tokens": 2048,
+  "max_tool_turns": 8,
+  "temperature": 0,
+  "seed": 719,
+  "source_sha256": {
+    "bench.py": "f1c4d5987b445fe325b699ebca82d9dc09cce33eb7ed57ec3020b38d615061de",
+    "cases.json": "8322223d21cb20d0c1d80f7725719d1cdf4be073f44d2dfe0b6860c980b96156",
+    "mock/cli.py": "c1dd35c6183ef05a15ac47b7fdf30daf4b0dc3b7b38341a0730a3430a1c5f206",
+    "mock/mock_workflow.py": "61d8e21055f2417dad557d1a7fc03e39995133083aca7fd2fb9213daddee61be",
+    "mock/evaluate.py": "2c2859306965514d6aa397de8992650bffa134c0893fbfbe0d7ce491d3fb857a"
+  },
+  "used_for_model_selection": false,
+  "added_to_historical_full_score": false
+}
