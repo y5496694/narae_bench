@@ -49,7 +49,7 @@ def parse_reply(text):
 def public_schema(task):
     variants = []
     for name in [*task["available_tools"], "finish"]:
-        args = {"type": "object"}
+        args = task.get("tool_argument_schemas", {}).get(name, {"type": "object"})
         if name == "finish":
             args = {**task["finish_report_schema"], "required": task["finish_report_fields"]}
         variants.append({"type": "object", "properties": {"tool": {"const": name}, "args": args},
@@ -182,7 +182,7 @@ def run(args):
                "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                "benchmark_profile": results["profile"], "output_transport": "UTF-8 JSON message.content; no streamed token-ID decoding",
                "benchmark_files_sha256": {name: hashlib.sha256((PACKAGE / name).read_bytes()).hexdigest()
-                                          for name in ("bench.py", "cases.json", "mock/cli.py", "mock/mock_workflow.py")}}
+                                          for name in ("bench.py", "cases.json", "mock/cli.py", "mock/mock_workflow.py", "mock/contracts.py")}}
     (args.out / "model-profile.json").write_text(json.dumps(profile, ensure_ascii=False, indent=2), encoding="utf-8")
     selected = [r["case_id"] for r in results["results"] if r["status"] == "NOT_RUN" and (not args.case or r["case_id"] in args.case)]
     if not selected:

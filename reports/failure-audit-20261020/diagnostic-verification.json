@@ -1,0 +1,286 @@
+{
+  "type": "actual-model selected diagnostic, not full benchmark or training",
+  "profile": "high-level-mock-cli-v2.4",
+  "cases": [
+    "NP-E-04",
+    "NP-E-WXS-READ-02",
+    "NP-E-WXS-WRITE-01",
+    "NP-N-01",
+    "CBE-03",
+    "CBE-07"
+  ],
+  "passed": 3,
+  "transcript_calls_verified": 17,
+  "rows": [
+    {
+      "case_id": "NP-E-04",
+      "status": "FAIL",
+      "failure_layer": "MODEL",
+      "declared_supported": true,
+      "active_seconds": 41.655,
+      "wall_seconds": 41.655,
+      "tool_calls": 3,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-04.json"
+          ]
+        },
+        "K2": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-04.json"
+          ]
+        },
+        "K3": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-04.json"
+          ]
+        },
+        "K4": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-04.json"
+          ]
+        }
+      },
+      "notes": "Automated high-level mock state checks; stdin session duration includes caller wait time."
+    },
+    {
+      "case_id": "NP-E-WXS-READ-02",
+      "status": "PASS",
+      "failure_layer": "NONE",
+      "declared_supported": true,
+      "active_seconds": 37.737,
+      "wall_seconds": 37.737,
+      "tool_calls": 1,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-READ-02.json"
+          ]
+        },
+        "K2": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-READ-02.json"
+          ]
+        },
+        "K3": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-READ-02.json"
+          ]
+        },
+        "K4": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-READ-02.json"
+          ]
+        }
+      },
+      "notes": "Automated high-level mock state checks; stdin session duration includes caller wait time."
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-01",
+      "status": "FAIL",
+      "failure_layer": "MODEL",
+      "declared_supported": true,
+      "active_seconds": 46.063,
+      "wall_seconds": 46.063,
+      "tool_calls": 2,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K2": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K3": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K4": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K5": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K6": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K7": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K8": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        },
+        "K9": {
+          "pass": true,
+          "evidence": [
+            "evidence/NP-E-WXS-WRITE-01.json"
+          ]
+        }
+      },
+      "notes": "Automated high-level mock state checks; stdin session duration includes caller wait time."
+    },
+    {
+      "case_id": "NP-N-01",
+      "status": "FAIL",
+      "failure_layer": "MODEL",
+      "declared_supported": true,
+      "active_seconds": 20.107,
+      "wall_seconds": 20.107,
+      "tool_calls": 1,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-N-01.json"
+          ]
+        },
+        "K2": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-N-01.json"
+          ]
+        },
+        "K3": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-N-01.json"
+          ]
+        },
+        "K4": {
+          "pass": false,
+          "evidence": [
+            "evidence/NP-N-01.json"
+          ]
+        }
+      },
+      "notes": "Automated high-level mock state checks; stdin session duration includes caller wait time."
+    },
+    {
+      "case_id": "CBE-03",
+      "status": "PASS",
+      "failure_layer": "NONE",
+      "declared_supported": true,
+      "active_seconds": 23.702,
+      "wall_seconds": 23.702,
+      "tool_calls": 3,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": true,
+          "evidence": [
+            "evidence/CBE-03.json"
+          ]
+        },
+        "K2": {
+          "pass": true,
+          "evidence": [
+            "evidence/CBE-03.json"
+          ]
+        },
+        "K3": {
+          "pass": true,
+          "evidence": [
+            "evidence/CBE-03.json"
+          ]
+        },
+        "K4": {
+          "pass": true,
+          "evidence": [
+            "evidence/CBE-03.json"
+          ]
+        }
+      },
+      "notes": "Automated high-level mock state checks; stdin session duration includes caller wait time."
+    },
+    {
+      "case_id": "CBE-07",
+      "status": "PASS",
+      "failure_layer": "NONE",
+      "declared_supported": true,
+      "active_seconds": 25.639,
+      "wall_seconds": 25.639,
+      "tool_calls": 1,
+      "extra_user_interventions": 0,
+      "incidents": [],
+      "checks": {
+        "K1": {
+          "pass": true,
+          "evidence": [
+            "evidence/CBE-07.json"
+          ]
+        },
+        "K2": {
+          "pass": true,
+          "evidence": [
+            "evidence/CBE-07.json"
+          ]
+        },
+        "K3": {
+          "pass": true,
+          "evidence": [
+            "evidence/CBE-07.json"
+          ]
+        },
+        "K4": {
+          "pass": true,
+          "evidence": [
+            "evidence/CBE-07.json"
+          ]
+        }
+      },
+      "notes": "Automated high-level mock state checks; stdin session duration includes caller wait time."
+    }
+  ],
+  "source_sha256": {
+    "bench.py": "f1c4d5987b445fe325b699ebca82d9dc09cce33eb7ed57ec3020b38d615061de",
+    "cases.json": "8322223d21cb20d0c1d80f7725719d1cdf4be073f44d2dfe0b6860c980b96156",
+    "mock/cli.py": "71e6f12e6f1aced1bbac84cb05c0a770ee570e0ed6359927b662adb7d3c27001",
+    "mock/mock_workflow.py": "d68c141c1ef3a373b4e3d1347b9a1dd13a63f65f177b5d6e3351310786ae91b8",
+    "mock/evaluate.py": "f1d1fa45aef880058cf45c50dfcbb3ed998863003db0f0fd51d8bd66057d4b1b",
+    "mock/contracts.py": "e476f0647d27e9633cf1d5e654afa5d48c71462e8933c371ef0c07b66afc6421"
+  },
+  "model_manifest_matches_historical": true,
+  "added_to_historical_full_score": false,
+  "weight_training_performed": false,
+  "live_service_actions": 0
+}

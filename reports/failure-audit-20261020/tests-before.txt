@@ -1,0 +1,196 @@
+EFFFFFFFFFFFFFFFFFFF.
+======================================================================
+ERROR: test_argument_schema_and_source_meaning_reach_model_without_answers (__main__.FailureContracts.test_argument_schema_and_source_meaning_reach_model_without_answers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 109, in test_argument_schema_and_source_meaning_reach_model_without_answers
+    self.assertEqual(query['properties']['scope']['enum'], ['my_documents','registry','circulation'])
+                     ~~~~~^^^^^^^^^^^^^^
+KeyError: 'properties'
+
+======================================================================
+FAIL: test_circulation_wrong_date_and_title_cannot_pass_with_gold_report (__main__.FailureContracts.test_circulation_wrong_date_and_title_cannot_pass_with_gold_report) (changed={'from': '2025-10-01'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 95, in test_circulation_wrong_date_and_title_cannot_pass_with_gold_report
+    self.assertFalse(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_circulation_wrong_date_and_title_cannot_pass_with_gold_report (__main__.FailureContracts.test_circulation_wrong_date_and_title_cannot_pass_with_gold_report) (changed={'title_contains': '다른 검색어'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 95, in test_circulation_wrong_date_and_title_cannot_pass_with_gold_report
+    self.assertFalse(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_explicit_my_then_all_search_preserves_fallback_trace (__main__.FailureContracts.test_explicit_my_then_all_search_preserves_fallback_trace)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 65, in test_explicit_my_then_all_search_preserves_fallback_trace
+    self.assertEqual(second['searched'], ['my','all'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['all'] != ['my', 'all']
+
+First differing element 0:
+'all'
+'my'
+
+Second list contains 1 additional elements.
+First extra element 1:
+'all'
+
+- ['all']
++ ['my', 'all']
+
+======================================================================
+FAIL: test_invalid_document_scope_enum_and_boolean_are_rejected (__main__.FailureContracts.test_invalid_document_scope_enum_and_boolean_are_rejected) (changed={'scope': 'my_documents|registry|circulation'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 85, in test_invalid_document_scope_enum_and_boolean_are_rejected
+    self.assertFalse(w.call('documents.query', args)['ok'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_invalid_document_scope_enum_and_boolean_are_rejected (__main__.FailureContracts.test_invalid_document_scope_enum_and_boolean_are_rejected) (changed={'date_basis': 'processed|registered'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 85, in test_invalid_document_scope_enum_and_boolean_are_rejected
+    self.assertFalse(w.call('documents.query', args)['ok'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_invalid_document_scope_enum_and_boolean_are_rejected (__main__.FailureContracts.test_invalid_document_scope_enum_and_boolean_are_rejected) (changed={'all_pages': 'true'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 85, in test_invalid_document_scope_enum_and_boolean_are_rejected
+    self.assertFalse(w.call('documents.query', args)['ok'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_invalid_document_scope_enum_and_boolean_are_rejected (__main__.FailureContracts.test_invalid_document_scope_enum_and_boolean_are_rejected) (changed={'scope': 'registry', 'condition': 'A|B|C'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 85, in test_invalid_document_scope_enum_and_boolean_are_rejected
+    self.assertFalse(w.call('documents.query', args)['ok'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_invalid_document_scope_enum_and_boolean_are_rejected (__main__.FailureContracts.test_invalid_document_scope_enum_and_boolean_are_rejected) (changed={'role': 'drafted|received|approved'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 85, in test_invalid_document_scope_enum_and_boolean_are_rejected
+    self.assertFalse(w.call('documents.query', args)['ok'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_registry_conditions_cannot_be_credited_under_wrong_scope (__main__.FailureContracts.test_registry_conditions_cannot_be_credited_under_wrong_scope)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 102, in test_registry_conditions_cannot_be_credited_under_wrong_scope
+    self.assertFalse(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_same_deadline_and_correction_action_are_equivalent (__main__.FailureContracts.test_same_deadline_and_correction_action_are_equivalent) (cid='CBE-07', deadline='2026-11-24 15:00')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 38, in test_same_deadline_and_correction_action_are_equivalent
+    self.assertTrue(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_same_deadline_and_correction_action_are_equivalent (__main__.FailureContracts.test_same_deadline_and_correction_action_are_equivalent) (cid='CBE-07', deadline='2026-11-24T15:00+09:00')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 38, in test_same_deadline_and_correction_action_are_equivalent
+    self.assertTrue(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_same_deadline_and_correction_action_are_equivalent (__main__.FailureContracts.test_same_deadline_and_correction_action_are_equivalent) (cid='CBE-07', deadline='2026.11.24T15:00')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 38, in test_same_deadline_and_correction_action_are_equivalent
+    self.assertTrue(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_same_deadline_and_correction_action_are_equivalent (__main__.FailureContracts.test_same_deadline_and_correction_action_are_equivalent) (cid='CBE-07', deadline='2026-11-24T06:00Z')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 38, in test_same_deadline_and_correction_action_are_equivalent
+    self.assertTrue(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_same_deadline_and_correction_action_are_equivalent (__main__.FailureContracts.test_same_deadline_and_correction_action_are_equivalent) (cid='CBE-08', deadline='2026-11-24 15:00')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 38, in test_same_deadline_and_correction_action_are_equivalent
+    self.assertTrue(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_same_deadline_and_correction_action_are_equivalent (__main__.FailureContracts.test_same_deadline_and_correction_action_are_equivalent) (cid='CBE-08', deadline='2026-11-24T15:00+09:00')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 38, in test_same_deadline_and_correction_action_are_equivalent
+    self.assertTrue(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_same_deadline_and_correction_action_are_equivalent (__main__.FailureContracts.test_same_deadline_and_correction_action_are_equivalent) (cid='CBE-08', deadline='2026.11.24T15:00')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 38, in test_same_deadline_and_correction_action_are_equivalent
+    self.assertTrue(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_same_deadline_and_correction_action_are_equivalent (__main__.FailureContracts.test_same_deadline_and_correction_action_are_equivalent) (cid='CBE-08', deadline='2026-11-24T06:00Z')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 38, in test_same_deadline_and_correction_action_are_equivalent
+    self.assertTrue(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_search_error_does_not_fall_back_and_bad_scope_is_rejected (__main__.FailureContracts.test_search_error_does_not_fall_back_and_bad_scope_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 77, in test_search_error_does_not_fall_back_and_bad_scope_is_rejected
+    self.assertFalse(w.call('cbe.search', {'name':'가상김','scope':'my|all'})['ok'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_unread_attachment_sets_have_no_required_sort_order (__main__.FailureContracts.test_unread_attachment_sets_have_no_required_sort_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\workspaces\narae_bench\tests\verify_failure_contracts.py", line 55, in test_unread_attachment_sets_have_no_required_sort_order
+    self.assertTrue(all(w.grade().values()))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.009s
+
+FAILED (failures=19, errors=1)

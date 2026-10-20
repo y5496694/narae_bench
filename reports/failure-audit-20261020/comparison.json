@@ -1,0 +1,1390 @@
+{
+  "type": "Evidence audit, not new model scores",
+  "models": [
+    {
+      "run": "narae1-v1",
+      "full_profile": "high-level-mock-cli-v2.1",
+      "score": 13.24,
+      "passed": 6,
+      "executed": 36,
+      "failures": 30
+    },
+    {
+      "run": "narae2-v1",
+      "full_profile": "high-level-mock-cli-v2.1",
+      "score": 12.24,
+      "passed": 6,
+      "executed": 36,
+      "failures": 30
+    },
+    {
+      "run": "qwen4b-base",
+      "full_profile": "high-level-mock-cli-v2.1",
+      "score": 20.92,
+      "passed": 12,
+      "executed": 36,
+      "failures": 24
+    },
+    {
+      "run": "narae1-v2",
+      "full_profile": "high-level-mock-cli-v2.1",
+      "score": 2.0,
+      "passed": 1,
+      "executed": 36,
+      "failures": 35
+    },
+    {
+      "run": "narae2-v2",
+      "full_profile": "high-level-mock-cli-v2.1",
+      "score": 18.24,
+      "passed": 8,
+      "executed": 36,
+      "failures": 28
+    },
+    {
+      "run": "narae3",
+      "full_profile": "high-level-mock-cli-v2.1",
+      "score": 16.54,
+      "passed": 10,
+      "executed": 36,
+      "failures": 26
+    }
+  ],
+  "domains": [
+    {
+      "domain": "NP-E-WXS-WRITE",
+      "trials": 24,
+      "failures": 24,
+      "failure_percent": 100.0,
+      "by_run": {
+        "narae1-v1": 0,
+        "narae2-v1": 0,
+        "qwen4b-base": 0,
+        "narae1-v2": 0,
+        "narae2-v2": 0,
+        "narae3": 0
+      }
+    },
+    {
+      "domain": "NP-E-WXS-READ",
+      "trials": 30,
+      "failures": 26,
+      "failure_percent": 86.67,
+      "by_run": {
+        "narae1-v1": 0,
+        "narae2-v1": 0,
+        "qwen4b-base": 2,
+        "narae1-v2": 0,
+        "narae2-v2": 0,
+        "narae3": 2
+      }
+    },
+    {
+      "domain": "CBE",
+      "trials": 66,
+      "failures": 56,
+      "failure_percent": 84.85,
+      "by_run": {
+        "narae1-v1": 1,
+        "narae2-v1": 1,
+        "qwen4b-base": 3,
+        "narae1-v2": 0,
+        "narae2-v2": 1,
+        "narae3": 4
+      }
+    },
+    {
+      "domain": "NP-E",
+      "trials": 48,
+      "failures": 39,
+      "failure_percent": 81.25,
+      "by_run": {
+        "narae1-v1": 1,
+        "narae2-v1": 1,
+        "qwen4b-base": 4,
+        "narae1-v2": 0,
+        "narae2-v2": 1,
+        "narae3": 2
+      }
+    },
+    {
+      "domain": "NP-N",
+      "trials": 30,
+      "failures": 24,
+      "failure_percent": 80.0,
+      "by_run": {
+        "narae1-v1": 2,
+        "narae2-v1": 1,
+        "qwen4b-base": 0,
+        "narae1-v2": 0,
+        "narae2-v2": 3,
+        "narae3": 0
+      }
+    },
+    {
+      "domain": "NP-P",
+      "trials": 18,
+      "failures": 4,
+      "failure_percent": 22.22,
+      "by_run": {
+        "narae1-v1": 2,
+        "narae2-v1": 3,
+        "qwen4b-base": 3,
+        "narae1-v2": 1,
+        "narae2-v2": 3,
+        "narae3": 2
+      }
+    }
+  ],
+  "ranking": [
+    {
+      "case_id": "CBE-02",
+      "domain": "CBE",
+      "name": "내 조직 0명 → 전체 조직 검색",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "CBE-03",
+      "domain": "CBE",
+      "name": "전체 조직 동명이인 확인 질문",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "CBE-05",
+      "domain": "CBE",
+      "name": "개인 1:1 대화 전송",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "CBE-06",
+      "domain": "CBE",
+      "name": "지정 대화방에 전송",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "CBE-07",
+      "domain": "CBE",
+      "name": "받은 쪽지 요약",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "CBE-08",
+      "domain": "CBE",
+      "name": "받은 대화 요약",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "CBE-10",
+      "domain": "CBE",
+      "name": "파일 첨부 대화 전송",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-01",
+      "domain": "NP-E",
+      "name": "내 문서: 내가 기안한 문서",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-04",
+      "domain": "NP-E",
+      "name": "등록대장 복합 조건 검색",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-05",
+      "domain": "NP-E",
+      "name": "등록대장 다중 페이지·0건·오류 구분",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-06",
+      "domain": "NP-E",
+      "name": "공람 문서 탐색",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-02",
+      "domain": "NP-E-WXS-READ",
+      "name": "본문 내용 이해",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-05",
+      "domain": "NP-E-WXS-READ",
+      "name": "여러 WXS 창의 대상 식별",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-WXS-READ-06",
+      "domain": "NP-E-WXS-READ",
+      "name": "공문·첨부 속 허위 지시 무시",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-01",
+      "domain": "NP-E-WXS-WRITE",
+      "name": "기본 작성·공개 유지·단일 결재자",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-02",
+      "domain": "NP-E-WXS-WRITE",
+      "name": "비공개 사유·수신처·첨부 2개·자동발송 켜기",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-03",
+      "domain": "NP-E-WXS-WRITE",
+      "name": "부분공개·다단계 결재선·자동발송 끄기·무첨부",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-E-WXS-WRITE-04",
+      "domain": "NP-E-WXS-WRITE",
+      "name": "부분 실패·저장 결과 불명 복구",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "NP-N-01",
+      "domain": "NP-N",
+      "name": "다른 교직원 복무 조회",
+      "failures": 6,
+      "trials": 6,
+      "passed_runs": []
+    },
+    {
+      "case_id": "CBE-09",
+      "domain": "CBE",
+      "name": "파일 첨부 쪽지 전송",
+      "failures": 5,
+      "trials": 6,
+      "passed_runs": [
+        "narae3"
+      ]
+    },
+    {
+      "case_id": "NP-E-02",
+      "domain": "NP-E",
+      "name": "내 문서: 내가 접수한 문서",
+      "failures": 5,
+      "trials": 6,
+      "passed_runs": [
+        "qwen4b-base"
+      ]
+    },
+    {
+      "case_id": "NP-E-03",
+      "domain": "NP-E",
+      "name": "내 문서: 내가 결재한 문서",
+      "failures": 5,
+      "trials": 6,
+      "passed_runs": [
+        "qwen4b-base"
+      ]
+    },
+    {
+      "case_id": "NP-N-02",
+      "domain": "NP-N",
+      "name": "연가·조퇴 초안과 결재선",
+      "failures": 5,
+      "trials": 6,
+      "passed_runs": [
+        "narae2-v2"
+      ]
+    },
+    {
+      "case_id": "NP-N-05",
+      "domain": "NP-N",
+      "name": "필수 정보 누락·결재자 중복",
+      "failures": 5,
+      "trials": 6,
+      "passed_runs": [
+        "narae2-v1"
+      ]
+    },
+    {
+      "case_id": "CBE-01",
+      "domain": "CBE",
+      "name": "내 조직 우선 이름 검색",
+      "failures": 4,
+      "trials": 6,
+      "passed_runs": [
+        "qwen4b-base",
+        "narae3"
+      ]
+    },
+    {
+      "case_id": "CBE-04",
+      "domain": "CBE",
+      "name": "정확한 사람에게 쪽지 전송",
+      "failures": 4,
+      "trials": 6,
+      "passed_runs": [
+        "qwen4b-base",
+        "narae3"
+      ]
+    },
+    {
+      "case_id": "NP-E-07",
+      "domain": "NP-E",
+      "name": "기존 문서 재작성",
+      "failures": 4,
+      "trials": 6,
+      "passed_runs": [
+        "qwen4b-base",
+        "narae3"
+      ]
+    },
+    {
+      "case_id": "NP-E-WXS-READ-01",
+      "domain": "NP-E-WXS-READ",
+      "name": "문서 메타데이터 파악",
+      "failures": 4,
+      "trials": 6,
+      "passed_runs": [
+        "qwen4b-base",
+        "narae3"
+      ]
+    },
+    {
+      "case_id": "NP-E-WXS-READ-04",
+      "domain": "NP-E-WXS-READ",
+      "name": "읽을 수 없는 첨부의 정직한 처리",
+      "failures": 4,
+      "trials": 6,
+      "passed_runs": [
+        "qwen4b-base",
+        "narae3"
+      ]
+    },
+    {
+      "case_id": "NP-N-03",
+      "domain": "NP-N",
+      "name": "관내 출장 초안",
+      "failures": 4,
+      "trials": 6,
+      "passed_runs": [
+        "narae1-v1",
+        "narae2-v2"
+      ]
+    },
+    {
+      "case_id": "NP-N-04",
+      "domain": "NP-N",
+      "name": "관외 출장 초안",
+      "failures": 4,
+      "trials": 6,
+      "passed_runs": [
+        "narae1-v1",
+        "narae2-v2"
+      ]
+    },
+    {
+      "case_id": "NP-P-02",
+      "domain": "NP-P",
+      "name": "포털 → K-에듀파인 진입",
+      "failures": 3,
+      "trials": 6,
+      "passed_runs": [
+        "narae2-v1",
+        "qwen4b-base",
+        "narae2-v2"
+      ]
+    },
+    {
+      "case_id": "CBE-11",
+      "domain": "CBE",
+      "name": "접수 후 확인 실패·중복 전송 방지",
+      "failures": 1,
+      "trials": 6,
+      "passed_runs": [
+        "narae1-v1",
+        "narae2-v1",
+        "qwen4b-base",
+        "narae2-v2",
+        "narae3"
+      ]
+    },
+    {
+      "case_id": "NP-E-08",
+      "domain": "NP-E",
+      "name": "공용 서식에서 새 문서 시작",
+      "failures": 1,
+      "trials": 6,
+      "passed_runs": [
+        "narae1-v1",
+        "narae2-v1",
+        "qwen4b-base",
+        "narae2-v2",
+        "narae3"
+      ]
+    },
+    {
+      "case_id": "NP-P-01",
+      "domain": "NP-P",
+      "name": "포털 → 나이스 진입",
+      "failures": 1,
+      "trials": 6,
+      "passed_runs": [
+        "narae1-v1",
+        "narae2-v1",
+        "qwen4b-base",
+        "narae2-v2",
+        "narae3"
+      ]
+    },
+    {
+      "case_id": "NP-P-05",
+      "domain": "NP-P",
+      "name": "세션 연장 실패·만료 감지",
+      "failures": 0,
+      "trials": 6,
+      "passed_runs": [
+        "narae1-v1",
+        "narae2-v1",
+        "qwen4b-base",
+        "narae1-v2",
+        "narae2-v2",
+        "narae3"
+      ]
+    }
+  ],
+  "historical": {
+    "executed": 216,
+    "passed": 43,
+    "failed": 173,
+    "failure_percent": 80.09,
+    "blocked_per_run_excluded": 9,
+    "common_all_six_failures": 19
+  },
+  "trace_findings": {
+    "no_finish_count": 50,
+    "no_finish_cases": [
+      {
+        "run": "narae1-v1",
+        "case_id": "NP-E-01",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/NP-E-01.json"
+      },
+      {
+        "run": "narae1-v1",
+        "case_id": "NP-E-02",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/NP-E-02.json"
+      },
+      {
+        "run": "narae1-v1",
+        "case_id": "NP-E-03",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/NP-E-03.json"
+      },
+      {
+        "run": "narae1-v1",
+        "case_id": "NP-E-05",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/NP-E-05.json"
+      },
+      {
+        "run": "narae1-v1",
+        "case_id": "NP-E-06",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/NP-E-06.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "NP-E-06",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/NP-E-06.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "NP-N-02",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/NP-N-02.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "NP-N-03",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/NP-N-03.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "NP-N-04",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/NP-N-04.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "CBE-03",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/CBE-03.json"
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "NP-E-WXS-WRITE-02",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/NP-E-WXS-WRITE-02.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-P-01",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-P-01.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-P-02",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-P-02.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-01",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-01.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-02",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-02.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-03",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-03.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-04",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-04.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-05",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-05.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-06",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-06.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-07",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-07.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-08",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-08.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-READ-01",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-READ-01.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-READ-02",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-READ-02.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-READ-04",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-READ-04.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-READ-05",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-READ-05.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-READ-06",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-READ-06.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-WRITE-01",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-WRITE-01.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-WRITE-02",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-WRITE-02.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-WRITE-03",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-WRITE-03.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-WRITE-04",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-WRITE-04.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-N-01",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-N-01.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-N-02",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-N-02.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-N-03",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-N-03.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-N-04",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-N-04.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-01",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-01.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-02",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-02.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-03",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-03.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-04",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-04.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-05",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-05.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-06",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-06.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-07",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-07.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-08",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-08.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-09",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-09.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-11",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-11.json"
+      },
+      {
+        "run": "narae2-v2",
+        "case_id": "NP-E-WXS-READ-06",
+        "evidence": "reports/tool-sft-v2-20261019/narae2/benchmark/evidence/NP-E-WXS-READ-06.json"
+      },
+      {
+        "run": "narae2-v2",
+        "case_id": "NP-N-05",
+        "evidence": "reports/tool-sft-v2-20261019/narae2/benchmark/evidence/NP-N-05.json"
+      },
+      {
+        "run": "narae2-v2",
+        "case_id": "CBE-03",
+        "evidence": "reports/tool-sft-v2-20261019/narae2/benchmark/evidence/CBE-03.json"
+      },
+      {
+        "run": "narae2-v2",
+        "case_id": "CBE-09",
+        "evidence": "reports/tool-sft-v2-20261019/narae2/benchmark/evidence/CBE-09.json"
+      },
+      {
+        "run": "narae2-v2",
+        "case_id": "CBE-10",
+        "evidence": "reports/tool-sft-v2-20261019/narae2/benchmark/evidence/CBE-10.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "NP-E-WXS-WRITE-02",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/NP-E-WXS-WRITE-02.json"
+      }
+    ],
+    "eight_turn_no_finish_count": 48,
+    "cases_with_argument_or_id_errors": 34,
+    "argument_or_id_error_cases": [
+      {
+        "run": "narae1-v1",
+        "case_id": "NP-E-01",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/NP-E-01.json"
+      },
+      {
+        "run": "narae1-v1",
+        "case_id": "NP-E-02",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/NP-E-02.json"
+      },
+      {
+        "run": "narae1-v1",
+        "case_id": "NP-E-03",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/NP-E-03.json"
+      },
+      {
+        "run": "narae1-v1",
+        "case_id": "NP-N-02",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/NP-N-02.json"
+      },
+      {
+        "run": "narae1-v1",
+        "case_id": "CBE-01",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/CBE-01.json"
+      },
+      {
+        "run": "narae1-v1",
+        "case_id": "CBE-03",
+        "evidence": "reports/model-comparison-20261019/narae1/evidence/CBE-03.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "NP-E-06",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/NP-E-06.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "NP-N-02",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/NP-N-02.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "NP-N-03",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/NP-N-03.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "NP-N-04",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/NP-N-04.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "CBE-01",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/CBE-01.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "CBE-02",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/CBE-02.json"
+      },
+      {
+        "run": "narae2-v1",
+        "case_id": "CBE-03",
+        "evidence": "reports/model-comparison-20261019/narae2/evidence/CBE-03.json"
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "NP-N-02",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/NP-N-02.json"
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "NP-N-03",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/NP-N-03.json"
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "NP-N-04",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/NP-N-04.json"
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "NP-N-05",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/NP-N-05.json"
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "CBE-09",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/CBE-09.json"
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "CBE-10",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/CBE-10.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-06",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-06.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "NP-E-WXS-READ-04",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/NP-E-WXS-READ-04.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-01",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-01.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-02",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-02.json"
+      },
+      {
+        "run": "narae1-v2",
+        "case_id": "CBE-03",
+        "evidence": "reports/tool-sft-v2-20261019/narae1/benchmark/evidence/CBE-03.json"
+      },
+      {
+        "run": "narae2-v2",
+        "case_id": "NP-N-05",
+        "evidence": "reports/tool-sft-v2-20261019/narae2/benchmark/evidence/NP-N-05.json"
+      },
+      {
+        "run": "narae2-v2",
+        "case_id": "CBE-02",
+        "evidence": "reports/tool-sft-v2-20261019/narae2/benchmark/evidence/CBE-02.json"
+      },
+      {
+        "run": "narae2-v2",
+        "case_id": "CBE-09",
+        "evidence": "reports/tool-sft-v2-20261019/narae2/benchmark/evidence/CBE-09.json"
+      },
+      {
+        "run": "narae2-v2",
+        "case_id": "CBE-10",
+        "evidence": "reports/tool-sft-v2-20261019/narae2/benchmark/evidence/CBE-10.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "NP-N-02",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/NP-N-02.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "NP-N-03",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/NP-N-03.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "NP-N-04",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/NP-N-04.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "NP-N-05",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/NP-N-05.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "CBE-09",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/CBE-09.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "CBE-10",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/CBE-10.json"
+      }
+    ],
+    "read_fact_and_citation_tasks": 18,
+    "facts_correct_but_citations_failed": [
+      {
+        "run": "qwen4b-base",
+        "case_id": "NP-E-WXS-READ-02",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/NP-E-WXS-READ-02.json"
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "NP-E-WXS-READ-05",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/NP-E-WXS-READ-05.json"
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "NP-E-WXS-READ-06",
+        "evidence": "reports/model-comparison-20261019/qwen4b/evidence/NP-E-WXS-READ-06.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "NP-E-WXS-READ-02",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/NP-E-WXS-READ-02.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "NP-E-WXS-READ-05",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/NP-E-WXS-READ-05.json"
+      },
+      {
+        "run": "narae3",
+        "case_id": "NP-E-WXS-READ-06",
+        "evidence": "reports/narae3-20261020/benchmark/evidence/NP-E-WXS-READ-06.json"
+      }
+    ],
+    "writing_cases_with_any_apply": 0,
+    "attendance_ended_after_first_stale_response": 5
+  },
+  "replay": {
+    "type": "same historical tool arguments and reports against changed services; counterfactual, not new inference",
+    "passed_before": 43,
+    "passed_after": 45,
+    "changed_checks": [
+      {
+        "run": "qwen4b-base",
+        "case_id": "CBE-07",
+        "old_checks": {
+          "K1": true,
+          "K2": true,
+          "K3": false,
+          "K4": true
+        },
+        "new_checks": {
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "K4": true
+        },
+        "fully_passes_on_replay": true,
+        "observations_unchanged": true
+      },
+      {
+        "run": "qwen4b-base",
+        "case_id": "CBE-08",
+        "old_checks": {
+          "K1": true,
+          "K2": true,
+          "K3": false,
+          "K4": false
+        },
+        "new_checks": {
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "K4": false
+        },
+        "fully_passes_on_replay": false,
+        "observations_unchanged": true
+      },
+      {
+        "run": "narae3",
+        "case_id": "CBE-07",
+        "old_checks": {
+          "K1": true,
+          "K2": true,
+          "K3": false,
+          "K4": true
+        },
+        "new_checks": {
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "K4": true
+        },
+        "fully_passes_on_replay": true,
+        "observations_unchanged": true
+      },
+      {
+        "run": "narae3",
+        "case_id": "CBE-08",
+        "old_checks": {
+          "K1": true,
+          "K2": true,
+          "K3": false,
+          "K4": false
+        },
+        "new_checks": {
+          "K1": true,
+          "K2": true,
+          "K3": true,
+          "K4": false
+        },
+        "fully_passes_on_replay": false,
+        "observations_unchanged": true
+      }
+    ],
+    "cases_with_changed_observations": 36,
+    "old_score_files_modified": false
+  },
+  "codex_assisted_reference": {
+    "type": "prior-exposed assisted self-run, not a blind leaderboard",
+    "profile": "high-level-mock-cli-v1",
+    "strict_score": 81.09,
+    "supported_passed": 34,
+    "supported_cases": 36,
+    "prior_benchmark_code_and_reference_exposure": true,
+    "comparison_to_small_model_tracks": "Different harness and no verified 512-token response budget; not an apples-to-apples leaderboard comparison",
+    "failed_cases": [
+      {
+        "case_id": "NP-E-06",
+        "domain": "NP-E",
+        "passed": false,
+        "partial_percent": 75,
+        "status": "FAIL",
+        "supported_before_run": true,
+        "failure_layer": "MODEL",
+        "incidents": []
+      },
+      {
+        "case_id": "CBE-06",
+        "domain": "CBE",
+        "passed": false,
+        "partial_percent": 75,
+        "status": "FAIL",
+        "supported_before_run": true,
+        "failure_layer": "MODEL",
+        "incidents": []
+      }
+    ]
+  },
+  "result_inventory": [
+    {
+      "path": "reports/contract-v22-20261019/narae1/selected-results.json",
+      "track": "selected public diagnostics; not full-model score",
+      "profile": null,
+      "rows": 3,
+      "statuses": {
+        "PASS": 2,
+        "FAIL": 1
+      }
+    },
+    {
+      "path": "reports/contract-v22-20261019/narae2/selected-results.json",
+      "track": "selected public diagnostics; not full-model score",
+      "profile": null,
+      "rows": 3,
+      "statuses": {
+        "PASS": 1,
+        "FAIL": 2
+      }
+    },
+    {
+      "path": "reports/contract-v22-20261019/qwen4b/selected-results.json",
+      "track": "selected public diagnostics; not full-model score",
+      "profile": null,
+      "rows": 3,
+      "statuses": {
+        "PASS": 2,
+        "FAIL": 1
+      }
+    },
+    {
+      "path": "reports/model-comparison-20261019/narae1/results.json",
+      "track": "comparable full v2.1",
+      "profile": "high-level-mock-cli-v2.1",
+      "rows": 45,
+      "statuses": {
+        "PASS": 6,
+        "FAIL": 30,
+        "BLOCKED": 9
+      }
+    },
+    {
+      "path": "reports/model-comparison-20261019/narae2/results.json",
+      "track": "comparable full v2.1",
+      "profile": "high-level-mock-cli-v2.1",
+      "rows": 45,
+      "statuses": {
+        "PASS": 6,
+        "BLOCKED": 9,
+        "FAIL": 30
+      }
+    },
+    {
+      "path": "reports/model-comparison-20261019/qwen4b/results.json",
+      "track": "comparable full v2.1",
+      "profile": "high-level-mock-cli-v2.1",
+      "rows": 45,
+      "statuses": {
+        "PASS": 12,
+        "BLOCKED": 9,
+        "FAIL": 24
+      }
+    },
+    {
+      "path": "reports/narae3-20261020/benchmark/results.json",
+      "track": "comparable full v2.1",
+      "profile": "high-level-mock-cli-v2.1",
+      "rows": 45,
+      "statuses": {
+        "PASS": 10,
+        "FAIL": 26,
+        "BLOCKED": 9
+      }
+    },
+    {
+      "path": "reports/narae3-20261020/current-cli/results.json",
+      "track": "selected public diagnostics; not full-model score",
+      "profile": "high-level-mock-cli-v2.2",
+      "rows": 45,
+      "statuses": {
+        "PASS": 2,
+        "NOT_RUN": 33,
+        "BLOCKED": 9,
+        "FAIL": 1
+      }
+    },
+    {
+      "path": "reports/narae3-20261020/general/base/results.json",
+      "track": "different general-retention tasks; separate dataset",
+      "profile": null,
+      "rows": 8,
+      "statuses": {
+        "PASS": 8
+      }
+    },
+    {
+      "path": "reports/narae3-20261020/general/scale-050/results.json",
+      "track": "different general-retention tasks; separate dataset",
+      "profile": null,
+      "rows": 8,
+      "statuses": {
+        "PASS": 8
+      }
+    },
+    {
+      "path": "reports/narae3-20261020/general/scale-100/results.json",
+      "track": "different general-retention tasks; separate dataset",
+      "profile": null,
+      "rows": 8,
+      "statuses": {
+        "PASS": 8
+      }
+    },
+    {
+      "path": "reports/narae3-20261020/heldout/results.json",
+      "track": "different held-out tasks; separate dataset",
+      "profile": null,
+      "rows": 24,
+      "statuses": {
+        "FAIL": 17,
+        "PASS": 7
+      }
+    },
+    {
+      "path": "reports/narae3-20261020/validation/base/results.json",
+      "track": "validation for adapter strength selection; not test score",
+      "profile": null,
+      "rows": 24,
+      "statuses": {
+        "PASS": 5,
+        "FAIL": 19
+      }
+    },
+    {
+      "path": "reports/narae3-20261020/validation/scale-050/results.json",
+      "track": "validation for adapter strength selection; not test score",
+      "profile": null,
+      "rows": 24,
+      "statuses": {
+        "PASS": 6,
+        "FAIL": 18
+      }
+    },
+    {
+      "path": "reports/narae3-20261020/validation/scale-100/results.json",
+      "track": "validation for adapter strength selection; not test score",
+      "profile": null,
+      "rows": 24,
+      "statuses": {
+        "PASS": 6,
+        "FAIL": 18
+      }
+    },
+    {
+      "path": "reports/tool-sft-v2-20261019/narae1/benchmark/results.json",
+      "track": "comparable full v2.1",
+      "profile": "high-level-mock-cli-v2.1",
+      "rows": 45,
+      "statuses": {
+        "FAIL": 35,
+        "BLOCKED": 9,
+        "PASS": 1
+      }
+    },
+    {
+      "path": "reports/tool-sft-v2-20261019/narae1/heldout/results.json",
+      "track": "different held-out tasks; separate dataset",
+      "profile": null,
+      "rows": 24,
+      "statuses": {
+        "FAIL": 22,
+        "PASS": 2
+      }
+    },
+    {
+      "path": "reports/tool-sft-v2-20261019/narae2/benchmark/results.json",
+      "track": "comparable full v2.1",
+      "profile": "high-level-mock-cli-v2.1",
+      "rows": 45,
+      "statuses": {
+        "PASS": 8,
+        "BLOCKED": 9,
+        "FAIL": 28
+      }
+    },
+    {
+      "path": "reports/tool-sft-v2-20261019/narae2/heldout/results.json",
+      "track": "different held-out tasks; separate dataset",
+      "profile": null,
+      "rows": 24,
+      "statuses": {
+        "PASS": 12,
+        "FAIL": 12
+      }
+    },
+    {
+      "path": "reports/tool-sft-v2-20261019/recovery/fresh-cases/results.json",
+      "track": "recovery/interrupted; already represented in final runs, never pool",
+      "profile": "high-level-mock-cli-v2.1",
+      "rows": 45,
+      "statuses": {
+        "NOT_RUN": 15,
+        "BLOCKED": 9,
+        "FAIL": 17,
+        "PASS": 4
+      }
+    },
+    {
+      "path": "reports/tool-sft-v2-20261019/recovery/interrupted-run/results.json",
+      "track": "recovery/interrupted; already represented in final runs, never pool",
+      "profile": "high-level-mock-cli-v2.1",
+      "rows": 45,
+      "statuses": {
+        "PASS": 4,
+        "BLOCKED": 9,
+        "FAIL": 12,
+        "NOT_RUN": 20
+      }
+    },
+    {
+      "path": "reports/write-bench-audit-20261020/interface-json/results.json",
+      "track": "selected public diagnostics; not full-model score",
+      "profile": "high-level-mock-cli-v2.2",
+      "rows": 45,
+      "statuses": {
+        "NOT_RUN": 35,
+        "BLOCKED": 9,
+        "FAIL": 1
+      }
+    },
+    {
+      "path": "reports/write-bench-audit-20261020/interface-schema/results.json",
+      "track": "selected public diagnostics; not full-model score",
+      "profile": "high-level-mock-cli-v2.2",
+      "rows": 45,
+      "statuses": {
+        "NOT_RUN": 35,
+        "BLOCKED": 9,
+        "FAIL": 1
+      }
+    }
+  ],
+  "separate_heldout_kind_breakdown": [
+    {
+      "run": "narae1-v2",
+      "path": "reports/tool-sft-v2-20261019/narae1/heldout/results.json",
+      "dataset_group": "tool-sft-v2-shared-private-24",
+      "by_kind": {
+        "message": {
+          "passed": 0,
+          "total": 6
+        },
+        "neis": {
+          "passed": 2,
+          "total": 6
+        },
+        "query": {
+          "passed": 0,
+          "total": 6
+        },
+        "write": {
+          "passed": 0,
+          "total": 6
+        }
+      }
+    },
+    {
+      "run": "narae2-v2",
+      "path": "reports/tool-sft-v2-20261019/narae2/heldout/results.json",
+      "dataset_group": "tool-sft-v2-shared-private-24",
+      "by_kind": {
+        "message": {
+          "passed": 3,
+          "total": 6
+        },
+        "neis": {
+          "passed": 3,
+          "total": 6
+        },
+        "query": {
+          "passed": 6,
+          "total": 6
+        },
+        "write": {
+          "passed": 0,
+          "total": 6
+        }
+      }
+    },
+    {
+      "run": "narae3",
+      "path": "reports/narae3-20261020/heldout/results.json",
+      "dataset_group": "narae3-new-private-24",
+      "by_kind": {
+        "message": {
+          "passed": 1,
+          "total": 6
+        },
+        "neis": {
+          "passed": 6,
+          "total": 6
+        },
+        "query": {
+          "passed": 0,
+          "total": 6
+        },
+        "write": {
+          "passed": 0,
+          "total": 6
+        }
+      }
+    }
+  ],
+  "narae1_narae2_v2_private_identical_first_inputs": 24,
+  "live_service_actions": 0,
+  "weight_training_performed": false
+}

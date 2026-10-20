@@ -1,0 +1,2 @@
+{"type": "mock evaluator contract tests; not model performance", "supported_cases_verified": 36, "blocked_cases": 9, "maximum_mock_score": 84.33, "empty_agent_cannot_pass": true, "wrong_recipient_rejected": true, "save_without_server_reinspection_rejected": true, "live_service_actions": 0, "negative_contract_cases_passed": 4}
+{"stdio_cli_positive_negative_and_aggregation": "passed", "live_service_actions": 0}

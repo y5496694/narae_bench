@@ -8,7 +8,9 @@ import os
 import hashlib
 import json
 import re
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from contracts import argument_schemas
 
 PACKAGE=Path(__file__).resolve().parents[1]
 ROOT=Path(os.environ.get("NARAE_BENCH_STATE",str(PACKAGE/"work/mock001"))).resolve()
@@ -41,6 +43,18 @@ def norm(v):
     if isinstance(v,list): return [norm(x) for x in v]
     if isinstance(v,dict): return {k:norm(x) for k,x in v.items()}
     return v
+
+def deadline_value(value):
+    # A time is mandatory. Bare dates must not silently become midnight.
+    if not isinstance(value,str):return None
+    text=re.sub(r"^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.?[T ]+",
+                lambda m:f"{int(m[1]):04d}-{int(m[2]):02d}-{int(m[3]):02d}T",value.strip())
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}(?::00)?(?:Z|[+-]\d{2}:\d{2})?",text):return None
+    try:
+        result=datetime.fromisoformat(text.replace('Z','+00:00'))
+    except ValueError:return None
+    local=timezone(timedelta(hours=9))
+    return (result.replace(tzinfo=local) if result.tzinfo is None else result).astimezone(local)
 
 def write_fields_equal(actual,expected):
     # CRLF/LF are equivalent document text; preserve every other field and space.
@@ -107,9 +121,23 @@ class World:
     def tool(self,name,description): self.tools[name]=description
     def finish(self,gold,groups,steps): self.gold=gold;self.groups=groups;self.oracle=steps+[("finish",gold)]
     def public(self):
+        schema=report_shape(self.gold)
+        props=schema.get("properties",{})
+        descriptions={
+            "facts":"Extract each requested fact from observed content, preserving dates, times, quantities and exceptions.",
+            "sources":"Evidence locations, not repeated fact text. For a fact-to-source object use <document_id>:<body location key> for each fact. For an array use observed document IDs or supported locations.",
+            "body":"The exact message body or document text confirmed by the tool, not a narrative status summary.",
+            "title":"The exact observed title; use the empty string if the confirmed message has no title.",
+            "action":"The work to perform from the latest corrected content, not the transport or service name.",
+            "deadline":"The complete corrected date AND time. Equivalent ISO or dotted dates are accepted; absent timezone means Asia/Seoul.",
+            "fallback":"Whether the successful person search reached all organizations after a successful zero-row my-organization search.",
+        }
+        for key,description in descriptions.items():
+            if key in props:props[key]["description"]=description
         return {"case_id":self.id,"request":self.request,"initial_observation":self.initial,
                 "available_tools":self.tools,"finish_report_fields":sorted(self.gold),
-                "finish_report_schema":report_shape(self.gold),
+                "tool_argument_schemas":argument_schemas(self.id,self.tools),
+                "finish_report_schema":schema,
                 "environment":"isolated mock; no live school-service actions"}
 
     def setup(self):
@@ -406,13 +434,18 @@ class World:
             return {"ok":True,"user_reply":{k:v for k,v in {"organization":"푸른초","position":"교감"}.items() if k in fields},"presented_candidates":queried}
         if tool=="cbe.search":
             name=a["name"];scope=a.get("scope","auto");my=[x for x in USERS if x["name"]==name and x["scope"]=="my"]
+            if scope not in ("auto","my","all"):raise ValueError("INVALID_SEARCH_SCOPE")
             if name=="가상오류":
                 s["my_search_error"]="MY_SEARCH_FAILED"
                 return {"ok":False,"error":"MY_SEARCH_FAILED","searched":["my"],"fallback":False,"error_is_zero":False}
             all_rows=[x for x in USERS if x["name"]==name]
             actual="my" if scope=="auto" and my else ("all" if scope=="auto" else scope)
             rows=my if actual=="my" else all_rows
-            s["user_search"]={"requested_scope":scope,"scope":actual,"fallback":scope=="auto" and not my,"searched":["my","all"] if scope=="auto" and not my else [actual],"users":copy.deepcopy(rows)}
+            history=s.setdefault("user_search_history",[])
+            explicit_fallback=scope=="all" and any(q["name"]==name and q["scope"]=="my" and not q["users"] for q in history)
+            fallback=(scope=="auto" and not my) or explicit_fallback
+            s["user_search"]={"requested_scope":scope,"scope":actual,"fallback":fallback,"searched":["my","all"] if fallback else [actual],"users":copy.deepcopy(rows)}
+            history.append({"name":name,**copy.deepcopy(s["user_search"])})
             return {"ok":True,**s["user_search"]}
         if tool=="cbe.select":
             candidates=s.get("user_search",{}).get("users",[])
@@ -467,7 +500,14 @@ class World:
         raise ValueError("UNSUPPORTED_MOCK_TOOL")
 
     def query_documents(self,a):
-        s=self.state;query=copy.deepcopy(a);s["queries"].append(query);scope=a["scope"]
+        # Reject malformed contracts before recording a query or returning rows.
+        enums={"scope":("my_documents","registry","circulation"),"role":("drafted","received","approved"),
+               "date_basis":("processed","registered"),"condition":("A","B","C")}
+        for key,allowed in enums.items():
+            if key in a and a[key] not in allowed:raise ValueError("INVALID_QUERY_ENUM: "+key)
+        if "all_pages" in a and type(a["all_pages"]) is not bool:raise ValueError("ALL_PAGES_MUST_BE_BOOLEAN")
+        scope=a["scope"]
+        s=self.state;query=copy.deepcopy(a);s["queries"].append(query)
         if scope=="my_documents":
             role=a.get("role");ids=["MY-"+role.upper()] if role in ("drafted","received","approved") and a.get("date_basis")=="processed" and a.get("from")=="2026-10-01" and a.get("to")=="2026-10-19" else []
             rows=[{"id":i,"title":"동일 제목 가상 연수","document_number":i+"-100","processed":"2026-10-10","status":"처리완료","actor_id":"ME-01","role":role} for i in ids]
@@ -490,7 +530,10 @@ class World:
         report=self.report if isinstance(self.report,dict) else {}
         def equal(key):
             actual=report.get(key);expected=self.gold[key]
-            if key=="ids" and isinstance(actual,list):return all(isinstance(x,str) for x in actual) and len(actual)==len(set(actual)) and set(actual)==set(expected)
+            if key in ("ids","unread_ids","content_unknown_ids","read_ids","unreadable_ids") and isinstance(actual,list):return all(isinstance(x,str) for x in actual) and len(actual)==len(set(actual)) and set(actual)==set(expected)
+            if self.id in ("CBE-07","CBE-08"):
+                if key=="deadline":return deadline_value(actual) is not None and deadline_value(actual)==deadline_value(expected)
+                if key=="action":return norm(actual) in (expected,expected+" 기한 정정",expected+" 기한 변경")
             if key=="sources" and self.id=="NP-E-06" and isinstance(actual,list):
                 # Accept observed paragraph citations as well as document IDs.
                 # Every cited location must exist in a document actually read.
@@ -520,10 +563,10 @@ class World:
                                    and all(t["args"].get(k)==v for k,v in good.items() if k!="all_pages")
                                    for t in self.trace))
             elif n==5:
-                require(["K1","K2"],any(q.get("condition")=="A" and q.get("all_pages") is True for q in s["queries"]))
-                require(["K3"],any(q.get("condition")=="B" for q in s["queries"]))
-                require(["K4"],any(q.get("condition")=="C" for q in s["queries"]))
-            elif n==6:require(checks,"CIRC-01" in s["read_ids"] and any(q["scope"]=="circulation" for q in s["queries"]))
+                require(["K1","K2"],any(q.get("scope")=="registry" and q.get("condition")=="A" and q.get("all_pages") is True for q in s["queries"]))
+                require(["K3"],any(q.get("scope")=="registry" and q.get("condition")=="B" for q in s["queries"]))
+                require(["K4"],any(q.get("scope")=="registry" and q.get("condition")=="C" for q in s["queries"]))
+            elif n==6:require(checks,"CIRC-01" in s["read_ids"] and any(all(q.get(k)==v for k,v in self.oracle[0][1].items() if k!="all_pages") for q in s["queries"]))
             elif n==7:require(checks,s.get("new_draft")==self.gold)
             else:require(checks,s.get("template")==self.gold)
         elif cid.startswith("NP-E-WXS-READ-"):
