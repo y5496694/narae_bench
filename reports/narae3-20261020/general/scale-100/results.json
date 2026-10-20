@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "passed": 8,
+  "planned": 8,
+  "results": [
+    {
+      "id": "addition",
+      "passed": true
+    },
+    {
+      "id": "multiplication",
+      "passed": true
+    },
+    {
+      "id": "sort",
+      "passed": true
+    },
+    {
+      "id": "extract",
+      "passed": true
+    },
+    {
+      "id": "reverse",
+      "passed": true
+    },
+    {
+      "id": "reading",
+      "passed": true
+    },
+    {
+      "id": "count",
+      "passed": true
+    },
+    {
+      "id": "unknown",
+      "passed": true
+    }
+  ],
+  "scope": "Eight elementary exact-format probes; not a general intelligence benchmark."
+}

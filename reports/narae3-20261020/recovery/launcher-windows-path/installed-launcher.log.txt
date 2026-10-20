@@ -1,0 +1,11 @@
+Narae3 : http://127.0.0.1:18462/v1 ; model=Narae3-Qwen3-4B-LoRA-v1
+Actual learned LoRA strength 1; mock score 16.54/100; experimental=True
+error while handling argument "--lora-scaled": lora-scaled format: FNAME:SCALE
+
+usage:
+--lora-scaled FNAME:SCALE,...           path to LoRA adapter with user defined scaling (format:
+                                        FNAME:SCALE,...)
+                                        note: use comma-separated values
+
+
+to show complete usage, run with -h

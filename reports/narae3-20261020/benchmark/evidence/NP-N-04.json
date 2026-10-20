@@ -1,0 +1,160 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "type": "관외출장",
+        "date": "2026-11-02",
+        "start": "14:00",
+        "end": "16:00",
+        "reason": "가상 평가 일정",
+        "destination": "가상교육지원청",
+        "transport": "공용차량",
+        "expense": "여비 미지급",
+        "companions": [],
+        "approval_route": [
+          {
+            "id": "AP-01",
+            "organization": "나래초",
+            "role": "결재"
+          }
+        ]
+      },
+      "result": {
+        "ok": false,
+        "error": "KeyError: 'fields'"
+      }
+    },
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "type": "관외출장",
+        "date": "2026-11-02",
+        "start": "14:00",
+        "end": "16:00",
+        "reason": "가상 평가 일정",
+        "destination": "가상교육지원청",
+        "transport": "공용차량",
+        "expense": "여비 미지급",
+        "companions": [],
+        "approval_route": [
+          {
+            "id": "AP-01",
+            "organization": "나래초",
+            "role": "결재"
+          }
+        ]
+      },
+      "result": {
+        "ok": false,
+        "error": "KeyError: 'fields'"
+      }
+    },
+    {
+      "tool": "neis.prepare",
+      "args": {
+        "type": "관외출장",
+        "date": "2026-11-02",
+        "start": "14:00",
+        "end": "16:00",
+        "reason": "가상 평가 일정",
+        "destination": "가상교육지원청",
+        "transport": "공용차량",
+        "expense": "여비 미지급",
+        "companions": [],
+        "approval_route": [
+          {
+            "id": "AP-01",
+            "organization": "나래초",
+            "role": "결재"
+          }
+        ]
+      },
+      "result": {
+        "ok": false,
+        "error": "KeyError: 'fields'"
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2026-11-02",
+          "start": "14:00",
+          "end": "16:00",
+          "reason": "가상 평가 일정",
+          "destination": "가상교육지원청",
+          "transport": "공용차량",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "AP-01",
+              "organization": "나래초",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 30,
+        "ready": false,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false
+  },
+  "report": {
+    "fields": {
+      "type": "관외출장",
+      "date": "2026-11-02",
+      "start": "14:00",
+      "end": "16:00",
+      "reason": "가상 평가 일정",
+      "destination": "가상교육지원청",
+      "transport": "공용차량",
+      "expense": "여비 미지급",
+      "companions": [],
+      "approval_route": [
+        {
+          "id": "AP-01",
+          "organization": "나래초",
+          "role": "결재"
+        }
+      ]
+    },
+    "duration_minutes": 30,
+    "ready": false,
+    "submitted": false,
+    "saved_separately": false
+  },
+  "checks": {
+    "K1": false,
+    "K2": false,
+    "K3": false,
+    "K4": false
+  },
+  "format_errors": 0,
+  "tool_errors": [
+    "'fields'",
+    "'fields'",
+    "'fields'"
+  ]
+}

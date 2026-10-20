@@ -1,0 +1,98 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "cbe.search",
+      "args": {
+        "name": "가상김 선생님",
+        "scope": "my"
+      },
+      "result": {
+        "ok": true,
+        "requested_scope": "my",
+        "scope": "my",
+        "fallback": false,
+        "searched": [
+          "my"
+        ],
+        "users": []
+      }
+    },
+    {
+      "tool": "cbe.search",
+      "args": {
+        "name": "가상김 선생님",
+        "scope": "all"
+      },
+      "result": {
+        "ok": true,
+        "requested_scope": "all",
+        "scope": "all",
+        "fallback": false,
+        "searched": [
+          "all"
+        ],
+        "users": []
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "user_id": "null",
+        "name": "가상김 선생님",
+        "organization": "나래초",
+        "position": "null",
+        "scope": "all",
+        "fallback": false,
+        "sent": false,
+        "my_search_error": "검색 결과가 없습니다. 'my' 및 'all' 범위에서 '가상김 선생님'을 찾을 수 없습니다.",
+        "error_is_zero": false
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "user_search": {
+      "requested_scope": "all",
+      "scope": "all",
+      "fallback": false,
+      "searched": [
+        "all"
+      ],
+      "users": []
+    }
+  },
+  "report": {
+    "user_id": "null",
+    "name": "가상김 선생님",
+    "organization": "나래초",
+    "position": "null",
+    "scope": "all",
+    "fallback": false,
+    "sent": false,
+    "my_search_error": "검색 결과가 없습니다. 'my' 및 'all' 범위에서 '가상김 선생님'을 찾을 수 없습니다.",
+    "error_is_zero": false
+  },
+  "checks": {
+    "K1": false,
+    "K2": false,
+    "K3": false,
+    "K4": false
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

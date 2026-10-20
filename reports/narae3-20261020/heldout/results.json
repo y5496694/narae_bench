@@ -1,0 +1,538 @@
+{
+  "complete": true,
+  "passed": 7,
+  "planned": 24,
+  "results": [
+    {
+      "id": "episode-query-1283000",
+      "kind": "query",
+      "passed": false,
+      "turns": 2,
+      "report": {
+        "ids": [
+          "doc-4f5fe153-0"
+        ],
+        "total": 1,
+        "date_basis": "registered",
+        "pages": [
+          1
+        ],
+        "role": "received",
+        "scope": "my_documents"
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-query-1283001",
+      "kind": "query",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "ids": [
+          "미확인"
+        ],
+        "total": 0,
+        "date_basis": "registered",
+        "pages": [
+          0
+        ],
+        "role": "approved",
+        "scope": "my_documents"
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-query-1283002",
+      "kind": "query",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "ids": [
+          "미확인"
+        ],
+        "total": 0,
+        "date_basis": "registered",
+        "pages": [
+          0
+        ],
+        "role": "received",
+        "scope": "registry"
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-query-1283003",
+      "kind": "query",
+      "passed": false,
+      "turns": 6,
+      "report": {
+        "ids": [
+          "미확인"
+        ],
+        "total": 0,
+        "date_basis": "processed",
+        "pages": [],
+        "role": "approved",
+        "scope": "my_documents"
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-query-1283004",
+      "kind": "query",
+      "passed": false,
+      "turns": 2,
+      "report": {
+        "ids": [
+          "doc-bffe261b-0"
+        ],
+        "total": 1,
+        "date_basis": "registered",
+        "pages": [
+          1
+        ],
+        "role": "approved",
+        "scope": "registry"
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-query-1283005",
+      "kind": "query",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "ids": [
+          "미확인"
+        ],
+        "total": 0,
+        "date_basis": "processed",
+        "pages": [],
+        "role": "drafted",
+        "scope": "registry"
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-neis-1283100",
+      "kind": "neis",
+      "passed": true,
+      "turns": 3,
+      "report": {
+        "fields": {
+          "type": "연가-조퇴",
+          "date": "2032-07-27",
+          "start": "08:00",
+          "end": "09:00",
+          "reason": "학습 동아리 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-c49279e8",
+              "organization": "은하중",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 60,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-neis-1283101",
+      "kind": "neis",
+      "passed": true,
+      "turns": 4,
+      "report": {
+        "fields": {
+          "type": "관내출장",
+          "date": "2032-02-24",
+          "start": "15:00",
+          "end": "18:00",
+          "reason": "학습 동아리 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-e7d6dfcf",
+              "organization": "달오름초",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 180,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-neis-1283102",
+      "kind": "neis",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "fields": {
+          "type": "관내출장",
+          "date": "2032-05-13",
+          "start": "09:00",
+          "end": "12:00",
+          "reason": "학습 동아리 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-0bea4071",
+              "organization": "솔빛고",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 180,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-neis-1283103",
+      "kind": "neis",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "fields": {
+          "type": "연가-조퇴",
+          "date": "2032-07-20",
+          "start": "08:00",
+          "end": "10:00",
+          "reason": "독서 행사 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-9a689f6d",
+              "organization": "솔빛고",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-neis-1283104",
+      "kind": "neis",
+      "passed": true,
+      "turns": 3,
+      "report": {
+        "fields": {
+          "type": "관내출장",
+          "date": "2032-09-01",
+          "start": "10:00",
+          "end": "11:00",
+          "reason": "학습 동아리 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-ffc1e88e",
+              "organization": "달오름초",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 60,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-neis-1283105",
+      "kind": "neis",
+      "passed": true,
+      "turns": 4,
+      "report": {
+        "fields": {
+          "type": "관내출장",
+          "date": "2032-06-04",
+          "start": "08:00",
+          "end": "09:00",
+          "reason": "융합 수업 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-1e57db64",
+              "organization": "달오름초",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 60,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-write-1283200",
+      "kind": "write",
+      "passed": false,
+      "turns": 3,
+      "report": {
+        "draft_id": "draft-83e7084e",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "학습 동아리 명단 제출",
+        "visibility": "공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-83e7084e"
+        ],
+        "auto_send": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-write-1283201",
+      "kind": "write",
+      "passed": false,
+      "turns": 3,
+      "report": {
+        "draft_id": "draft-9d3a94c6",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "진로 체험 명단 제출",
+        "visibility": "부분공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-9d3a94c6"
+        ],
+        "auto_send": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-write-1283202",
+      "kind": "write",
+      "passed": false,
+      "turns": 3,
+      "report": {
+        "draft_id": "draft-3a91a40b",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "학습 동아리 명단 제출",
+        "visibility": "공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-3a91a40b"
+        ],
+        "auto_send": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-write-1283203",
+      "kind": "write",
+      "passed": false,
+      "turns": 3,
+      "report": {
+        "draft_id": "draft-28a135bf",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "학습 동아리 명단 제출",
+        "visibility": "공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-28a135bf"
+        ],
+        "auto_send": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-write-1283204",
+      "kind": "write",
+      "passed": false,
+      "turns": 3,
+      "report": {
+        "draft_id": "draft-9954e9aa",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "융합 수업 명단 제출",
+        "visibility": "부분공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-9954e9aa"
+        ],
+        "auto_send": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-write-1283205",
+      "kind": "write",
+      "passed": false,
+      "turns": 3,
+      "report": {
+        "draft_id": "draft-46e80894",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "진로 체험 명단 제출",
+        "visibility": "부분공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-46e80894"
+        ],
+        "auto_send": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-message-1283300",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-message-1283301",
+      "kind": "message",
+      "passed": true,
+      "turns": 4,
+      "report": {
+        "message_id": "sent-4a18dcec",
+        "kind": "chat",
+        "recipient_id": "person-4a18dcec",
+        "room_id": "room-4a18dcec",
+        "title": "",
+        "body": "융합 수업 모임은 2032-05-21 14:20 학생문화관에서 열립니다.",
+        "files": [],
+        "sent": true,
+        "verified": true,
+        "send_count": 1,
+        "new_room_created": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-message-1283302",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": {
+        "message_id": "미확인",
+        "kind": "미확인",
+        "recipient_id": "person-28ac8523",
+        "room_id": null,
+        "title": "미확인",
+        "body": "미확인",
+        "files": [],
+        "sent": false,
+        "verified": false,
+        "send_count": 2,
+        "new_room_created": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-message-1283303",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-message-1283304",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": null,
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-message-1283305",
+      "kind": "message",
+      "passed": false,
+      "turns": 8,
+      "report": {
+        "message_id": "미확인",
+        "kind": "미확인",
+        "recipient_id": "person-545a97ee",
+        "room_id": null,
+        "title": "학습 동아리 안내",
+        "body": "학습 동아리 모임은 2032-03-07 14:20 학생문화관에서 열립니다.",
+        "files": [],
+        "sent": false,
+        "verified": false,
+        "send_count": 3,
+        "new_room_created": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    }
+  ],
+  "scope": "New held-out values from shared synthetic templates; not the old v2 private cases or live services."
+}

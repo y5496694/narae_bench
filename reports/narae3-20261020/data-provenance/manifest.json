@@ -1,0 +1,59 @@
+{
+  "type": "Narae3 independent synthetic full-trajectory assistant-only SFT",
+  "benchmark_data_read": false,
+  "shared_public_tool_interface": true,
+  "developer_prior_benchmark_exposure": true,
+  "splits": {
+    "train": {
+      "records": 164,
+      "trajectories": 96,
+      "supervised_assistant_turns": 362,
+      "max_tokens": 1624,
+      "kinds": {
+        "write": 24,
+        "message": 24,
+        "replay_quote": 24,
+        "neis": 24,
+        "replay_route": 32,
+        "replay_unknown": 8,
+        "query": 24,
+        "identity": 4
+      },
+      "sha256": "8bdbdacd95a1659f62212d42b36ef9e878bdc0b0f948dc1b6c4dc80fc0c43098",
+      "trajectory_sha256": "23fa8430211aaa204fc056c97326c4c779d5a3c26e92b318323169be63207443"
+    },
+    "validation": {
+      "records": 36,
+      "trajectories": 24,
+      "supervised_assistant_turns": 86,
+      "max_tokens": 1618,
+      "kinds": {
+        "replay_unknown": 2,
+        "write": 6,
+        "message": 6,
+        "query": 6,
+        "replay_quote": 4,
+        "replay_route": 6,
+        "neis": 6
+      },
+      "sha256": "1208c313c8b5450d3f3117dc00455393b8dcdcaaafde7ae0968fad32bba58110",
+      "trajectory_sha256": "91935c3dbf17162820e9ccecadf1d97530e8192f43906b9e97e2ca287d2f069d"
+    },
+    "test": {
+      "records": 24,
+      "trajectories": 24,
+      "supervised_assistant_turns": 74,
+      "max_tokens": 1632,
+      "kinds": {
+        "query": 6,
+        "neis": 6,
+        "write": 6,
+        "message": 6
+      },
+      "sha256": "d11c95f8d739b59415a3ee9e13570264d3705c032cc8e8f524a8612c06c57910",
+      "trajectory_sha256": "c3cad381ca09cefc700b6b177fc4d23270fbf712666a65f275881c5dd674d762"
+    }
+  },
+  "old_training_replay_only": true,
+  "builder_sha256": "06cc81458b101f993f05f619bda67821c774a2da1ceef8d0394512982b02c290"
+}

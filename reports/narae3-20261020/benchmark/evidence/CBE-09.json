@@ -1,0 +1,277 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "cbe.send",
+      "args": {
+        "kind": "note",
+        "recipient_id": "U-MY",
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [
+          "동명첨부.txt"
+        ]
+      },
+      "result": {
+        "ok": false,
+        "error": "ValueError: FILE_NOT_IN_ALLOWED_FIXTURE"
+      }
+    },
+    {
+      "tool": "cbe.verify",
+      "args": {
+        "message_id": "null"
+      },
+      "result": {
+        "ok": false,
+        "error": "StopIteration: "
+      }
+    },
+    {
+      "tool": "cbe.send",
+      "args": {
+        "kind": "note",
+        "recipient_id": "U-MY",
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [
+          "folder-a/동명첨부.txt",
+          "folder-b/동명첨부.txt"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "message_id": "SENT-01",
+        "message_ids": [
+          "SENT-01"
+        ],
+        "room_id": null,
+        "sent": true,
+        "verified": false
+      }
+    },
+    {
+      "tool": "cbe.verify",
+      "args": {
+        "message_ids": [
+          "SENT-01"
+        ]
+      },
+      "result": {
+        "ok": true,
+        "message_id": "SENT-01",
+        "message_ids": [
+          "SENT-01"
+        ],
+        "kind": "note",
+        "recipient_id": "U-MY",
+        "room_id": null,
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [
+          "folder-a/동명첨부.txt",
+          "folder-b/동명첨부.txt"
+        ],
+        "file_receipts": [
+          {
+            "path": "folder-a/동명첨부.txt",
+            "filename": "동명첨부.txt",
+            "bytes": 257,
+            "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+          },
+          {
+            "path": "folder-b/동명첨부.txt",
+            "filename": "동명첨부.txt",
+            "bytes": 257,
+            "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+          }
+        ],
+        "records": [
+          {
+            "kind": "note",
+            "recipient_id": "U-MY",
+            "room_id": null,
+            "title": "가상 알림",
+            "body": "가상 평가 원문",
+            "files": [
+              "folder-a/동명첨부.txt",
+              "folder-b/동명첨부.txt"
+            ],
+            "id": "SENT-01",
+            "file_receipts": [
+              {
+                "path": "folder-a/동명첨부.txt",
+                "filename": "동명첨부.txt",
+                "bytes": 257,
+                "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+              },
+              {
+                "path": "folder-b/동명첨부.txt",
+                "filename": "동명첨부.txt",
+                "bytes": 257,
+                "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+              }
+            ]
+          }
+        ],
+        "recipient_ids": [
+          "U-MY"
+        ],
+        "room_ids": [
+          null
+        ],
+        "sent": true,
+        "verified": true,
+        "partial": false,
+        "send_count": 1,
+        "server_message_count": 1,
+        "resent": false,
+        "new_room_created": false,
+        "new_rooms": [],
+        "existing_room_reused": false
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "message_id": "SENT-01",
+        "recipient_id": "U-MY",
+        "room_id": null,
+        "kind": "note",
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [
+          "folder-a/동명첨부.txt",
+          "folder-b/동명첨부.txt"
+        ],
+        "sent": true,
+        "verified": true,
+        "send_count": 1,
+        "new_room_created": false,
+        "message_ids": [
+          "SENT-01"
+        ],
+        "file_receipts": [
+          {
+            "path": "folder-a/동명첨부.txt",
+            "filename": "동명첨부.txt",
+            "bytes": 257,
+            "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+          },
+          {
+            "path": "folder-b/동명첨부.txt",
+            "filename": "동명첨부.txt",
+            "bytes": 257,
+            "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+          }
+        ],
+        "server_message_count": 1
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [
+      {
+        "kind": "note",
+        "recipient_id": "U-MY",
+        "room_id": null,
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [
+          "folder-a/동명첨부.txt",
+          "folder-b/동명첨부.txt"
+        ],
+        "id": "SENT-01",
+        "file_receipts": [
+          {
+            "path": "folder-a/동명첨부.txt",
+            "filename": "동명첨부.txt",
+            "bytes": 257,
+            "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+          },
+          {
+            "path": "folder-b/동명첨부.txt",
+            "filename": "동명첨부.txt",
+            "bytes": 257,
+            "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+          }
+        ]
+      }
+    ],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": true,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "logical_sends": [
+      {
+        "kind": "note",
+        "recipient_id": "U-MY",
+        "room_id": null,
+        "title": "가상 알림",
+        "body": "가상 평가 원문",
+        "files": [
+          "folder-a/동명첨부.txt",
+          "folder-b/동명첨부.txt"
+        ]
+      }
+    ],
+    "verified_ids": [
+      "SENT-01"
+    ]
+  },
+  "report": {
+    "message_id": "SENT-01",
+    "recipient_id": "U-MY",
+    "room_id": null,
+    "kind": "note",
+    "title": "가상 알림",
+    "body": "가상 평가 원문",
+    "files": [
+      "folder-a/동명첨부.txt",
+      "folder-b/동명첨부.txt"
+    ],
+    "sent": true,
+    "verified": true,
+    "send_count": 1,
+    "new_room_created": false,
+    "message_ids": [
+      "SENT-01"
+    ],
+    "file_receipts": [
+      {
+        "path": "folder-a/동명첨부.txt",
+        "filename": "동명첨부.txt",
+        "bytes": 257,
+        "sha256": "e2e0c87fbcb1be913422d1606095e45ce0d806cd419be791283841a8cf2b0084"
+      },
+      {
+        "path": "folder-b/동명첨부.txt",
+        "filename": "동명첨부.txt",
+        "bytes": 257,
+        "sha256": "868dc273ecb518d4816b43feff196e4b4523dfd444b8d8254ac0fa4e9c9ad136"
+      }
+    ],
+    "server_message_count": 1
+  },
+  "checks": {
+    "K1": true,
+    "K2": true,
+    "K3": true,
+    "K4": true
+  },
+  "format_errors": 0,
+  "tool_errors": [
+    "FILE_NOT_IN_ALLOWED_FIXTURE",
+    ""
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "correct_validation_assistant_turns": 74,
+  "maximum_target_tokens": 204,
+  "validation_generation_cap": 768,
+  "all_correct_targets_fit": true
+}

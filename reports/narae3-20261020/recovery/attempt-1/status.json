@@ -1,0 +1,7 @@
+{
+  "model": "Narae3-Qwen3-4B-LoRA-v1",
+  "stage": "failed",
+  "elapsed_seconds": 6310.82,
+  "error": "argument of type 'float' is not iterable",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\scripts\\train_lora.py\", line 154, in <module>\n    try:run.run()\n        ~~~~~~~^^\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\scripts\\train_lora.py\", line 131, in run\n    set_scale(0)\n    ~~~~~~~~~^^^\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\scripts\\train_lora.py\", line 130, in set_scale\n    if hasattr(module,'scaling') and 'default' in module.scaling:module.scaling['default']=2.0*value\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: argument of type 'float' is not iterable\n"
+}

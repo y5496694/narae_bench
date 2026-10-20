@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-10-20T02:23:37.807318+00:00",
+  "reason": "Original main() failed on missing Path import before spawning the first public worker.",
+  "completed_heldout_cases_preserved": 24,
+  "public_cases_executed_before_resume": 0,
+  "training_selection_and_benchmark_contracts_unchanged": true,
+  "recovery": "Start a fresh identical verified native server; call original frozen evaluate_narae3.py --worker directly; no repeated held-out or training work.",
+  "resume_source_sha256": "8a5801b10e0f29fbddd850cd9248cabe51b3ca5a96fe4c557c14421601ff81e0",
+  "preserved_artifacts_sha256": {
+    "evaluation/heldout/results.json": "4fd5ed9aef3dc22521875a90420b49c793d7394c87c5f93d47a0b6b4c741e3b8",
+    "evaluation/heldout/transcript.jsonl": "efe1b5baa2a663b562f013867f55bf424fab2ca4e1159a993689b6c6d6d7a05c",
+    "evaluation/serving/narae3-evaluation.json": "8dda881bb61cd0568930d07052e0a2eba9223f7d288958abbaf4a66c44ba5142",
+    "outputs/selection.json": "44adcf99c2b43ed3b1b555779e5deb29ce5f599dfb5b48ff352bb58618972b9f",
+    "exports/verification.json": "93d6de5fa47298a6f9425e77a74808bc91a2dc4ff318ff43c51e8cce4f0e6fbd",
+    "recovery/amendment.json": "469dcf7f68d4486cfbbc78f5c63b443606a1034cf82b4f13a27698b362a710a6",
+    "recovery\\benchmark-startup-failure\\empty-benchmark.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recovery\\benchmark-startup-failure\\evaluate_narae3.log": "60d59cd21258d7392599eb7f0345b895d6b99f8a9aebcbdccd657e79e9a57c0a",
+    "recovery\\benchmark-startup-failure\\recovery-pipeline-error.json": "2e158e8bda5b0062e86071494925dc7b0e91e346c14c0ec7392cf27825f77529",
+    "recovery\\benchmark-startup-failure\\recovery-pipeline.stderr.log": "364013674980504548411bf6d85dc54b8a9a070fab9e8d672fc4541e63a6b1d7",
+    "recovery\\benchmark-startup-failure\\status.json": "bc0973b64e1aae23b05473d1af466273d27d6a58bb06f4ee24f3fe7e21c5c6d9"
+  }
+}

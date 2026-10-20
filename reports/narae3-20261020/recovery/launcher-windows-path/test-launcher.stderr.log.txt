@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\Codex\training\narae3-qwen4b-20261020\evaluation\test_launcher.py", line 40, in <module>
+    if process.poll() is not None:raise RuntimeError('Installed launcher exited; inspect D launcher log')
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Installed launcher exited; inspect D launcher log

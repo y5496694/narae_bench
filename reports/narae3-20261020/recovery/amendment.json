@@ -1,0 +1,32 @@
+{
+  "created_at": "2026-10-20T01:02:01.607690+00:00",
+  "observed_failure": {
+    "model": "Narae3-Qwen3-4B-LoRA-v1",
+    "stage": "failed",
+    "elapsed_seconds": 6310.82,
+    "error": "argument of type 'float' is not iterable",
+    "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\scripts\\train_lora.py\", line 154, in <module>\n    try:run.run()\n        ~~~~~~~^^\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\scripts\\train_lora.py\", line 131, in run\n    set_scale(0)\n    ~~~~~~~~~^^^\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\scripts\\train_lora.py\", line 130, in set_scale\n    if hasattr(module,'scaling') and 'default' in module.scaling:module.scaling['default']=2.0*value\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: argument of type 'float' is not iterable\n"
+  },
+  "frozen_original_profile_sha256": "5decadd5f8d320df62527f564a045af42d954ae83d876ac2039d03dfba46a805",
+  "original_sources_data_selection_and_benchmark_unchanged": true,
+  "adapted_native_validation_or_public_results_observed": false,
+  "reason": "Qwen attention has float scaling; only PEFT dict scaling may be changed. First 41 updates were lost before save.",
+  "recovery": "Fresh identical initial adapter, same seed/data/order/optimizer/41 updates; reuse 200 verified frozen-prefix cache records; rerun equivalence and baseline; save adapter immediately after updates.",
+  "discarded_optimizer_updates": 41,
+  "planned_final_artifact_updates": 41,
+  "first_attempt_evidence_sha256": {
+    "recovery\\attempt-1\\output\\events.jsonl": "fed885fa9fb65c72b2e2159929045ff2aaf16274542f36ceef23a20ceb5ec10e",
+    "recovery\\attempt-1\\output\\initial-adapter\\adapter_config.json": "1b22237353d20b9dc5b0c4cb4dbb60738577d5f3737cc9425d7929cdca0e850f",
+    "recovery\\attempt-1\\output\\initial-adapter\\adapter_model.safetensors": "2f959a34dcad3d0b0fe527cb2a196dd5dc0897cf2f8280469c61bbfc7fd62b46",
+    "recovery\\attempt-1\\output\\initial-adapter\\README.md": "87af50d7aadd86affe935bd9cdc2fe9e7d07136e0d004ced1be0879c890b3fcd",
+    "recovery\\attempt-1\\output\\status.json": "568143e64d4392c627a2c77d9fec6bd12d38a1519b973e5e0146b0113aa803c3",
+    "recovery\\attempt-1\\pipeline-error.json": "e28fc08528835b3e3166797448ba4ab61b828f54341f39c8b68df09fb85fb8ca",
+    "recovery\\attempt-1\\pipeline.stderr.log": "79e44f9b90b6b5fc52f604ef86fc5fe0d224c79a4abcd8fef0c4c9934afc6371",
+    "recovery\\attempt-1\\train_lora.log": "e1432cc11ae347d8d4eeb62e5bce99e79113d14f1b76f25bb1354668a3bacc4a"
+  },
+  "recovery_source_sha256": {
+    "recovery\\train_lora_recovery.py": "ef10ac5927fe99398e81ddd7b82e81ad60415ebb59158ec4b182d4027f4bccae",
+    "recovery\\run_recovery.py": "a2fe805ae3062a27f6e1dfad38594df24bb93fe29a8af58968368a9e284d9dab",
+    "recovery\\cache-manifest.json": "93382b78a3c9024d7e8ff458680b76bc04bca602e745aa1747f25b07f32cb660"
+  }
+}

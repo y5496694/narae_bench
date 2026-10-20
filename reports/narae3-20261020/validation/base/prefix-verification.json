@@ -1,0 +1,45 @@
+{
+  "native_prompt_and_tokens_equal_hf": true,
+  "checks": [
+    {
+      "id": "episode-query-1172000",
+      "message": 4,
+      "tokens": 706
+    },
+    {
+      "id": "episode-query-1172000",
+      "message": 6,
+      "tokens": 898
+    },
+    {
+      "id": "episode-neis-1172100",
+      "message": 4,
+      "tokens": 848
+    },
+    {
+      "id": "episode-neis-1172100",
+      "message": 6,
+      "tokens": 1110
+    },
+    {
+      "id": "episode-write-1172200",
+      "message": 4,
+      "tokens": 942
+    },
+    {
+      "id": "episode-write-1172200",
+      "message": 10,
+      "tokens": 1540
+    },
+    {
+      "id": "episode-message-1172300",
+      "message": 4,
+      "tokens": 731
+    },
+    {
+      "id": "episode-message-1172300",
+      "message": 10,
+      "tokens": 1155
+    }
+  ]
+}

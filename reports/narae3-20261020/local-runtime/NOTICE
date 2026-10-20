@@ -1,0 +1,5 @@
+Narae3: a LoRA derivative of Qwen/Qwen3-4B-Instruct-2507.
+Upstream revision: cdbee75f17c01a7cc42f958dc650907174af0554
+Upstream model authors: Qwen Team. License: Apache-2.0 (LICENSE retained).
+Modified by local Narae supervised fine-tuning, 2026-10-20T11:47:31+09:00.
+This is not a model trained from scratch; the original base is preserved.

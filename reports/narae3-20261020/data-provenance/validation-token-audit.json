@@ -1,0 +1,218 @@
+[
+  {
+    "id": "episode-query-1172000",
+    "tokens": 932,
+    "supervised_tokens": 112,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1172001",
+    "tokens": 954,
+    "supervised_tokens": 145,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1172002",
+    "tokens": 812,
+    "supervised_tokens": 110,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1172003",
+    "tokens": 908,
+    "supervised_tokens": 135,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1172004",
+    "tokens": 1087,
+    "supervised_tokens": 153,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1172005",
+    "tokens": 983,
+    "supervised_tokens": 154,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1172100",
+    "tokens": 1244,
+    "supervised_tokens": 246,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1172101",
+    "tokens": 1142,
+    "supervised_tokens": 251,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-neis-1172102",
+    "tokens": 1086,
+    "supervised_tokens": 239,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1172103",
+    "tokens": 1090,
+    "supervised_tokens": 241,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1172104",
+    "tokens": 1237,
+    "supervised_tokens": 243,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1172105",
+    "tokens": 1148,
+    "supervised_tokens": 254,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-write-1172200",
+    "tokens": 1618,
+    "supervised_tokens": 323,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1172201",
+    "tokens": 1557,
+    "supervised_tokens": 321,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1172202",
+    "tokens": 1565,
+    "supervised_tokens": 322,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1172203",
+    "tokens": 1579,
+    "supervised_tokens": 329,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1172204",
+    "tokens": 1578,
+    "supervised_tokens": 306,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1172205",
+    "tokens": 1585,
+    "supervised_tokens": 332,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1172300",
+    "tokens": 1266,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1172301",
+    "tokens": 1233,
+    "supervised_tokens": 242,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1172302",
+    "tokens": 1221,
+    "supervised_tokens": 230,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1172303",
+    "tokens": 1212,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1172304",
+    "tokens": 1238,
+    "supervised_tokens": 222,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1172305",
+    "tokens": 1249,
+    "supervised_tokens": 240,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "replay-validation-route-schedule-0-0",
+    "tokens": 109,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-route-documents-0-0",
+    "tokens": 110,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-route-cbe-notes-0-0",
+    "tokens": 113,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-route-cbe-users-0-0",
+    "tokens": 113,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-route-unsupported-1-0",
+    "tokens": 107,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-route-documents-1-0",
+    "tokens": 105,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-quote-audience-1",
+    "tokens": 323,
+    "supervised_tokens": 56,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-quote-exceptions-0",
+    "tokens": 218,
+    "supervised_tokens": 36,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-quote-audience-0",
+    "tokens": 305,
+    "supervised_tokens": 54,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-quote-when-0",
+    "tokens": 316,
+    "supervised_tokens": 72,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-unknown-audience-1",
+    "tokens": 93,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-validation-unknown-audience-0",
+    "tokens": 95,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  }
+]

@@ -1,0 +1,956 @@
+{
+  "complete": true,
+  "run_started_on": "2026-10-20",
+  "created_at": "2026-10-20T11:51:39+09:00",
+  "type": "Actual Qwen3-4B instruction-base LoRA adaptation, not a renamed prompt profile",
+  "model": "Narae3-Qwen3-4B-LoRA-v1",
+  "benchmark_profile": "high-level-mock-cli-v2.1",
+  "score": 16.54,
+  "passed": 10,
+  "executed": 36,
+  "blocked": 9,
+  "maximum_mock_score": 84.33,
+  "delta_from_upstream": -4.38,
+  "critical_incident_cases": 0,
+  "weighted_partial_score": 31.11,
+  "domains": {
+    "NP-P": {
+      "weight": 10,
+      "planned": 5,
+      "passed": 2,
+      "strict_percent": 40.0,
+      "partial_percent": 46.6,
+      "supported_count": 3,
+      "supported_success_percent": 66.67
+    },
+    "NP-E": {
+      "weight": 15,
+      "planned": 8,
+      "passed": 2,
+      "strict_percent": 25.0,
+      "partial_percent": 25.0,
+      "supported_count": 8,
+      "supported_success_percent": 25.0
+    },
+    "NP-E-WXS-READ": {
+      "weight": 20,
+      "planned": 12,
+      "passed": 2,
+      "strict_percent": 16.67,
+      "partial_percent": 35.42,
+      "supported_count": 5,
+      "supported_success_percent": 40.0
+    },
+    "NP-E-WXS-WRITE": {
+      "weight": 25,
+      "planned": 4,
+      "passed": 0,
+      "strict_percent": 0.0,
+      "partial_percent": 29.75,
+      "supported_count": 4,
+      "supported_success_percent": 0.0
+    },
+    "NP-N": {
+      "weight": 15,
+      "planned": 5,
+      "passed": 0,
+      "strict_percent": 0.0,
+      "partial_percent": 0.0,
+      "supported_count": 5,
+      "supported_success_percent": 0.0
+    },
+    "CBE": {
+      "weight": 15,
+      "planned": 11,
+      "passed": 4,
+      "strict_percent": 36.36,
+      "partial_percent": 54.55,
+      "supported_count": 11,
+      "supported_success_percent": 36.36
+    }
+  },
+  "gained_pass_cases": [
+    "CBE-09"
+  ],
+  "lost_pass_cases": [
+    "NP-E-02",
+    "NP-E-03",
+    "NP-P-02"
+  ],
+  "upstream_comparison": {
+    "model": "Qwen3-4B-Instruct-2507",
+    "score": 20.92,
+    "passed": 12,
+    "rerun_this_job": false,
+    "source": "Historical verified same-profile v2.1 run; new validation baseline was run before training"
+  },
+  "training": {
+    "name": "Narae3-Qwen3-4B-LoRA-v1",
+    "base_model": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "path": "D:\\Codex\\models\\Qwen3-4B-Instruct-2507-HF",
+      "license": "Apache-2.0",
+      "upstream_files_sha256": {
+        "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+        "README.md": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+        "config.json": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba",
+        "generation_config.json": "835fffe355c9438e7a25be099b3fccaa98350b83451f9fd2d99512e74f1ade48",
+        "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "model-00001-of-00003.safetensors": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6",
+        "model-00002-of-00003.safetensors": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1",
+        "model-00003-of-00003.safetensors": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d",
+        "model.safetensors.index.json": "d6c42883a895dfef5b0080ed2116a1bcd764f558406b98923d675978a1abf29c",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "upstream_original": true,
+      "narae_weight_training": false,
+      "matched_existing_gguf_source_revision": true
+    },
+    "actual_weight_training": true,
+    "starting_point": "Fresh upstream Qwen3-4B-Instruct-2507, zero-B LoRA initialization; no prior Narae adapter",
+    "method": "NF4 frozen base, F32 LoRA on all seven linear projections of final six decoder blocks",
+    "attention_backend": "sdpa",
+    "rank": 8,
+    "alpha": 16,
+    "epochs": 1,
+    "seed": 719,
+    "learning_rate": 5e-05,
+    "optimizer_steps": 41,
+    "trainable_parameters": 2752512,
+    "assistant_only_loss": true,
+    "all_correct_assistant_turns_supervised": true,
+    "incorrect_context_turns_masked": true,
+    "benchmark_used_for_training_or_selection": false,
+    "validation_losses_by_scale": {
+      "0": 1.475590513087809,
+      "0.5": 1.3075801358144317,
+      "1": 1.159511116385046
+    },
+    "zero_scale_returns_initial_first_validation_loss_absolute_error": 0.0,
+    "train_loss": 1.5999774865235072,
+    "cached_vs_full_loss_absolute_error": 2.9802322387695312e-08,
+    "sdpa_vs_eager_loss_absolute_error": 5.364418029785156e-07,
+    "future_token_causality_max_error": 0.0,
+    "adapter_sha256_before": "1201ce934c4b5ad8bf2ce5320d66d35bb57d5d72b1983a641b000717e2766d39",
+    "adapter_sha256_after": "2306f6d91e213eedc6c09605120e832674b3dd1a2ac275049907ad4a17ebe758",
+    "adapter_file_sha256": "60b6d98a8771bac79194c48a074c4b5b7908663e94d63a43ca4b237c958a451d",
+    "adapter_parameter_l2_changes": {
+      "base_model.model.model.layers.30.self_attn.q_proj.lora_A.default.weight": 0.07406492531299591,
+      "base_model.model.model.layers.30.self_attn.q_proj.lora_B.default.weight": 0.07000289112329483,
+      "base_model.model.model.layers.30.self_attn.k_proj.lora_A.default.weight": 0.0720999538898468,
+      "base_model.model.model.layers.30.self_attn.k_proj.lora_B.default.weight": 0.03558896854519844,
+      "base_model.model.model.layers.30.self_attn.v_proj.lora_A.default.weight": 0.09005662053823471,
+      "base_model.model.model.layers.30.self_attn.v_proj.lora_B.default.weight": 0.0417032390832901,
+      "base_model.model.model.layers.30.self_attn.o_proj.lora_A.default.weight": 0.09896556288003922,
+      "base_model.model.model.layers.30.self_attn.o_proj.lora_B.default.weight": 0.06476716697216034,
+      "base_model.model.model.layers.30.mlp.gate_proj.lora_A.default.weight": 0.08325990289449692,
+      "base_model.model.model.layers.30.mlp.gate_proj.lora_B.default.weight": 0.10878288745880127,
+      "base_model.model.model.layers.30.mlp.up_proj.lora_A.default.weight": 0.07929420471191406,
+      "base_model.model.model.layers.30.mlp.up_proj.lora_B.default.weight": 0.12045712769031525,
+      "base_model.model.model.layers.30.mlp.down_proj.lora_A.default.weight": 0.15207847952842712,
+      "base_model.model.model.layers.30.mlp.down_proj.lora_B.default.weight": 0.06297247856855392,
+      "base_model.model.model.layers.31.self_attn.q_proj.lora_A.default.weight": 0.07176204770803452,
+      "base_model.model.model.layers.31.self_attn.q_proj.lora_B.default.weight": 0.07361281663179398,
+      "base_model.model.model.layers.31.self_attn.k_proj.lora_A.default.weight": 0.05965108796954155,
+      "base_model.model.model.layers.31.self_attn.k_proj.lora_B.default.weight": 0.033109795302152634,
+      "base_model.model.model.layers.31.self_attn.v_proj.lora_A.default.weight": 0.08726005256175995,
+      "base_model.model.model.layers.31.self_attn.v_proj.lora_B.default.weight": 0.04041123017668724,
+      "base_model.model.model.layers.31.self_attn.o_proj.lora_A.default.weight": 0.09796568751335144,
+      "base_model.model.model.layers.31.self_attn.o_proj.lora_B.default.weight": 0.06434044986963272,
+      "base_model.model.model.layers.31.mlp.gate_proj.lora_A.default.weight": 0.08003129065036774,
+      "base_model.model.model.layers.31.mlp.gate_proj.lora_B.default.weight": 0.10488814115524292,
+      "base_model.model.model.layers.31.mlp.up_proj.lora_A.default.weight": 0.08093499392271042,
+      "base_model.model.model.layers.31.mlp.up_proj.lora_B.default.weight": 0.11475492268800735,
+      "base_model.model.model.layers.31.mlp.down_proj.lora_A.default.weight": 0.14932730793952942,
+      "base_model.model.model.layers.31.mlp.down_proj.lora_B.default.weight": 0.06793529540300369,
+      "base_model.model.model.layers.32.self_attn.q_proj.lora_A.default.weight": 0.08955984562635422,
+      "base_model.model.model.layers.32.self_attn.q_proj.lora_B.default.weight": 0.08015437424182892,
+      "base_model.model.model.layers.32.self_attn.k_proj.lora_A.default.weight": 0.07864682376384735,
+      "base_model.model.model.layers.32.self_attn.k_proj.lora_B.default.weight": 0.039905473589897156,
+      "base_model.model.model.layers.32.self_attn.v_proj.lora_A.default.weight": 0.0887291356921196,
+      "base_model.model.model.layers.32.self_attn.v_proj.lora_B.default.weight": 0.04381316155195236,
+      "base_model.model.model.layers.32.self_attn.o_proj.lora_A.default.weight": 0.11325781792402267,
+      "base_model.model.model.layers.32.self_attn.o_proj.lora_B.default.weight": 0.06791117042303085,
+      "base_model.model.model.layers.32.mlp.gate_proj.lora_A.default.weight": 0.07931820303201675,
+      "base_model.model.model.layers.32.mlp.gate_proj.lora_B.default.weight": 0.1021215096116066,
+      "base_model.model.model.layers.32.mlp.up_proj.lora_A.default.weight": 0.08243393898010254,
+      "base_model.model.model.layers.32.mlp.up_proj.lora_B.default.weight": 0.11401879787445068,
+      "base_model.model.model.layers.32.mlp.down_proj.lora_A.default.weight": 0.16086547076702118,
+      "base_model.model.model.layers.32.mlp.down_proj.lora_B.default.weight": 0.07181672006845474,
+      "base_model.model.model.layers.33.self_attn.q_proj.lora_A.default.weight": 0.07481624186038971,
+      "base_model.model.model.layers.33.self_attn.q_proj.lora_B.default.weight": 0.06692952662706375,
+      "base_model.model.model.layers.33.self_attn.k_proj.lora_A.default.weight": 0.07584051042795181,
+      "base_model.model.model.layers.33.self_attn.k_proj.lora_B.default.weight": 0.037683892995119095,
+      "base_model.model.model.layers.33.self_attn.v_proj.lora_A.default.weight": 0.09508249163627625,
+      "base_model.model.model.layers.33.self_attn.v_proj.lora_B.default.weight": 0.03945387899875641,
+      "base_model.model.model.layers.33.self_attn.o_proj.lora_A.default.weight": 0.09774859994649887,
+      "base_model.model.model.layers.33.self_attn.o_proj.lora_B.default.weight": 0.056726038455963135,
+      "base_model.model.model.layers.33.mlp.gate_proj.lora_A.default.weight": 0.081563301384449,
+      "base_model.model.model.layers.33.mlp.gate_proj.lora_B.default.weight": 0.10081686079502106,
+      "base_model.model.model.layers.33.mlp.up_proj.lora_A.default.weight": 0.08536544442176819,
+      "base_model.model.model.layers.33.mlp.up_proj.lora_B.default.weight": 0.1102234497666359,
+      "base_model.model.model.layers.33.mlp.down_proj.lora_A.default.weight": 0.1526309847831726,
+      "base_model.model.model.layers.33.mlp.down_proj.lora_B.default.weight": 0.0694587454199791,
+      "base_model.model.model.layers.34.self_attn.q_proj.lora_A.default.weight": 0.08785460144281387,
+      "base_model.model.model.layers.34.self_attn.q_proj.lora_B.default.weight": 0.08125393092632294,
+      "base_model.model.model.layers.34.self_attn.k_proj.lora_A.default.weight": 0.07077036052942276,
+      "base_model.model.model.layers.34.self_attn.k_proj.lora_B.default.weight": 0.03890145197510719,
+      "base_model.model.model.layers.34.self_attn.v_proj.lora_A.default.weight": 0.08656224608421326,
+      "base_model.model.model.layers.34.self_attn.v_proj.lora_B.default.weight": 0.041230227798223495,
+      "base_model.model.model.layers.34.self_attn.o_proj.lora_A.default.weight": 0.10595332086086273,
+      "base_model.model.model.layers.34.self_attn.o_proj.lora_B.default.weight": 0.06418601423501968,
+      "base_model.model.model.layers.34.mlp.gate_proj.lora_A.default.weight": 0.08056201040744781,
+      "base_model.model.model.layers.34.mlp.gate_proj.lora_B.default.weight": 0.10310633480548859,
+      "base_model.model.model.layers.34.mlp.up_proj.lora_A.default.weight": 0.08086548745632172,
+      "base_model.model.model.layers.34.mlp.up_proj.lora_B.default.weight": 0.11308325827121735,
+      "base_model.model.model.layers.34.mlp.down_proj.lora_A.default.weight": 0.16500112414360046,
+      "base_model.model.model.layers.34.mlp.down_proj.lora_B.default.weight": 0.06706932187080383,
+      "base_model.model.model.layers.35.self_attn.q_proj.lora_A.default.weight": 0.08396265655755997,
+      "base_model.model.model.layers.35.self_attn.q_proj.lora_B.default.weight": 0.07596056908369064,
+      "base_model.model.model.layers.35.self_attn.k_proj.lora_A.default.weight": 0.09685108810663223,
+      "base_model.model.model.layers.35.self_attn.k_proj.lora_B.default.weight": 0.035272520035505295,
+      "base_model.model.model.layers.35.self_attn.v_proj.lora_A.default.weight": 0.08449900150299072,
+      "base_model.model.model.layers.35.self_attn.v_proj.lora_B.default.weight": 0.03819026052951813,
+      "base_model.model.model.layers.35.self_attn.o_proj.lora_A.default.weight": 0.09711890667676926,
+      "base_model.model.model.layers.35.self_attn.o_proj.lora_B.default.weight": 0.06227117404341698,
+      "base_model.model.model.layers.35.mlp.gate_proj.lora_A.default.weight": 0.08169294148683548,
+      "base_model.model.model.layers.35.mlp.gate_proj.lora_B.default.weight": 0.11154326051473618,
+      "base_model.model.model.layers.35.mlp.up_proj.lora_A.default.weight": 0.07867565006017685,
+      "base_model.model.model.layers.35.mlp.up_proj.lora_B.default.weight": 0.10591265559196472,
+      "base_model.model.model.layers.35.mlp.down_proj.lora_A.default.weight": 0.15211579203605652,
+      "base_model.model.model.layers.35.mlp.down_proj.lora_B.default.weight": 0.05819636210799217
+    },
+    "corpus_manifest_sha256": "93c1f5e4610dd1e4718eee417465915341509160b85f2d745678067fc4bf0b27",
+    "trainer_source_sha256": "ef10ac5927fe99398e81ddd7b82e81ad60415ebb59158ec4b182d4027f4bccae",
+    "versions": {
+      "torch": "2.14.1",
+      "transformers": "5.20.1",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2",
+      "accelerate": "1.15.0"
+    },
+    "recovery_amendment_sha256": "469dcf7f68d4486cfbbc78f5c63b443606a1034cf82b4f13a27698b362a710a6",
+    "attempts": 2,
+    "discarded_first_attempt_updates": 41,
+    "final_artifact_optimizer_updates": 41,
+    "first_attempt_weights_saved": false,
+    "identical_initial_adapter_tensors_verified": 84,
+    "cached_prefix_recovery_max_error": 0.0,
+    "original_frozen_trainer_sha256": "ad0999102249d214d4f95428372f34cffe963a14cd31b3e8eae351f34510ec8c"
+  },
+  "training_profile": {
+    "name": "Narae3-Qwen3-4B-LoRA-v1",
+    "base_model": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "path": "D:\\Codex\\models\\Qwen3-4B-Instruct-2507-HF",
+      "license": "Apache-2.0",
+      "upstream_files_sha256": {
+        "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+        "README.md": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd",
+        "config.json": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba",
+        "generation_config.json": "835fffe355c9438e7a25be099b3fccaa98350b83451f9fd2d99512e74f1ade48",
+        "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "model-00001-of-00003.safetensors": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6",
+        "model-00002-of-00003.safetensors": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1",
+        "model-00003-of-00003.safetensors": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d",
+        "model.safetensors.index.json": "d6c42883a895dfef5b0080ed2116a1bcd764f558406b98923d675978a1abf29c",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "tokenizer_config.json": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "upstream_original": true,
+      "narae_weight_training": false,
+      "matched_existing_gguf_source_revision": true
+    },
+    "seed": 719,
+    "epochs": 1,
+    "train_records": 164,
+    "assistant_turns": 362,
+    "optimizer_steps": 41,
+    "learning_rate": 5e-05,
+    "rank": 8,
+    "alpha": 16,
+    "adaptation": "Final6decoderblocks,all7linearprojections;NF4base,F32LoRA;full-trajectory assistant-only loss",
+    "benchmark_used_for_training_or_selection": false,
+    "source_sha256": {
+      "scripts\\build_data.py": "06cc81458b101f993f05f619bda67821c774a2da1ceef8d0394512982b02c290",
+      "scripts\\chat_encoding.py": "643841e49d8d9c3e0ac170145db4aec84244d6daaac5270b33c95b625970e496",
+      "scripts\\download_base.py": "1b86cd1220f987737c6c282edc50e0b8d0f12c8936b3d5645146c5f438f106fc",
+      "scripts\\evaluate_narae3.py": "053a75d50e4c3513785bcafd77983a75e5bd10bf72d52160892317c44260c8bd",
+      "scripts\\export_adapter.py": "e1d3f1f4e554e583dd2229970c55ddad011bb694155af32fa317db74f254b060",
+      "scripts\\general_probe.py": "32e1709db828acd001b1a5519d49730a234ba2e63aa70ad44e850f435e78b197",
+      "scripts\\run_pipeline.py": "2b859c07ee404f52dbc440578e5c27ba8c6fd2f6ca393a440c9d5118aee76493",
+      "scripts\\runtime.py": "71bdc9854549051ed9e03e1d34a96f1e727918d13766ffdbd2a5d31e115372c6",
+      "scripts\\select_model.py": "1d1dee27810b484c5fd93ae32464ae3fe02f1bc9d1d3eb766eafa80133e2db04",
+      "scripts\\tool_corpus.py": "2b253ed0cd17867341a2b0399d615ff119791721679f326dba16f1bb86f164af",
+      "scripts\\train_lora.py": "ad0999102249d214d4f95428372f34cffe963a14cd31b3e8eae351f34510ec8c",
+      "scripts\\validate_native.py": "5b6d2828a27ca889e552b6758e8047c2909511724f40f3c6db0885d82588f5f2",
+      "data\\manifest.json": "93c1f5e4610dd1e4718eee417465915341509160b85f2d745678067fc4bf0b27",
+      "data\\native-prefix-audit.json": "d09534f8ae071138adda27cfcb9613a5d6dd18474a101dc27126b17d97f7684d",
+      "data\\system.txt": "d0620701f57c80a0b1f8aa8cc9d7289f8bbabe84137fcacec66c640d610bec14",
+      "data\\test-token-audit.json": "369eabba29e59294b8877fa65f163951ee51039bb30bcc439b736c3bf5706c5a",
+      "data\\test-trajectories.jsonl": "c3cad381ca09cefc700b6b177fc4d23270fbf712666a65f275881c5dd674d762",
+      "data\\test.jsonl": "d11c95f8d739b59415a3ee9e13570264d3705c032cc8e8f524a8612c06c57910",
+      "data\\train-token-audit.json": "80ed9e11021fcbfb679b958ac646b9075b46a38cb86f955aaed9f63e5d07a894",
+      "data\\train-trajectories.jsonl": "23fa8430211aaa204fc056c97326c4c779d5a3c26e92b318323169be63207443",
+      "data\\train.jsonl": "8bdbdacd95a1659f62212d42b36ef9e878bdc0b0f948dc1b6c4dc80fc0c43098",
+      "data\\validation-token-audit.json": "8fdfdff8c99293fcd57e0f5b133cbf92ccd44d4e284957da7a3279465576c037",
+      "data\\validation-trajectories.jsonl": "91935c3dbf17162820e9ccecadf1d97530e8192f43906b9e97e2ca287d2f069d",
+      "data\\validation.jsonl": "1208c313c8b5450d3f3117dc00455393b8dcdcaaafde7ae0968fad32bba58110",
+      "models/source.json": "026e08841862e7240cf9ebd448bccfebeed1c59012e1a67a2a68561fe6743fbe",
+      "evaluation/controller.py": "2c2859306965514d6aa397de8992650bffa134c0893fbfbe0d7ce491d3fb857a",
+      "evaluation/selection-plan.json": "60b65820918cbfeb8396a4e444b889f8898d2ae9430afc9d3dc9dc17876fc1ec",
+      "evaluation/snapshot.json": "a03b344d13886d414f31f04ee7f6b51f8f312b86a4e1e71b7fe28fc72e158d0b"
+    },
+    "external_controller_source_sha256": "2c2859306965514d6aa397de8992650bffa134c0893fbfbe0d7ce491d3fb857a",
+    "baseline_validation_completed_before_training": true
+  },
+  "dataset": {
+    "type": "Narae3 independent synthetic full-trajectory assistant-only SFT",
+    "benchmark_data_read": false,
+    "shared_public_tool_interface": true,
+    "developer_prior_benchmark_exposure": true,
+    "splits": {
+      "train": {
+        "records": 164,
+        "trajectories": 96,
+        "supervised_assistant_turns": 362,
+        "max_tokens": 1624,
+        "kinds": {
+          "write": 24,
+          "message": 24,
+          "replay_quote": 24,
+          "neis": 24,
+          "replay_route": 32,
+          "replay_unknown": 8,
+          "query": 24,
+          "identity": 4
+        },
+        "sha256": "8bdbdacd95a1659f62212d42b36ef9e878bdc0b0f948dc1b6c4dc80fc0c43098",
+        "trajectory_sha256": "23fa8430211aaa204fc056c97326c4c779d5a3c26e92b318323169be63207443"
+      },
+      "validation": {
+        "records": 36,
+        "trajectories": 24,
+        "supervised_assistant_turns": 86,
+        "max_tokens": 1618,
+        "kinds": {
+          "replay_unknown": 2,
+          "write": 6,
+          "message": 6,
+          "query": 6,
+          "replay_quote": 4,
+          "replay_route": 6,
+          "neis": 6
+        },
+        "sha256": "1208c313c8b5450d3f3117dc00455393b8dcdcaaafde7ae0968fad32bba58110",
+        "trajectory_sha256": "91935c3dbf17162820e9ccecadf1d97530e8192f43906b9e97e2ca287d2f069d"
+      },
+      "test": {
+        "records": 24,
+        "trajectories": 24,
+        "supervised_assistant_turns": 74,
+        "max_tokens": 1632,
+        "kinds": {
+          "query": 6,
+          "neis": 6,
+          "write": 6,
+          "message": 6
+        },
+        "sha256": "d11c95f8d739b59415a3ee9e13570264d3705c032cc8e8f524a8612c06c57910",
+        "trajectory_sha256": "c3cad381ca09cefc700b6b177fc4d23270fbf712666a65f275881c5dd674d762"
+      }
+    },
+    "old_training_replay_only": true,
+    "builder_sha256": "06cc81458b101f993f05f619bda67821c774a2da1ceef8d0394512982b02c290"
+  },
+  "selection": {
+    "complete": true,
+    "selection_plan_sha256": "60b65820918cbfeb8396a4e444b889f8898d2ae9430afc9d3dc9dc17876fc1ec",
+    "candidates": [
+      {
+        "tag": "base",
+        "strength": 0,
+        "tool_passed": 4,
+        "retention_passed": 1,
+        "general_probe_passed": 8,
+        "failed_finishes": 5,
+        "length_limited_responses": 0,
+        "teacher_loss": 1.475590513087809
+      },
+      {
+        "tag": "scale-050",
+        "strength": 0.5,
+        "tool_passed": 4,
+        "retention_passed": 2,
+        "general_probe_passed": 8,
+        "failed_finishes": 5,
+        "length_limited_responses": 0,
+        "teacher_loss": 1.3075801358144317
+      },
+      {
+        "tag": "scale-100",
+        "strength": 1,
+        "tool_passed": 4,
+        "retention_passed": 2,
+        "general_probe_passed": 8,
+        "failed_finishes": 5,
+        "length_limited_responses": 0,
+        "teacher_loss": 1.159511116385046
+      }
+    ],
+    "selected": {
+      "tag": "scale-100",
+      "strength": 1,
+      "tool_passed": 4,
+      "retention_passed": 2,
+      "general_probe_passed": 8,
+      "failed_finishes": 5,
+      "length_limited_responses": 0,
+      "teacher_loss": 1.159511116385046
+    },
+    "validation_approved_learned_model": true,
+    "evaluation_candidate": {
+      "tag": "scale-100",
+      "strength": 1,
+      "tool_passed": 4,
+      "retention_passed": 2,
+      "general_probe_passed": 8,
+      "failed_finishes": 5,
+      "length_limited_responses": 0,
+      "teacher_loss": 1.159511116385046
+    },
+    "benchmark_used_for_selection": false
+  },
+  "selection_plan": {
+    "candidate_scales": [
+      0,
+      0.5,
+      1
+    ],
+    "tool_case_ids": [
+      "episode-query-1172000",
+      "episode-query-1172001",
+      "episode-query-1172003",
+      "episode-neis-1172100",
+      "episode-neis-1172101",
+      "episode-neis-1172103",
+      "episode-write-1172200",
+      "episode-write-1172201",
+      "episode-write-1172203",
+      "episode-message-1172300",
+      "episode-message-1172301",
+      "episode-message-1172303"
+    ],
+    "validation_tool_turns": 6,
+    "validation_max_tokens": 768,
+    "retention_cases": 12,
+    "retention_max_tokens": 256,
+    "selection": "Eligible if tool, legacy-format retention and general-probe passes do not fall below base. Rank by tool passes, general-probe passes, legacy retention, fewer failed finishes, fewer length limits, lower teacher validation loss, then lower scale. Zero rejects promotion; public benchmark never selects the model.",
+    "public_benchmark_used_for_selection": false,
+    "data_sha256": {
+      "data/train.jsonl": "8bdbdacd95a1659f62212d42b36ef9e878bdc0b0f948dc1b6c4dc80fc0c43098",
+      "data/validation.jsonl": "1208c313c8b5450d3f3117dc00455393b8dcdcaaafde7ae0968fad32bba58110",
+      "data/test.jsonl": "d11c95f8d739b59415a3ee9e13570264d3705c032cc8e8f524a8612c06c57910",
+      "data/validation-trajectories.jsonl": "91935c3dbf17162820e9ccecadf1d97530e8192f43906b9e97e2ca287d2f069d",
+      "data/test-trajectories.jsonl": "c3cad381ca09cefc700b6b177fc4d23270fbf712666a65f275881c5dd674d762",
+      "data/native-prefix-audit.json": "d09534f8ae071138adda27cfcb9613a5d6dd18474a101dc27126b17d97f7684d"
+    },
+    "version": 2,
+    "general_probe_cases": 8,
+    "general_probe_source_sha256": "32e1709db828acd001b1a5519d49730a234ba2e63aa70ad44e850f435e78b197",
+    "pretraining_amendment": "Added elementary instruction retention probes after upstream baseline legacy-format retention was only1/12. No LoRA weight optimization had started; original baseline and plan-v1 preserved."
+  },
+  "audit": {
+    "verified": true,
+    "validation_tool_cases": 36,
+    "legacy_retention_cases": 36,
+    "general_probe_cases": 24,
+    "heldout_cases": 24,
+    "benchmark_cases": 36,
+    "same_public_initial_messages_and_schema_as_upstream_4b": true,
+    "actual_weight_training_and_loaded_scale_verified": true,
+    "source_and_budget_checks_passed": true,
+    "responses_forwarded_unchanged": true,
+    "live_service_actions": 0,
+    "documented_posttraining_failure_recovery_verified": true,
+    "discarded_first_attempt_updates": 41,
+    "final_artifact_optimizer_updates": 41,
+    "repeat_update_mean_loss_max_error": 0.0,
+    "benchmark_startup_recovery_preserved_heldout_and_identical_server": true
+  },
+  "training_recovery": {
+    "created_at": "2026-10-20T01:02:01.607690+00:00",
+    "observed_failure": {
+      "model": "Narae3-Qwen3-4B-LoRA-v1",
+      "stage": "failed",
+      "elapsed_seconds": 6310.82,
+      "error": "argument of type 'float' is not iterable",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\scripts\\train_lora.py\", line 154, in <module>\n    try:run.run()\n        ~~~~~~~^^\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\scripts\\train_lora.py\", line 131, in run\n    set_scale(0)\n    ~~~~~~~~~^^^\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\scripts\\train_lora.py\", line 130, in set_scale\n    if hasattr(module,'scaling') and 'default' in module.scaling:module.scaling['default']=2.0*value\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: argument of type 'float' is not iterable\n"
+    },
+    "frozen_original_profile_sha256": "5decadd5f8d320df62527f564a045af42d954ae83d876ac2039d03dfba46a805",
+    "original_sources_data_selection_and_benchmark_unchanged": true,
+    "adapted_native_validation_or_public_results_observed": false,
+    "reason": "Qwen attention has float scaling; only PEFT dict scaling may be changed. First 41 updates were lost before save.",
+    "recovery": "Fresh identical initial adapter, same seed/data/order/optimizer/41 updates; reuse 200 verified frozen-prefix cache records; rerun equivalence and baseline; save adapter immediately after updates.",
+    "discarded_optimizer_updates": 41,
+    "planned_final_artifact_updates": 41,
+    "first_attempt_evidence_sha256": {
+      "recovery\\attempt-1\\output\\events.jsonl": "fed885fa9fb65c72b2e2159929045ff2aaf16274542f36ceef23a20ceb5ec10e",
+      "recovery\\attempt-1\\output\\initial-adapter\\adapter_config.json": "1b22237353d20b9dc5b0c4cb4dbb60738577d5f3737cc9425d7929cdca0e850f",
+      "recovery\\attempt-1\\output\\initial-adapter\\adapter_model.safetensors": "2f959a34dcad3d0b0fe527cb2a196dd5dc0897cf2f8280469c61bbfc7fd62b46",
+      "recovery\\attempt-1\\output\\initial-adapter\\README.md": "87af50d7aadd86affe935bd9cdc2fe9e7d07136e0d004ced1be0879c890b3fcd",
+      "recovery\\attempt-1\\output\\status.json": "568143e64d4392c627a2c77d9fec6bd12d38a1519b973e5e0146b0113aa803c3",
+      "recovery\\attempt-1\\pipeline-error.json": "e28fc08528835b3e3166797448ba4ab61b828f54341f39c8b68df09fb85fb8ca",
+      "recovery\\attempt-1\\pipeline.stderr.log": "79e44f9b90b6b5fc52f604ef86fc5fe0d224c79a4abcd8fef0c4c9934afc6371",
+      "recovery\\attempt-1\\train_lora.log": "e1432cc11ae347d8d4eeb62e5bce99e79113d14f1b76f25bb1354668a3bacc4a"
+    },
+    "recovery_source_sha256": {
+      "recovery\\train_lora_recovery.py": "ef10ac5927fe99398e81ddd7b82e81ad60415ebb59158ec4b182d4027f4bccae",
+      "recovery\\run_recovery.py": "a2fe805ae3062a27f6e1dfad38594df24bb93fe29a8af58968368a9e284d9dab",
+      "recovery\\cache-manifest.json": "93382b78a3c9024d7e8ff458680b76bc04bca602e745aa1747f25b07f32cb660"
+    }
+  },
+  "benchmark_startup_recovery": {
+    "created_at": "2026-10-20T02:23:37.807318+00:00",
+    "reason": "Original main() failed on missing Path import before spawning the first public worker.",
+    "completed_heldout_cases_preserved": 24,
+    "public_cases_executed_before_resume": 0,
+    "training_selection_and_benchmark_contracts_unchanged": true,
+    "recovery": "Start a fresh identical verified native server; call original frozen evaluate_narae3.py --worker directly; no repeated held-out or training work.",
+    "resume_source_sha256": "8a5801b10e0f29fbddd850cd9248cabe51b3ca5a96fe4c557c14421601ff81e0",
+    "preserved_artifacts_sha256": {
+      "evaluation/heldout/results.json": "4fd5ed9aef3dc22521875a90420b49c793d7394c87c5f93d47a0b6b4c741e3b8",
+      "evaluation/heldout/transcript.jsonl": "efe1b5baa2a663b562f013867f55bf424fab2ca4e1159a993689b6c6d6d7a05c",
+      "evaluation/serving/narae3-evaluation.json": "8dda881bb61cd0568930d07052e0a2eba9223f7d288958abbaf4a66c44ba5142",
+      "outputs/selection.json": "44adcf99c2b43ed3b1b555779e5deb29ce5f599dfb5b48ff352bb58618972b9f",
+      "exports/verification.json": "93d6de5fa47298a6f9425e77a74808bc91a2dc4ff318ff43c51e8cce4f0e6fbd",
+      "recovery/amendment.json": "469dcf7f68d4486cfbbc78f5c63b443606a1034cf82b4f13a27698b362a710a6",
+      "recovery\\benchmark-startup-failure\\empty-benchmark.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "recovery\\benchmark-startup-failure\\evaluate_narae3.log": "60d59cd21258d7392599eb7f0345b895d6b99f8a9aebcbdccd657e79e9a57c0a",
+      "recovery\\benchmark-startup-failure\\recovery-pipeline-error.json": "2e158e8bda5b0062e86071494925dc7b0e91e346c14c0ec7392cf27825f77529",
+      "recovery\\benchmark-startup-failure\\recovery-pipeline.stderr.log": "364013674980504548411bf6d85dc54b8a9a070fab9e8d672fc4541e63a6b1d7",
+      "recovery\\benchmark-startup-failure\\status.json": "bc0973b64e1aae23b05473d1af466273d27d6a58bb06f4ee24f3fe7e21c5c6d9"
+    }
+  },
+  "heldout": {
+    "passed": 7,
+    "planned": 24,
+    "by_kind": {
+      "message": {
+        "passed": 1,
+        "total": 6
+      },
+      "neis": {
+        "passed": 6,
+        "total": 6
+      },
+      "query": {
+        "passed": 0,
+        "total": 6
+      },
+      "write": {
+        "passed": 0,
+        "total": 6
+      }
+    },
+    "scope": "New held-out values from shared synthetic templates; not the old v2 private cases or live services."
+  },
+  "serving": {
+    "alias": "Narae3-Qwen3-4B-LoRA-v1",
+    "base": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "quantizer": "bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF",
+      "quantizer_revision": "ae44f08e1392f39c0e474af10c3ff8355c8b6688",
+      "file": "D:\\Codex\\models\\Qwen3-4B-Instruct-2507-Q4_K_M\\Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+      "bytes": 2497280736,
+      "tokenizer_path": "D:\\Codex\\models\\Qwen3-4B-Instruct-2507-Q4_K_M",
+      "actual_narae_weight_training": false,
+      "license": "Apache-2.0",
+      "tokenizer_files_sha256": {
+        "config.json": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba",
+        "tokenizer_config.json": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+        "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+      }
+    },
+    "adapter": {
+      "model": "Narae3-Qwen3-4B-LoRA-v1",
+      "file": "D:\\Codex\\training\\narae3-qwen4b-20261020\\exports\\Narae3-Qwen3-4B-LoRA-v1-f32.gguf",
+      "tensors": 84,
+      "all_f32_tensors_bitwise_equal": true,
+      "source_sha256": "60b6d98a8771bac79194c48a074c4b5b7908663e94d63a43ca4b237c958a451d",
+      "export_sha256": "aed6f97ff68581b31a52821625653bb0edbf3e42583af2408e70c35ad9d7abe7",
+      "alpha": 16,
+      "rank": 8,
+      "converter_commit": "412a363c655b479279d3050d0d1c67a5733697b4",
+      "converter_source_sha256": "ecfe41c32d788a58de9da64ba988b2c97d4131880ff838b1e4e5f641bd415d2e",
+      "scope": "Tensor conversion verified; NF4 training and Q4_K_M native inference are distinct quantizations."
+    },
+    "actual_narae_weight_training": true,
+    "scale": 1,
+    "loaded_adapters": [
+      {
+        "id": 0,
+        "path": "D:\\Codex\\training\\narae3-qwen4b-20261020\\exports\\Narae3-Qwen3-4B-LoRA-v1-f32.gguf",
+        "scale": 1.0,
+        "task_name": "",
+        "prompt_prefix": ""
+      }
+    ],
+    "command": [
+      "D:\\Codex\\tools\\llama-b11669-win-cpu\\llama-server.exe",
+      "--model",
+      "D:\\Codex\\models\\Qwen3-4B-Instruct-2507-Q4_K_M\\Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "--alias",
+      "Narae3-Qwen3-4B-LoRA-v1",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18464",
+      "--threads",
+      "6",
+      "--threads-batch",
+      "6",
+      "--ctx-size",
+      "8192",
+      "--parallel",
+      "1",
+      "--batch-size",
+      "512",
+      "--ubatch-size",
+      "128",
+      "--cache-ram",
+      "0",
+      "--no-context-shift",
+      "--no-warmup",
+      "--no-webui",
+      "--seed",
+      "719",
+      "--chat-template-kwargs",
+      "{\"enable_thinking\":false}",
+      "--lora",
+      "D:\\Codex\\training\\narae3-qwen4b-20261020\\exports\\Narae3-Qwen3-4B-LoRA-v1-f32.gguf"
+    ],
+    "executable_sha256": "6a4635aeb35656153d4bfeeddf761d24ed84aada9c9108d580737cbed465141b"
+  },
+  "export_verification": {
+    "model": "Narae3-Qwen3-4B-LoRA-v1",
+    "file": "D:\\Codex\\training\\narae3-qwen4b-20261020\\exports\\Narae3-Qwen3-4B-LoRA-v1-f32.gguf",
+    "tensors": 84,
+    "all_f32_tensors_bitwise_equal": true,
+    "source_sha256": "60b6d98a8771bac79194c48a074c4b5b7908663e94d63a43ca4b237c958a451d",
+    "export_sha256": "aed6f97ff68581b31a52821625653bb0edbf3e42583af2408e70c35ad9d7abe7",
+    "alpha": 16,
+    "rank": 8,
+    "converter_commit": "412a363c655b479279d3050d0d1c67a5733697b4",
+    "converter_source_sha256": "ecfe41c32d788a58de9da64ba988b2c97d4131880ff838b1e4e5f641bd415d2e",
+    "scope": "Tensor conversion verified; NF4 training and Q4_K_M native inference are distinct quantizations."
+  },
+  "local_runtime": {
+    "path": "D:\\Codex\\models\\Narae3",
+    "metadata": {
+      "name": "나래3",
+      "served_model_id": "Narae3-Qwen3-4B-LoRA-v1",
+      "created_at": "2026-10-20T11:47:31+09:00",
+      "training_root": "D:\\Codex\\training\\narae3-qwen4b-20261020",
+      "base": {
+        "model": "Qwen/Qwen3-4B-Instruct-2507",
+        "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+        "quantizer": "bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF",
+        "quantizer_revision": "ae44f08e1392f39c0e474af10c3ff8355c8b6688",
+        "file": "D:\\Codex\\models\\Qwen3-4B-Instruct-2507-Q4_K_M\\Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+        "sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+        "bytes": 2497280736,
+        "tokenizer_path": "D:\\Codex\\models\\Qwen3-4B-Instruct-2507-Q4_K_M",
+        "actual_narae_weight_training": false,
+        "license": "Apache-2.0",
+        "tokenizer_files_sha256": {
+          "config.json": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba",
+          "tokenizer_config.json": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+          "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        }
+      },
+      "adapter": {
+        "file": "D:\\Codex\\models\\Narae3\\Narae3-Qwen3-4B-LoRA-v1-f32.gguf",
+        "sha256": "aed6f97ff68581b31a52821625653bb0edbf3e42583af2408e70c35ad9d7abe7",
+        "safetensors_sha256": "60b6d98a8771bac79194c48a074c4b5b7908663e94d63a43ca4b237c958a451d",
+        "strength": 1
+      },
+      "native_executable": "D:\\Codex\\tools\\llama-b11669-win-cpu\\llama-server.exe",
+      "executable_sha256": "6a4635aeb35656153d4bfeeddf761d24ed84aada9c9108d580737cbed465141b",
+      "actual_weight_training": true,
+      "training_attempts": 2,
+      "discarded_first_attempt_updates": 41,
+      "final_artifact_optimizer_updates": 41,
+      "validation_approved": true,
+      "mock_benchmark_score": 16.54,
+      "mock_passed": 10,
+      "historical_same_profile_upstream_score": 20.92,
+      "same_profile_mock_nonregression": false,
+      "experimental": true,
+      "experimental_reason": "Initial adapter with small synthetic training and limited mock validation; held-out workflow failures remain."
+    },
+    "manifest_sha256": "4d94395c24a6230f7926dce194e1c779a264cb80a5ffc53128a7a746e6c86e7f"
+  },
+  "launcher_check": {
+    "verified": true,
+    "launcher_sha256": "59aee23f0afd6f2cef27db4f35c3620a5ae93b715054a9acb14f8ced43ceca27",
+    "model_manifest_sha256": "4d94395c24a6230f7926dce194e1c779a264cb80a5ffc53128a7a746e6c86e7f",
+    "powershell_parser_passed": true,
+    "actual_learned_adapter_loaded": true,
+    "loaded_adapters": [
+      {
+        "id": 0,
+        "path": "Narae3-Qwen3-4B-LoRA-v1-f32.gguf",
+        "scale": 1.0,
+        "task_name": "",
+        "prompt_prefix": ""
+      }
+    ],
+    "models": {
+      "models": [
+        {
+          "name": "Narae3-Qwen3-4B-LoRA-v1",
+          "model": "Narae3-Qwen3-4B-LoRA-v1",
+          "modified_at": "",
+          "size": "",
+          "digest": "",
+          "type": "model",
+          "description": "",
+          "tags": [
+            ""
+          ],
+          "capabilities": [
+            "completion"
+          ],
+          "parameters": "",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "",
+            "families": [
+              ""
+            ],
+            "parameter_size": "",
+            "quantization_level": ""
+          }
+        }
+      ],
+      "object": "list",
+      "data": [
+        {
+          "id": "Narae3-Qwen3-4B-LoRA-v1",
+          "aliases": [
+            "Narae3-Qwen3-4B-LoRA-v1"
+          ],
+          "tags": [],
+          "object": "model",
+          "architecture": {
+            "input_modalities": [
+              "text"
+            ],
+            "output_modalities": [
+              "text"
+            ]
+          },
+          "created": 1792464569,
+          "owned_by": "llamacpp",
+          "meta": {
+            "vocab_type": 2,
+            "n_vocab": 151936,
+            "n_ctx": 8192,
+            "n_ctx_train": 262144,
+            "n_embd": 2560,
+            "n_params": 4022468096,
+            "size": 2491323904,
+            "ftype": "Q4_K - Medium"
+          }
+        }
+      ]
+    },
+    "native_process": {
+      "pid": 29548,
+      "create_time": 1792464567.0035467,
+      "executable": "D:\\Codex\\tools\\llama-b11669-win-cpu\\llama-server.exe",
+      "command": [
+        "D:\\Codex\\tools\\llama-b11669-win-cpu\\llama-server.exe",
+        "--model",
+        "D:\\Codex\\models\\Qwen3-4B-Instruct-2507-Q4_K_M\\Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+        "--alias",
+        "Narae3-Qwen3-4B-LoRA-v1",
+        "--lora-scaled",
+        "Narae3-Qwen3-4B-LoRA-v1-f32.gguf:1",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18462",
+        "--threads",
+        "6",
+        "--threads-batch",
+        "6",
+        "--ctx-size",
+        "8192",
+        "--parallel",
+        "1",
+        "--batch-size",
+        "512",
+        "--ubatch-size",
+        "128",
+        "--cache-ram",
+        "0",
+        "--no-context-shift",
+        "--no-warmup",
+        "--no-webui",
+        "--seed",
+        "719",
+        "--chat-template-kwargs",
+        "{\"enable_thinking\":false}"
+      ],
+      "cwd": "D:\\Codex\\models\\Narae3"
+    },
+    "command": [
+      "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+      "-NoProfile",
+      "-NonInteractive",
+      "-File",
+      "D:\\Codex\\models\\Narae3\\Start-Narae3.ps1",
+      "-Port",
+      "18462"
+    ],
+    "request": {
+      "model": "Narae3-Qwen3-4B-LoRA-v1",
+      "messages": [
+        {
+          "role": "user",
+          "content": "7 더하기 8은? 숫자만 답하세요."
+        }
+      ],
+      "max_tokens": 32,
+      "temperature": 0,
+      "seed": 719,
+      "stream": false
+    },
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "15"
+          }
+        }
+      ],
+      "created": 1792464570,
+      "model": "Narae3-Qwen3-4B-LoRA-v1",
+      "system_fingerprint": "b11669-620d2225c",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 21,
+        "total_tokens": 24,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-uQPVZNbvgf5NOiG0jO2Vh2woHP8hVXiC",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 257.62,
+        "prompt_per_token_ms": 12.267619047619048,
+        "prompt_per_second": 81.51541029423181,
+        "predicted_n": 3,
+        "predicted_ms": 182.137,
+        "predicted_per_token_ms": 91.0685,
+        "predicted_per_second": 10.980745263181012
+      }
+    },
+    "port": 18462,
+    "own_server_stopped": true,
+    "port_released": true,
+    "live_service_actions": 0,
+    "current_cli_diagnostic": {
+      "verified": true,
+      "planned": 3,
+      "executed": 3,
+      "passed": 2,
+      "results": [
+        {
+          "id": "NP-P-01",
+          "status": "PASS"
+        },
+        {
+          "id": "NP-E-WXS-WRITE-01",
+          "status": "FAIL"
+        },
+        {
+          "id": "NP-N-03",
+          "status": "PASS"
+        }
+      ],
+      "plan_sha256": "fc2ced231f2a0b01f529ceee82ba713884a8c66a70dfd6946276a38b0e7f30db",
+      "full_v21_score_unchanged": true
+    },
+    "scope": "Installed local launcher integration check; not a benchmark score"
+  },
+  "current_cli_diagnostic": {
+    "verified": true,
+    "planned": 3,
+    "executed": 3,
+    "passed": 2,
+    "results": [
+      {
+        "id": "NP-P-01",
+        "status": "PASS"
+      },
+      {
+        "id": "NP-E-WXS-WRITE-01",
+        "status": "FAIL"
+      },
+      {
+        "id": "NP-N-03",
+        "status": "PASS"
+      }
+    ],
+    "plan_sha256": "fc2ced231f2a0b01f529ceee82ba713884a8c66a70dfd6946276a38b0e7f30db",
+    "full_v21_score_unchanged": true
+  },
+  "current_cli_diagnostic_plan": {
+    "scope": "Three existing v2.2 contract diagnostics, selected before this model run; partial check only",
+    "case_ids": [
+      "NP-E-WXS-WRITE-01",
+      "NP-N-03",
+      "NP-P-01"
+    ],
+    "model": "Narae3-Qwen3-4B-LoRA-v1",
+    "strength": 1,
+    "source_sha256": {
+      "bench.py": "f1c4d5987b445fe325b699ebca82d9dc09cce33eb7ed57ec3020b38d615061de",
+      "cases.json": "8322223d21cb20d0c1d80f7725719d1cdf4be073f44d2dfe0b6860c980b96156",
+      "mock/cli.py": "c1dd35c6183ef05a15ac47b7fdf30daf4b0dc3b7b38341a0730a3430a1c5f206",
+      "mock/mock_workflow.py": "61d8e21055f2417dad557d1a7fc03e39995133083aca7fd2fb9213daddee61be",
+      "mock/evaluate.py": "2c2859306965514d6aa397de8992650bffa134c0893fbfbe0d7ce491d3fb857a"
+    },
+    "used_for_model_selection": false,
+    "added_to_v21_full_score": false
+  },
+  "live_service_actions": 0,
+  "model_weights_in_public_bundle": false,
+  "raw_training_data_in_public_bundle": false,
+  "limitations": [
+    "Public benchmark and developer prior exposure; not blind",
+    "Private split uses held-out values from shared templates, not novel workflows",
+    "Only eight elementary general probes; not a broad general-capability retention guarantee",
+    "One fixed seed; other host activity can affect deadlines",
+    "High-level mock state/text checks, no live school-service E2E or independent document semantics review",
+    "NF4 training base and Q4_K_M native inference are distinct; exported F32 tensors and actual native outputs were checked",
+    "Multiple training-recipe changes together; no causal ablation of each change"
+  ]
+}

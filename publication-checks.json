@@ -12,7 +12,7 @@
   "model_scores_included": true,
   "current_mock_profile": "high-level-mock-cli-v2.2",
   "mock_v2_regression_tests_passed": 5,
-  "model_score_scope": "Fixed-budget local SFT v1/v2 and upstream 4B model runs on v2.1; historical assisted Codex self-run is separate",
+  "model_score_scope": "Fixed-budget local SFT v1/v2, actual Qwen-based Narae3 LoRA and historical upstream 4B runs on v2.1; assisted Codex self-run and v2.2 diagnostics are separate",
   "self_run_report": "reports/codex-self-20261019.json",
   "model_runner_regression_tests_passed": 9,
   "single_page_coverage_regression_tests_passed": 4,
@@ -28,5 +28,18 @@
   "tool_sft_v2_private_model_cases_replayed": 48,
   "tool_sft_v2_optimizer_steps_per_model": 104,
   "windows_closed_stdin_einval_regressions_passed": 2,
-  "windows_closed_stdin_real_timeout_recovery_verified": true
+  "windows_closed_stdin_real_timeout_recovery_verified": true,
+  "narae3_report": "reports/narae3-20261020/README.md",
+  "narae3_model_cases_audited": 156,
+  "narae3_public_benchmark_cases": 36,
+  "narae3_new_heldout_cases": 24,
+  "narae3_validation_tool_cases": 36,
+  "narae3_legacy_retention_cases": 36,
+  "narae3_general_probe_cases": 24,
+  "narae3_current_v22_diagnostic_cases_audited": 3,
+  "narae3_final_artifact_optimizer_updates": 41,
+  "narae3_discarded_first_attempt_updates": 41,
+  "narae3_actual_learned_adapter_launcher_verified": true,
+  "narae3_model_weights_included": false,
+  "narae3_raw_training_records_included": false
 }

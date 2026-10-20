@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "selection_plan_sha256": "60b65820918cbfeb8396a4e444b889f8898d2ae9430afc9d3dc9dc17876fc1ec",
+  "candidates": [
+    {
+      "tag": "base",
+      "strength": 0,
+      "tool_passed": 4,
+      "retention_passed": 1,
+      "general_probe_passed": 8,
+      "failed_finishes": 5,
+      "length_limited_responses": 0,
+      "teacher_loss": 1.475590513087809
+    },
+    {
+      "tag": "scale-050",
+      "strength": 0.5,
+      "tool_passed": 4,
+      "retention_passed": 2,
+      "general_probe_passed": 8,
+      "failed_finishes": 5,
+      "length_limited_responses": 0,
+      "teacher_loss": 1.3075801358144317
+    },
+    {
+      "tag": "scale-100",
+      "strength": 1,
+      "tool_passed": 4,
+      "retention_passed": 2,
+      "general_probe_passed": 8,
+      "failed_finishes": 5,
+      "length_limited_responses": 0,
+      "teacher_loss": 1.159511116385046
+    }
+  ],
+  "selected": {
+    "tag": "scale-100",
+    "strength": 1,
+    "tool_passed": 4,
+    "retention_passed": 2,
+    "general_probe_passed": 8,
+    "failed_finishes": 5,
+    "length_limited_responses": 0,
+    "teacher_loss": 1.159511116385046
+  },
+  "validation_approved_learned_model": true,
+  "evaluation_candidate": {
+    "tag": "scale-100",
+    "strength": 1,
+    "tool_passed": 4,
+    "retention_passed": 2,
+    "general_probe_passed": 8,
+    "failed_finishes": 5,
+    "length_limited_responses": 0,
+    "teacher_loss": 1.159511116385046
+  },
+  "benchmark_used_for_selection": false
+}

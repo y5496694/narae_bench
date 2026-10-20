@@ -1,0 +1,202 @@
+{
+  "verified": true,
+  "launcher_sha256": "59aee23f0afd6f2cef27db4f35c3620a5ae93b715054a9acb14f8ced43ceca27",
+  "model_manifest_sha256": "4d94395c24a6230f7926dce194e1c779a264cb80a5ffc53128a7a746e6c86e7f",
+  "powershell_parser_passed": true,
+  "actual_learned_adapter_loaded": true,
+  "loaded_adapters": [
+    {
+      "id": 0,
+      "path": "Narae3-Qwen3-4B-LoRA-v1-f32.gguf",
+      "scale": 1.0,
+      "task_name": "",
+      "prompt_prefix": ""
+    }
+  ],
+  "models": {
+    "models": [
+      {
+        "name": "Narae3-Qwen3-4B-LoRA-v1",
+        "model": "Narae3-Qwen3-4B-LoRA-v1",
+        "modified_at": "",
+        "size": "",
+        "digest": "",
+        "type": "model",
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "capabilities": [
+          "completion"
+        ],
+        "parameters": "",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "",
+          "families": [
+            ""
+          ],
+          "parameter_size": "",
+          "quantization_level": ""
+        }
+      }
+    ],
+    "object": "list",
+    "data": [
+      {
+        "id": "Narae3-Qwen3-4B-LoRA-v1",
+        "aliases": [
+          "Narae3-Qwen3-4B-LoRA-v1"
+        ],
+        "tags": [],
+        "object": "model",
+        "architecture": {
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ]
+        },
+        "created": 1792464569,
+        "owned_by": "llamacpp",
+        "meta": {
+          "vocab_type": 2,
+          "n_vocab": 151936,
+          "n_ctx": 8192,
+          "n_ctx_train": 262144,
+          "n_embd": 2560,
+          "n_params": 4022468096,
+          "size": 2491323904,
+          "ftype": "Q4_K - Medium"
+        }
+      }
+    ]
+  },
+  "native_process": {
+    "pid": 29548,
+    "create_time": 1792464567.0035467,
+    "executable": "D:\\Codex\\tools\\llama-b11669-win-cpu\\llama-server.exe",
+    "command": [
+      "D:\\Codex\\tools\\llama-b11669-win-cpu\\llama-server.exe",
+      "--model",
+      "D:\\Codex\\models\\Qwen3-4B-Instruct-2507-Q4_K_M\\Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "--alias",
+      "Narae3-Qwen3-4B-LoRA-v1",
+      "--lora-scaled",
+      "Narae3-Qwen3-4B-LoRA-v1-f32.gguf:1",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18462",
+      "--threads",
+      "6",
+      "--threads-batch",
+      "6",
+      "--ctx-size",
+      "8192",
+      "--parallel",
+      "1",
+      "--batch-size",
+      "512",
+      "--ubatch-size",
+      "128",
+      "--cache-ram",
+      "0",
+      "--no-context-shift",
+      "--no-warmup",
+      "--no-webui",
+      "--seed",
+      "719",
+      "--chat-template-kwargs",
+      "{\"enable_thinking\":false}"
+    ],
+    "cwd": "D:\\Codex\\models\\Narae3"
+  },
+  "command": [
+    "C:\\Users\\USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE",
+    "-NoProfile",
+    "-NonInteractive",
+    "-File",
+    "D:\\Codex\\models\\Narae3\\Start-Narae3.ps1",
+    "-Port",
+    "18462"
+  ],
+  "request": {
+    "model": "Narae3-Qwen3-4B-LoRA-v1",
+    "messages": [
+      {
+        "role": "user",
+        "content": "7 더하기 8은? 숫자만 답하세요."
+      }
+    ],
+    "max_tokens": 32,
+    "temperature": 0,
+    "seed": 719,
+    "stream": false
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "15"
+        }
+      }
+    ],
+    "created": 1792464570,
+    "model": "Narae3-Qwen3-4B-LoRA-v1",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 3,
+      "prompt_tokens": 21,
+      "total_tokens": 24,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-uQPVZNbvgf5NOiG0jO2Vh2woHP8hVXiC",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 21,
+      "prompt_ms": 257.62,
+      "prompt_per_token_ms": 12.267619047619048,
+      "prompt_per_second": 81.51541029423181,
+      "predicted_n": 3,
+      "predicted_ms": 182.137,
+      "predicted_per_token_ms": 91.0685,
+      "predicted_per_second": 10.980745263181012
+    }
+  },
+  "port": 18462,
+  "own_server_stopped": true,
+  "port_released": true,
+  "live_service_actions": 0,
+  "current_cli_diagnostic": {
+    "verified": true,
+    "planned": 3,
+    "executed": 3,
+    "passed": 2,
+    "results": [
+      {
+        "id": "NP-P-01",
+        "status": "PASS"
+      },
+      {
+        "id": "NP-E-WXS-WRITE-01",
+        "status": "FAIL"
+      },
+      {
+        "id": "NP-N-03",
+        "status": "PASS"
+      }
+    ],
+    "plan_sha256": "fc2ced231f2a0b01f529ceee82ba713884a8c66a70dfd6946276a38b0e7f30db",
+    "full_v21_score_unchanged": true
+  },
+  "scope": "Installed local launcher integration check; not a benchmark score"
+}

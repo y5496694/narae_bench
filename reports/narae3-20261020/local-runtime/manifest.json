@@ -1,0 +1,15 @@
+{
+  "type": "Actual local Narae3 model runtime; weights stay on D",
+  "files": {
+    "adapter/adapter_config.json": "6d68887dc38e981df1030140e9b4eb341346b6d7c02dadbfbc44d2a79633991a",
+    "adapter/adapter_model.safetensors": "60b6d98a8771bac79194c48a074c4b5b7908663e94d63a43ca4b237c958a451d",
+    "adapter/README.md": "87af50d7aadd86affe935bd9cdc2fe9e7d07136e0d004ced1be0879c890b3fcd",
+    "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "model.json": "63138d862be92db05deced049d6c640f914b378bdff2e559603532d310346615",
+    "Narae3-Qwen3-4B-LoRA-v1-f32.gguf": "aed6f97ff68581b31a52821625653bb0edbf3e42583af2408e70c35ad9d7abe7",
+    "NOTICE": "23642781d59bc7871471de499c943888eb8eb9c5863ad520bda92eea27f15439",
+    "README.md": "5eabf95a42482dfcdf7ec9e5b8157fe1217c1cacd3c4b276f34c8eb5d937c099",
+    "Start-Narae3.ps1": "59aee23f0afd6f2cef27db4f35c3620a5ae93b715054a9acb14f8ced43ceca27",
+    "upstream-source.json": "026e08841862e7240cf9ebd448bccfebeed1c59012e1a67a2a68561fe6743fbe"
+  }
+}

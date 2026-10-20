@@ -1,0 +1,986 @@
+[
+  {
+    "id": "episode-query-1061000",
+    "tokens": 961,
+    "supervised_tokens": 117,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061001",
+    "tokens": 994,
+    "supervised_tokens": 157,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061002",
+    "tokens": 874,
+    "supervised_tokens": 125,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061003",
+    "tokens": 855,
+    "supervised_tokens": 117,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061004",
+    "tokens": 984,
+    "supervised_tokens": 123,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061005",
+    "tokens": 865,
+    "supervised_tokens": 121,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061006",
+    "tokens": 1008,
+    "supervised_tokens": 161,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061007",
+    "tokens": 811,
+    "supervised_tokens": 109,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061008",
+    "tokens": 923,
+    "supervised_tokens": 109,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061009",
+    "tokens": 966,
+    "supervised_tokens": 152,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061010",
+    "tokens": 939,
+    "supervised_tokens": 140,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061011",
+    "tokens": 1001,
+    "supervised_tokens": 160,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061012",
+    "tokens": 1035,
+    "supervised_tokens": 138,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061013",
+    "tokens": 938,
+    "supervised_tokens": 141,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061014",
+    "tokens": 869,
+    "supervised_tokens": 123,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061015",
+    "tokens": 821,
+    "supervised_tokens": 113,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061016",
+    "tokens": 1119,
+    "supervised_tokens": 162,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061017",
+    "tokens": 918,
+    "supervised_tokens": 137,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061018",
+    "tokens": 1008,
+    "supervised_tokens": 161,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061019",
+    "tokens": 870,
+    "supervised_tokens": 124,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061020",
+    "tokens": 1087,
+    "supervised_tokens": 151,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061021",
+    "tokens": 865,
+    "supervised_tokens": 121,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061022",
+    "tokens": 1015,
+    "supervised_tokens": 164,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1061023",
+    "tokens": 900,
+    "supervised_tokens": 129,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061100",
+    "tokens": 1227,
+    "supervised_tokens": 239,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061101",
+    "tokens": 1148,
+    "supervised_tokens": 254,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-neis-1061102",
+    "tokens": 1096,
+    "supervised_tokens": 244,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061103",
+    "tokens": 1094,
+    "supervised_tokens": 243,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061104",
+    "tokens": 1232,
+    "supervised_tokens": 241,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061105",
+    "tokens": 1134,
+    "supervised_tokens": 247,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-neis-1061106",
+    "tokens": 1100,
+    "supervised_tokens": 246,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061107",
+    "tokens": 1084,
+    "supervised_tokens": 238,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061108",
+    "tokens": 1234,
+    "supervised_tokens": 242,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061109",
+    "tokens": 1158,
+    "supervised_tokens": 259,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-neis-1061110",
+    "tokens": 1080,
+    "supervised_tokens": 236,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061111",
+    "tokens": 1088,
+    "supervised_tokens": 240,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061112",
+    "tokens": 1222,
+    "supervised_tokens": 237,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061113",
+    "tokens": 1152,
+    "supervised_tokens": 256,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-neis-1061114",
+    "tokens": 1092,
+    "supervised_tokens": 242,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061115",
+    "tokens": 1098,
+    "supervised_tokens": 245,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061116",
+    "tokens": 1224,
+    "supervised_tokens": 238,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061117",
+    "tokens": 1144,
+    "supervised_tokens": 252,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-neis-1061118",
+    "tokens": 1088,
+    "supervised_tokens": 240,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061119",
+    "tokens": 1088,
+    "supervised_tokens": 240,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061120",
+    "tokens": 1239,
+    "supervised_tokens": 244,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061121",
+    "tokens": 1138,
+    "supervised_tokens": 249,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-neis-1061122",
+    "tokens": 1092,
+    "supervised_tokens": 242,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1061123",
+    "tokens": 1076,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-write-1061200",
+    "tokens": 1586,
+    "supervised_tokens": 309,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061201",
+    "tokens": 1579,
+    "supervised_tokens": 329,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061202",
+    "tokens": 1570,
+    "supervised_tokens": 327,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061203",
+    "tokens": 1552,
+    "supervised_tokens": 317,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061204",
+    "tokens": 1618,
+    "supervised_tokens": 323,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061205",
+    "tokens": 1566,
+    "supervised_tokens": 323,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061206",
+    "tokens": 1579,
+    "supervised_tokens": 329,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061207",
+    "tokens": 1558,
+    "supervised_tokens": 319,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061208",
+    "tokens": 1617,
+    "supervised_tokens": 324,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061209",
+    "tokens": 1579,
+    "supervised_tokens": 329,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061210",
+    "tokens": 1585,
+    "supervised_tokens": 332,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061211",
+    "tokens": 1563,
+    "supervised_tokens": 324,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061212",
+    "tokens": 1624,
+    "supervised_tokens": 325,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061213",
+    "tokens": 1591,
+    "supervised_tokens": 334,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061214",
+    "tokens": 1543,
+    "supervised_tokens": 315,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061215",
+    "tokens": 1524,
+    "supervised_tokens": 306,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061216",
+    "tokens": 1618,
+    "supervised_tokens": 323,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061217",
+    "tokens": 1556,
+    "supervised_tokens": 321,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061218",
+    "tokens": 1579,
+    "supervised_tokens": 329,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061219",
+    "tokens": 1576,
+    "supervised_tokens": 329,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061220",
+    "tokens": 1592,
+    "supervised_tokens": 311,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061221",
+    "tokens": 1578,
+    "supervised_tokens": 328,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061222",
+    "tokens": 1557,
+    "supervised_tokens": 321,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1061223",
+    "tokens": 1544,
+    "supervised_tokens": 315,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061300",
+    "tokens": 1274,
+    "supervised_tokens": 238,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061301",
+    "tokens": 1214,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061302",
+    "tokens": 1214,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061303",
+    "tokens": 1221,
+    "supervised_tokens": 238,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061304",
+    "tokens": 1274,
+    "supervised_tokens": 232,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061305",
+    "tokens": 1234,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061306",
+    "tokens": 1216,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061307",
+    "tokens": 1197,
+    "supervised_tokens": 226,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061308",
+    "tokens": 1305,
+    "supervised_tokens": 244,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061309",
+    "tokens": 1208,
+    "supervised_tokens": 230,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061310",
+    "tokens": 1207,
+    "supervised_tokens": 230,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061311",
+    "tokens": 1216,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061312",
+    "tokens": 1291,
+    "supervised_tokens": 238,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061313",
+    "tokens": 1223,
+    "supervised_tokens": 238,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061314",
+    "tokens": 1212,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061315",
+    "tokens": 1223,
+    "supervised_tokens": 232,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061316",
+    "tokens": 1266,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061317",
+    "tokens": 1235,
+    "supervised_tokens": 236,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061318",
+    "tokens": 1250,
+    "supervised_tokens": 242,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061319",
+    "tokens": 1251,
+    "supervised_tokens": 240,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061320",
+    "tokens": 1256,
+    "supervised_tokens": 226,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061321",
+    "tokens": 1222,
+    "supervised_tokens": 238,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061322",
+    "tokens": 1257,
+    "supervised_tokens": 244,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1061323",
+    "tokens": 1239,
+    "supervised_tokens": 238,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "replay-train-route-schedule-6-0",
+    "tokens": 108,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-status-5-0",
+    "tokens": 108,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-hiclass-notices-2-0",
+    "tokens": 109,
+    "supervised_tokens": 9,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-chats-4-0",
+    "tokens": 107,
+    "supervised_tokens": 9,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-schedule-2-1",
+    "tokens": 115,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-users-0-0",
+    "tokens": 106,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-chats-5-1",
+    "tokens": 118,
+    "supervised_tokens": 9,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-status-4-1",
+    "tokens": 114,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-status-0-1",
+    "tokens": 114,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-users-5-1",
+    "tokens": 113,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-schedule-4-1",
+    "tokens": 116,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-notes-1-1",
+    "tokens": 119,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-attendance-5-1",
+    "tokens": 118,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-attendance-6-1",
+    "tokens": 119,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-schedule-0-1",
+    "tokens": 116,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-status-3-0",
+    "tokens": 106,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-hiclass-notices-7-1",
+    "tokens": 118,
+    "supervised_tokens": 9,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-hiclass-notices-1-1",
+    "tokens": 121,
+    "supervised_tokens": 9,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-notes-2-1",
+    "tokens": 119,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-chats-1-0",
+    "tokens": 111,
+    "supervised_tokens": 9,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-chats-3-1",
+    "tokens": 123,
+    "supervised_tokens": 9,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-notes-7-1",
+    "tokens": 117,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-status-4-0",
+    "tokens": 104,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-schedule-0-0",
+    "tokens": 106,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-unsupported-7-1",
+    "tokens": 113,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-documents-2-0",
+    "tokens": 109,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-hiclass-notices-7-0",
+    "tokens": 108,
+    "supervised_tokens": 9,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-users-0-1",
+    "tokens": 116,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-unsupported-5-0",
+    "tokens": 105,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-schedule-5-1",
+    "tokens": 112,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-cbe-status-6-0",
+    "tokens": 102,
+    "supervised_tokens": 8,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-route-unsupported-1-1",
+    "tokens": 115,
+    "supervised_tokens": 6,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-actions-4",
+    "tokens": 280,
+    "supervised_tokens": 50,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-actions-3",
+    "tokens": 227,
+    "supervised_tokens": 27,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-deadline-3",
+    "tokens": 324,
+    "supervised_tokens": 57,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-exceptions-0",
+    "tokens": 217,
+    "supervised_tokens": 26,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-attachments-1",
+    "tokens": 292,
+    "supervised_tokens": 45,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-when-2",
+    "tokens": 312,
+    "supervised_tokens": 65,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-purpose-6",
+    "tokens": 300,
+    "supervised_tokens": 53,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-audience-2",
+    "tokens": 229,
+    "supervised_tokens": 37,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-attachments-0",
+    "tokens": 289,
+    "supervised_tokens": 45,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-attachments-3",
+    "tokens": 358,
+    "supervised_tokens": 73,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-audience-5",
+    "tokens": 232,
+    "supervised_tokens": 24,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-purpose-5",
+    "tokens": 205,
+    "supervised_tokens": 31,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-when-4",
+    "tokens": 255,
+    "supervised_tokens": 50,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-exceptions-5",
+    "tokens": 298,
+    "supervised_tokens": 50,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-when-7",
+    "tokens": 239,
+    "supervised_tokens": 51,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-purpose-3",
+    "tokens": 271,
+    "supervised_tokens": 44,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-actions-6",
+    "tokens": 310,
+    "supervised_tokens": 57,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-when-3",
+    "tokens": 354,
+    "supervised_tokens": 72,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-when-5",
+    "tokens": 311,
+    "supervised_tokens": 69,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-when-6",
+    "tokens": 314,
+    "supervised_tokens": 72,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-purpose-2",
+    "tokens": 240,
+    "supervised_tokens": 36,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-exceptions-4",
+    "tokens": 321,
+    "supervised_tokens": 55,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-attachments-5",
+    "tokens": 336,
+    "supervised_tokens": 66,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-quote-purpose-1",
+    "tokens": 212,
+    "supervised_tokens": 34,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-unknown-deadline-3",
+    "tokens": 93,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-unknown-audience-0",
+    "tokens": 94,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-unknown-deadline-0",
+    "tokens": 95,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-unknown-audience-1",
+    "tokens": 93,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-unknown-deadline-1",
+    "tokens": 94,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-unknown-deadline-2",
+    "tokens": 96,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-unknown-audience-2",
+    "tokens": 95,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "replay-train-unknown-audience-3",
+    "tokens": 92,
+    "supervised_tokens": 4,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "narae3-identity-0",
+    "tokens": 73,
+    "supervised_tokens": 38,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "narae3-identity-1",
+    "tokens": 80,
+    "supervised_tokens": 38,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "narae3-identity-2",
+    "tokens": 75,
+    "supervised_tokens": 38,
+    "correct_assistant_turns": 1
+  },
+  {
+    "id": "narae3-identity-3",
+    "tokens": 77,
+    "supervised_tokens": 38,
+    "correct_assistant_turns": 1
+  }
+]

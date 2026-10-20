@@ -1,0 +1,88 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "documents.open_template",
+      "args": {
+        "template_id": "TPL-PUBLIC"
+      },
+      "result": {
+        "ok": true,
+        "template_id": "TPL-PUBLIC",
+        "scope": "public",
+        "version": "2.0",
+        "wxs_open": true,
+        "required_fields": [
+          "title",
+          "body",
+          "approval_route"
+        ],
+        "original_unchanged": true
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "template_id": "TPL-PUBLIC",
+        "scope": "public",
+        "version": "2.0",
+        "wxs_open": true,
+        "required_fields": [
+          "title",
+          "body",
+          "approval_route"
+        ],
+        "original_unchanged": true
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "template": {
+      "template_id": "TPL-PUBLIC",
+      "scope": "public",
+      "version": "2.0",
+      "wxs_open": true,
+      "required_fields": [
+        "title",
+        "body",
+        "approval_route"
+      ],
+      "original_unchanged": true
+    }
+  },
+  "report": {
+    "template_id": "TPL-PUBLIC",
+    "scope": "public",
+    "version": "2.0",
+    "wxs_open": true,
+    "required_fields": [
+      "title",
+      "body",
+      "approval_route"
+    ],
+    "original_unchanged": true
+  },
+  "checks": {
+    "K1": true,
+    "K2": true,
+    "K3": true,
+    "K4": true
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

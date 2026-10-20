@@ -1,0 +1,12 @@
+{
+  "profile": "high-level-mock-cli-v2.1",
+  "same_before_after_source_files": true,
+  "source_commit": "8f3283725bbcb868e640882a6652e28af069fb60",
+  "files_sha256": {
+    "bench.py": "f1c4d5987b445fe325b699ebca82d9dc09cce33eb7ed57ec3020b38d615061de",
+    "cases.json": "8322223d21cb20d0c1d80f7725719d1cdf4be073f44d2dfe0b6860c980b96156",
+    "mock/evaluate.py": "e13ec59d69b8c96d13edead73c80bb4d89fc3b71ca6d8fca57d61ac54200fda7",
+    "mock/cli.py": "5e398e1b3f92c84894c842f197ea0c640536c701834d3dd77493336fe20a11c1",
+    "mock/mock_workflow.py": "cdcec7baebe1c81239eef878ef4807c4389ffc250e0bd0afc4f81040575f0d0e"
+  }
+}

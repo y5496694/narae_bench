@@ -1,0 +1,22 @@
+{
+  "verified": true,
+  "planned": 3,
+  "executed": 3,
+  "passed": 2,
+  "results": [
+    {
+      "id": "NP-P-01",
+      "status": "PASS"
+    },
+    {
+      "id": "NP-E-WXS-WRITE-01",
+      "status": "FAIL"
+    },
+    {
+      "id": "NP-N-03",
+      "status": "PASS"
+    }
+  ],
+  "plan_sha256": "fc2ced231f2a0b01f529ceee82ba713884a8c66a70dfd6946276a38b0e7f30db",
+  "full_v21_score_unchanged": true
+}

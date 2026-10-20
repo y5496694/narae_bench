@@ -1,0 +1,18 @@
+{
+  "verified": true,
+  "validation_tool_cases": 36,
+  "legacy_retention_cases": 36,
+  "general_probe_cases": 24,
+  "heldout_cases": 24,
+  "benchmark_cases": 36,
+  "same_public_initial_messages_and_schema_as_upstream_4b": true,
+  "actual_weight_training_and_loaded_scale_verified": true,
+  "source_and_budget_checks_passed": true,
+  "responses_forwarded_unchanged": true,
+  "live_service_actions": 0,
+  "documented_posttraining_failure_recovery_verified": true,
+  "discarded_first_attempt_updates": 41,
+  "final_artifact_optimizer_updates": 41,
+  "repeat_update_mean_loss_max_error": 0.0,
+  "benchmark_startup_recovery_preserved_heldout_and_identical_server": true
+}

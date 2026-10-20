@@ -1,0 +1,318 @@
+{
+  "complete": true,
+  "alias": "Narae3-Qwen3-4B-LoRA-v1",
+  "scale": 0.5,
+  "tool_passed": 4,
+  "tool_total": 12,
+  "retention_passed": 2,
+  "retention_total": 12,
+  "failed_finishes": 5,
+  "length_limited_responses": 0,
+  "tool_results": [
+    {
+      "id": "episode-query-1172000",
+      "kind": "query",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "ids": [],
+        "total": 0,
+        "date_basis": "processed",
+        "pages": [
+          1
+        ],
+        "role": "approved",
+        "scope": "my_documents"
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-query-1172001",
+      "kind": "query",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "ids": [
+          "미확인"
+        ],
+        "total": 0,
+        "date_basis": "registered",
+        "pages": [],
+        "role": "approved",
+        "scope": "my_documents"
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-query-1172003",
+      "kind": "query",
+      "passed": false,
+      "turns": 4,
+      "report": {
+        "ids": [
+          "미확인"
+        ],
+        "total": 0,
+        "date_basis": "registered",
+        "pages": [],
+        "role": "received",
+        "scope": "my_documents"
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-neis-1172100",
+      "kind": "neis",
+      "passed": true,
+      "turns": 3,
+      "report": {
+        "fields": {
+          "type": "연가-조퇴",
+          "date": "2031-05-23",
+          "start": "10:00",
+          "end": "12:00",
+          "reason": "진로 체험 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-7073a985",
+              "organization": "푸른중",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 120,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-neis-1172101",
+      "kind": "neis",
+      "passed": true,
+      "turns": 4,
+      "report": {
+        "fields": {
+          "type": "관외출장",
+          "date": "2031-06-24",
+          "start": "10:00",
+          "end": "13:00",
+          "reason": "독서 행사 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-c75640f2",
+              "organization": "솔빛고",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 180,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-neis-1172103",
+      "kind": "neis",
+      "passed": true,
+      "turns": 2,
+      "report": {
+        "fields": {
+          "type": "관내출장",
+          "date": "2031-09-05",
+          "start": "13:00",
+          "end": "14:00",
+          "reason": "학습 동아리 협의",
+          "destination": "학생문화관",
+          "transport": "대중교통",
+          "expense": "여비 미지급",
+          "companions": [],
+          "approval_route": [
+            {
+              "id": "approval-e45956c2",
+              "organization": "솔빛고",
+              "role": "결재"
+            }
+          ]
+        },
+        "duration_minutes": 60,
+        "ready": true,
+        "submitted": false,
+        "saved_separately": false
+      },
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-write-1172200",
+      "kind": "write",
+      "passed": false,
+      "turns": 3,
+      "report": {
+        "draft_id": "draft-b207b775",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "독서 행사 명단 제출",
+        "visibility": "부분공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-b207b775"
+        ],
+        "auto_send": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-write-1172201",
+      "kind": "write",
+      "passed": false,
+      "turns": 3,
+      "report": {
+        "draft_id": "draft-1ca70c06",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "학습 동아리 명단 제출",
+        "visibility": "공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-1ca70c06"
+        ],
+        "auto_send": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-write-1172203",
+      "kind": "write",
+      "passed": false,
+      "turns": 3,
+      "report": {
+        "draft_id": "draft-741d22ea",
+        "saved": true,
+        "verified": true,
+        "submitted": false,
+        "sent": false,
+        "title": "진로 체험 명단 제출",
+        "visibility": "부분공개",
+        "attachment_count": 0,
+        "recipient_ids": [
+          "org-741d22ea"
+        ],
+        "auto_send": false
+      },
+      "failed_finish": true,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-message-1172300",
+      "kind": "message",
+      "passed": false,
+      "turns": 6,
+      "report": null,
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-message-1172301",
+      "kind": "message",
+      "passed": false,
+      "turns": 6,
+      "report": null,
+      "failed_finish": false,
+      "length_limited_responses": 0
+    },
+    {
+      "id": "episode-message-1172303",
+      "kind": "message",
+      "passed": false,
+      "turns": 6,
+      "report": null,
+      "failed_finish": false,
+      "length_limited_responses": 0
+    }
+  ],
+  "retention_results": [
+    {
+      "id": "replay-validation-unknown-audience-1",
+      "kind": "replay_unknown",
+      "passed": true
+    },
+    {
+      "id": "replay-validation-quote-exceptions-0",
+      "kind": "replay_quote",
+      "passed": false
+    },
+    {
+      "id": "replay-validation-quote-audience-0",
+      "kind": "replay_quote",
+      "passed": false
+    },
+    {
+      "id": "replay-validation-route-unsupported-1-0",
+      "kind": "replay_route",
+      "passed": false
+    },
+    {
+      "id": "replay-validation-route-cbe-users-0-0",
+      "kind": "replay_route",
+      "passed": false
+    },
+    {
+      "id": "replay-validation-route-cbe-notes-0-0",
+      "kind": "replay_route",
+      "passed": false
+    },
+    {
+      "id": "replay-validation-quote-when-0",
+      "kind": "replay_quote",
+      "passed": false
+    },
+    {
+      "id": "replay-validation-route-documents-0-0",
+      "kind": "replay_route",
+      "passed": false
+    },
+    {
+      "id": "replay-validation-unknown-audience-0",
+      "kind": "replay_unknown",
+      "passed": true
+    },
+    {
+      "id": "replay-validation-route-documents-1-0",
+      "kind": "replay_route",
+      "passed": false
+    },
+    {
+      "id": "replay-validation-quote-audience-1",
+      "kind": "replay_quote",
+      "passed": false
+    },
+    {
+      "id": "replay-validation-route-schedule-0-0",
+      "kind": "replay_route",
+      "passed": false
+    }
+  ]
+}

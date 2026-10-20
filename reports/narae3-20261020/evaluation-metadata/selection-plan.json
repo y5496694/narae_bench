@@ -1,0 +1,39 @@
+{
+  "candidate_scales": [
+    0,
+    0.5,
+    1
+  ],
+  "tool_case_ids": [
+    "episode-query-1172000",
+    "episode-query-1172001",
+    "episode-query-1172003",
+    "episode-neis-1172100",
+    "episode-neis-1172101",
+    "episode-neis-1172103",
+    "episode-write-1172200",
+    "episode-write-1172201",
+    "episode-write-1172203",
+    "episode-message-1172300",
+    "episode-message-1172301",
+    "episode-message-1172303"
+  ],
+  "validation_tool_turns": 6,
+  "validation_max_tokens": 768,
+  "retention_cases": 12,
+  "retention_max_tokens": 256,
+  "selection": "Eligible if tool, legacy-format retention and general-probe passes do not fall below base. Rank by tool passes, general-probe passes, legacy retention, fewer failed finishes, fewer length limits, lower teacher validation loss, then lower scale. Zero rejects promotion; public benchmark never selects the model.",
+  "public_benchmark_used_for_selection": false,
+  "data_sha256": {
+    "data/train.jsonl": "8bdbdacd95a1659f62212d42b36ef9e878bdc0b0f948dc1b6c4dc80fc0c43098",
+    "data/validation.jsonl": "1208c313c8b5450d3f3117dc00455393b8dcdcaaafde7ae0968fad32bba58110",
+    "data/test.jsonl": "d11c95f8d739b59415a3ee9e13570264d3705c032cc8e8f524a8612c06c57910",
+    "data/validation-trajectories.jsonl": "91935c3dbf17162820e9ccecadf1d97530e8192f43906b9e97e2ca287d2f069d",
+    "data/test-trajectories.jsonl": "c3cad381ca09cefc700b6b177fc4d23270fbf712666a65f275881c5dd674d762",
+    "data/native-prefix-audit.json": "d09534f8ae071138adda27cfcb9613a5d6dd18474a101dc27126b17d97f7684d"
+  },
+  "version": 2,
+  "general_probe_cases": 8,
+  "general_probe_source_sha256": "32e1709db828acd001b1a5519d49730a234ba2e63aa70ad44e850f435e78b197",
+  "pretraining_amendment": "Added elementary instruction retention probes after upstream baseline legacy-format retention was only1/12. No LoRA weight optimization had started; original baseline and plan-v1 preserved."
+}

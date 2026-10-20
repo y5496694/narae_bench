@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\Codex\training\narae3-qwen4b-20261020\scripts\evaluate_narae3.py", line 44, in <module>
+    if __name__=='__main__':worker() if '--worker' in sys.argv else main()
+                                                                    ~~~~^^
+  File "D:\Codex\training\narae3-qwen4b-20261020\scripts\evaluate_narae3.py", line 32, in main
+    child=subprocess.Popen([sys.executable,'-X','utf8',str(Path(__file__)),'--worker'],stdout=log,stderr=log,
+                                                           ^^^^
+NameError: name 'Path' is not defined. Did you mean: 'path'?

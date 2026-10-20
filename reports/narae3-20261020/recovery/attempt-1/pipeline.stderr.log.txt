@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Codex\training\narae3-qwen4b-20261020\scripts\run_pipeline.py", line 56, in <module>
+    try:main()
+        ~~~~^^
+  File "D:\Codex\training\narae3-qwen4b-20261020\scripts\run_pipeline.py", line 41, in main
+    command('train_lora')
+    ~~~~~~~^^^^^^^^^^^^^^
+  File "D:\Codex\training\narae3-qwen4b-20261020\scripts\run_pipeline.py", line 40, in command
+    if completed.returncode:raise RuntimeError(f'Stage failed: {name}')
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Stage failed: train_lora

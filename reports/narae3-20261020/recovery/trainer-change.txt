@@ -1,0 +1,98 @@
+--- original frozen trainer
++++ post-failure recovery trainer
+@@ -2,6 +2,7 @@
+ import os
+ from pathlib import Path
+ ROOT=Path(__file__).resolve().parents[1]
++import sys;sys.path.insert(0,str(ROOT/'scripts'))
+ for key,folder in {'HF_HOME':'cache/huggingface','HF_HUB_CACHE':'cache/huggingface/hub','HF_MODULES_CACHE':'cache/modules',
+     'TORCH_HOME':'cache/torch','TORCHINDUCTOR_CACHE_DIR':'cache/inductor','TORCH_EXTENSIONS_DIR':'cache/extensions','TEMP':'tmp','TMP':'tmp'}.items():
+     os.environ[key]=str(ROOT/folder)
+@@ -52,11 +53,16 @@
+         finally:handle.remove()
+         return collected
+     def cache_records(self,rows,split):
+-        paths=[]
++        paths=[];manifest=load(ROOT/'recovery/cache-manifest.json')
+         for n,row in enumerate(rows):
+-            encoded,_=self.encode(row);record=self.capture(encoded['input_ids']);record.update(labels=encoded['labels'],id=row['id'])
+-            path=self.cache/(row['id']+'.pt');torch.save(record,path);paths.append(path)
+-            self.emit('caching-frozen-prefix',split=split,completed=n+1,total=len(rows),tokens=int(encoded['input_ids'].shape[1]))
++            encoded,_=self.encode(row);path=self.cache/(row['id']+'.pt')
++            assert sha(path)==manifest['files'][str(path.relative_to(ROOT))]
++            record=self.read(path)
++            assert record['id']==row['id'] and torch.equal(record['labels'],encoded['labels'])
++            assert record['hidden'].shape==(1,encoded['input_ids'].shape[1],2560)
++            assert torch.isfinite(record['hidden']).all()
++            paths.append(path)
++        self.emit('frozen-prefix-cache-verified-and-reused',split=split,records=len(paths))
+         return paths
+     def read(self,path):return torch.load(path,map_location='cpu',weights_only=True)
+     def mean_loss(self,paths):
+@@ -87,10 +93,28 @@
+         assert all(torch.count_nonzero(p).item()==0 for name,p in parameters.items() if 'lora_B' in name)
+         before={name:p.detach().clone() for name,p in parameters.items()};before_hash=self.adapter_hash()
+         self.model.save_pretrained(self.output/'initial-adapter',safe_serialization=True)
++        from safetensors.torch import load_file
++        old_initial=load_file(ROOT/'recovery/attempt-1/output/initial-adapter/adapter_model.safetensors')
++        new_initial=load_file(self.output/'initial-adapter/adapter_model.safetensors')
++        assert old_initial.keys()==new_initial.keys() and len(old_initial)==84
++        assert all(torch.equal(old_initial[name],value) for name,value in new_initial.items())
++        del old_initial,new_initial
++        scalable=[m for m in self.model.modules() if isinstance(getattr(m,'scaling',None),dict) and 'default' in m.scaling]
++        assert len(scalable)==42
++        for value in [0,.5,1]:
++            for module in scalable:module.scaling['default']=2.0*value
++            assert all(module.scaling['default']==2.0*value for module in scalable)
++        self.emit('recovery-preflight-passed',identical_initial_tensors=84,scalable_lora_modules=42)
++
+         self.emit('adapter-created',trainable_parameters=sum(p.numel() for p in parameters.values()),tensors=len(parameters),adapted_layers=list(range(self.start_layer,self.start_layer+6)))
+         rows={split:[json.loads(x) for x in (ROOT/'data'/f'{split}.jsonl').read_text(encoding='utf-8').splitlines()] for split in ['train','validation']}
+         representative=next(r for r in rows['train'] if r['kind']=='write')
+         encoded,spans=self.encode(representative);record=self.capture(encoded['input_ids']);record['labels']=encoded['labels']
++        prior_record=self.read(self.cache/(representative['id']+'.pt'))
++        cache_recovery_error=float((record['hidden']-prior_record['hidden']).abs().max())
++        assert cache_recovery_error<=2e-4 and torch.equal(record['labels'],prior_record['labels'])
++        del prior_record
++
+         with torch.no_grad():
+             full_loss=float(self.model(**encoded,use_cache=False).loss);cached_loss=float(self.cached_loss(record))
+             config=self.model.get_base_model().config;config._attn_implementation='eager'
+@@ -107,6 +131,7 @@
+         train_paths=self.cache_records(rows['train'],'train');validation_paths=self.cache_records(rows['validation'],'validation')
+         baseline_val=self.mean_loss(validation_paths)
+         with torch.no_grad():baseline_first=float(self.cached_loss(self.read(validation_paths[0])))
++        assert abs(baseline_val-1.475590513087809)<=1e-6
+         self.emit('baseline-validation',loss=baseline_val)
+         layers,_,_=self.parts()
+         for i in range(self.start_layer):layers[i]=torch.nn.Identity()
+@@ -124,10 +149,16 @@
+                 optimizer.step();optimizer.zero_grad(set_to_none=True)
+                 self.emit('training',optimizer_step=self.step,total_optimizer_steps=total_steps,mean_loss=sum(running[-4:])/4,gradient_norm=gradient)
+         assert self.step==total_steps
++        self.model.save_pretrained(self.output/'adapter',safe_serialization=True)
++        dump(self.output/'post-update-checkpoint.json',{'optimizer_steps':self.step,
++            'adapter_file_sha256':sha(self.output/'adapter/adapter_model.safetensors'),
++            'recovery_amendment_sha256':sha(ROOT/'recovery/amendment.json')})
++        self.emit('post-update-checkpoint-saved',optimizer_steps=self.step)
++
+         full_val=self.mean_loss(validation_paths)
+         def set_scale(value):
+             for module in self.model.modules():
+-                if hasattr(module,'scaling') and 'default' in module.scaling:module.scaling['default']=2.0*value
++                if isinstance(getattr(module,'scaling',None),dict) and 'default' in module.scaling:module.scaling['default']=2.0*value
+         set_scale(0)
+         with torch.no_grad():zero_error=abs(float(self.cached_loss(self.read(validation_paths[0])))-baseline_first)
+         assert zero_error<=1e-6
+@@ -147,6 +178,11 @@
+             'adapter_file_sha256':sha(self.output/'adapter/adapter_model.safetensors'),'adapter_parameter_l2_changes':changes,
+             'corpus_manifest_sha256':sha(ROOT/'data/manifest.json'),'trainer_source_sha256':sha(__file__),
+             'versions':{name:importlib.metadata.version(name) for name in ['torch','transformers','peft','bitsandbytes','accelerate']}}
++        report.update(recovery_amendment_sha256=sha(ROOT/'recovery/amendment.json'),
++            attempts=2,discarded_first_attempt_updates=41,final_artifact_optimizer_updates=41,
++            first_attempt_weights_saved=False,identical_initial_adapter_tensors_verified=84,
++            cached_prefix_recovery_max_error=cache_recovery_error,
++            original_frozen_trainer_sha256=profile['source_sha256'][r'scripts\train_lora.py'])
+         dump(self.output/'training-report.json',report)
+         self.emit('complete',actual_weight_training=True,optimizer_steps=self.step,validation_losses_by_scale=report['validation_losses_by_scale'])
+ if __name__=='__main__':

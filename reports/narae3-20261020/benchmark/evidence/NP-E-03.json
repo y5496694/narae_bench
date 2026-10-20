@@ -1,0 +1,168 @@
+{
+  "environment": "mock",
+  "live_service_actions": 0,
+  "trace": [
+    {
+      "tool": "documents.query",
+      "args": {
+        "scope": "my_documents",
+        "role": "approved",
+        "from": "2026-10-01",
+        "to": "2026-10-19",
+        "date_basis": "processed",
+        "title_contains": "none",
+        "drafter_id": "ME-01",
+        "condition": "A"
+      },
+      "result": {
+        "ok": true,
+        "scope": "my_documents",
+        "query": {
+          "scope": "my_documents",
+          "role": "approved",
+          "from": "2026-10-01",
+          "to": "2026-10-19",
+          "date_basis": "processed",
+          "title_contains": "none",
+          "drafter_id": "ME-01",
+          "condition": "A"
+        },
+        "rows": [
+          {
+            "id": "MY-APPROVED",
+            "title": "동일 제목 가상 연수",
+            "document_number": "MY-APPROVED-100",
+            "processed": "2026-10-10",
+            "status": "처리완료",
+            "actor_id": "ME-01",
+            "role": "approved"
+          }
+        ],
+        "pages": [
+          1
+        ],
+        "total_rows": 1,
+        "has_more": true
+      }
+    },
+    {
+      "tool": "documents.query",
+      "args": {
+        "scope": "my_documents",
+        "role": "approved",
+        "from": "2026-10-01",
+        "to": "2026-10-19",
+        "date_basis": "processed",
+        "title_contains": "동일 제목 가상 연수",
+        "drafter_id": "ME-01",
+        "condition": "A"
+      },
+      "result": {
+        "ok": true,
+        "scope": "my_documents",
+        "query": {
+          "scope": "my_documents",
+          "role": "approved",
+          "from": "2026-10-01",
+          "to": "2026-10-19",
+          "date_basis": "processed",
+          "title_contains": "동일 제목 가상 연수",
+          "drafter_id": "ME-01",
+          "condition": "A"
+        },
+        "rows": [
+          {
+            "id": "MY-APPROVED",
+            "title": "동일 제목 가상 연수",
+            "document_number": "MY-APPROVED-100",
+            "processed": "2026-10-10",
+            "status": "처리완료",
+            "actor_id": "ME-01",
+            "role": "approved"
+          }
+        ],
+        "pages": [
+          1
+        ],
+        "total_rows": 1,
+        "has_more": true
+      }
+    },
+    {
+      "tool": "finish",
+      "args": {
+        "ids": [
+          "MY-APPROVED"
+        ],
+        "total": 1,
+        "date_basis": "processed",
+        "pages": [
+          1
+        ],
+        "role": "approved",
+        "scope": "my_documents"
+      },
+      "result": {
+        "ok": true,
+        "finished": true
+      }
+    }
+  ],
+  "state": {
+    "environment": "mock",
+    "writes": [],
+    "sent": [],
+    "queries": [
+      {
+        "scope": "my_documents",
+        "role": "approved",
+        "from": "2026-10-01",
+        "to": "2026-10-19",
+        "date_basis": "processed",
+        "title_contains": "none",
+        "drafter_id": "ME-01",
+        "condition": "A"
+      },
+      {
+        "scope": "my_documents",
+        "role": "approved",
+        "from": "2026-10-01",
+        "to": "2026-10-19",
+        "date_basis": "processed",
+        "title_contains": "동일 제목 가상 연수",
+        "drafter_id": "ME-01",
+        "condition": "A"
+      }
+    ],
+    "read_ids": [],
+    "saved": null,
+    "verified": false,
+    "asked": [],
+    "original_modified": false,
+    "submitted": false,
+    "listed_ids": [
+      "MY-APPROVED",
+      "MY-APPROVED"
+    ]
+  },
+  "report": {
+    "ids": [
+      "MY-APPROVED"
+    ],
+    "total": 1,
+    "date_basis": "processed",
+    "pages": [
+      1
+    ],
+    "role": "approved",
+    "scope": "my_documents"
+  },
+  "checks": {
+    "K1": false,
+    "K2": false,
+    "K3": false,
+    "K4": false
+  },
+  "format_errors": 0,
+  "tool_errors": []
+}

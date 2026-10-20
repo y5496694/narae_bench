@@ -1,0 +1,4 @@
+{
+  "error": "Stage failed: evaluate_narae3",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\recovery\\run_recovery.py\", line 26, in <module>\n    command('select_model');command('evaluate_narae3')\n                            ~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Codex\\training\\narae3-qwen4b-20261020\\recovery\\run_recovery.py\", line 18, in command\n    if result.returncode:raise RuntimeError('Stage failed: '+name)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Stage failed: evaluate_narae3\n"
+}

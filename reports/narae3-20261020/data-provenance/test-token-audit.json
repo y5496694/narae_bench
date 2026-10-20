@@ -1,0 +1,146 @@
+[
+  {
+    "id": "episode-query-1283000",
+    "tokens": 1077,
+    "supervised_tokens": 149,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1283001",
+    "tokens": 815,
+    "supervised_tokens": 111,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1283002",
+    "tokens": 811,
+    "supervised_tokens": 109,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1283003",
+    "tokens": 954,
+    "supervised_tokens": 145,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1283004",
+    "tokens": 1077,
+    "supervised_tokens": 147,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-query-1283005",
+    "tokens": 821,
+    "supervised_tokens": 113,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1283100",
+    "tokens": 1237,
+    "supervised_tokens": 243,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1283101",
+    "tokens": 1146,
+    "supervised_tokens": 253,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-neis-1283102",
+    "tokens": 1092,
+    "supervised_tokens": 242,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1283103",
+    "tokens": 1092,
+    "supervised_tokens": 242,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1283104",
+    "tokens": 1232,
+    "supervised_tokens": 241,
+    "correct_assistant_turns": 2
+  },
+  {
+    "id": "episode-neis-1283105",
+    "tokens": 1148,
+    "supervised_tokens": 254,
+    "correct_assistant_turns": 3
+  },
+  {
+    "id": "episode-write-1283200",
+    "tokens": 1625,
+    "supervised_tokens": 327,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1283201",
+    "tokens": 1592,
+    "supervised_tokens": 335,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1283202",
+    "tokens": 1570,
+    "supervised_tokens": 327,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1283203",
+    "tokens": 1557,
+    "supervised_tokens": 321,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1283204",
+    "tokens": 1632,
+    "supervised_tokens": 328,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-write-1283205",
+    "tokens": 1592,
+    "supervised_tokens": 335,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1283300",
+    "tokens": 1254,
+    "supervised_tokens": 230,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1283301",
+    "tokens": 1220,
+    "supervised_tokens": 230,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1283302",
+    "tokens": 1216,
+    "supervised_tokens": 234,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1283303",
+    "tokens": 1196,
+    "supervised_tokens": 226,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1283304",
+    "tokens": 1287,
+    "supervised_tokens": 242,
+    "correct_assistant_turns": 4
+  },
+  {
+    "id": "episode-message-1283305",
+    "tokens": 1222,
+    "supervised_tokens": 238,
+    "correct_assistant_turns": 4
+  }
+]
